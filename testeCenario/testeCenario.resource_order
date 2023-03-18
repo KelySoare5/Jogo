@@ -14,9 +14,12 @@
     {"name":"Sons","order":1,"path":"folders/Sons.yy",},
   ],
   "ResourceOrderSettings": [
-    {"name":"Object2","order":2,"path":"objects/Object2/Object2.yy",},
-    {"name":"Sprite3","order":1,"path":"sprites/Sprite3/Sprite3.yy",},
-    {"name":"Sprite4","order":1,"path":"sprites/Sprite4/Sprite4.yy",},
+    {"name":"Object2","order":3,"path":"objects/Object2/Object2.yy",},
+    {"name":"background","order":1,"path":"sprites/background/background.yy",},
+    {"name":"Object1","order":2,"path":"objects/Object1/Object1.yy",},
+    {"name":"personPrinc","order":1,"path":"sprites/personPrinc/personPrinc.yy",},
+    {"name":"ObjDialogo","order":4,"path":"objects/ObjDialogo/ObjDialogo.yy",},
+    {"name":"Script1","order":2,"path":"scripts/Script1/Script1.yy",},
     {"name":"Ambiente1","order":13,"path":"rooms/Ambiente1/Ambiente1.yy",},
   ],
 }
