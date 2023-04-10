@@ -63,3 +63,50 @@ if place_meeting(x, y+1, Obj_wall) and key_jump {
 }
 
 #endregion
+
+
+//#region Dialogo
+// Dialogo 
+//ver se tem objeto do npc perto
+//if distance_to_object(obj_par_npcs) <=15{
+//	//clicando em f vai achar qual e o npc mais proximo
+//	if keyboard_check_pressed(ord("F")){
+//		//recebe a instancia do npc
+//		var _npc = instance_nearest(x, y,obj_par_npcs);
+//		//cria o dialogo na layer Dialogo
+//		var _dialogo = instance_create_layer(x,y, "Dialogo", ObjDialogo);
+//		_dialogo.npcNome = _npc.nome;
+//	}
+//}
+//#endregion
+
+
+
+
+#region Dialogo
+//bota if dialogo == false, ai pode andar
+
+
+
+// Dialogo 
+//ver se tem objeto do npc perto
+if distance_to_object(obj_par_npcs) <=15{
+//	//clicando em f vai achar qual e o npc mais proximo
+	
+	//so conversa se nao tiver conversando
+	//if keyboard_check_pressed(ord("F")) and global.dialogo == false{
+	if keyboard_check_pressed(ord("F")){
+		
+		//if global.dialogo == true {
+	//		//recebe a instancia do npc
+			var _npc = instance_nearest(x, y,obj_par_npcs);
+	//		//cria o dialogo na layer Dialogo
+			var _dialogo = instance_create_layer(x,y, "Dialogo", ObjDialogo);
+			_dialogo.npcNome = _npc.nome;
+		//}
+	}
+}
+#endregion
+
+
+
