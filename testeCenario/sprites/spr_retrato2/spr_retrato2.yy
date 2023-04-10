@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_retrato2",
-  "bbox_bottom": 50,
-  "bbox_left": 5,
-  "bbox_right": 29,
-  "bbox_top": 10,
+  "bbox_bottom": 63,
+  "bbox_left": 0,
+  "bbox_right": 67,
+  "bbox_top": 1,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"55fd814d-9e79-4c8f-bc36-cbf880da40b0",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2008dc3c-1a17-401d-a344-b4b8e6095ef1",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 64,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"996a5e62-2ae5-4225-9b69-7a3812b7494a","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"15332ebe-b895-435f-8d47-261408de12eb","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"55fd814d-9e79-4c8f-bc36-cbf880da40b0","path":"sprites/spr_retrato2/spr_retrato2.yy",},},},"Disabled":false,"id":"9284dde2-ccf7-4101-bf63-13b0a5dc0a94","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"2008dc3c-1a17-401d-a344-b4b8e6095ef1","path":"sprites/spr_retrato2/spr_retrato2.yy",},},},"Disabled":false,"id":"2317d4d5-a40c-4264-95e1-3ddb023f7b3e","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 32,
+  "width": 68,
 }

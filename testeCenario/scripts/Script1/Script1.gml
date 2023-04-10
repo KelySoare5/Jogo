@@ -6,10 +6,10 @@ function scr_textos(){
 	switch npcNome{
 		case "mago1":
 		//se for 0 e desenhar lado esquerdo e se for um do outro lado
-			ds_grid_add_text("Primeiro texto aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",spr_retrato2, 1, "Mago" );
-			ds_grid_add_text("Segundo texto aaaaaaaaaaaaaaaa", spr_retrato1, 0, "Kely" );
-			ds_grid_add_text("Terceiro texto aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",spr_retrato2, 1, "Mago" );
-			ds_grid_add_text("Quarto texto aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", spr_retrato1, 0, "Kely" );
+			ds_grid_add_text("Você é um garoto(a) de programa (S-sim/N-não)??",spr_retrato2, 1, "MAGO" );
+			ds_grid_add_text("SIM kk", spr_retrato1, 0, "KELY" );
+			ds_grid_add_text("Então, HTML é uma linguagem de programação (V-verdadeiro/F-Falso)??",spr_retrato2, 1, "MAGO" );
+			ds_grid_add_text("Falso", spr_retrato1, 0, "KELY" );
 			//texto[0]= "Vc é garota(o) de programa? ";
 			
 			

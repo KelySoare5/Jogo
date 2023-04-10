@@ -59,7 +59,7 @@ y = y + vspd;
 
 //pulo jump se tivr no chao e clicar na tela de pulo
 if place_meeting(x, y+1, Obj_wall) and key_jump {
-	vspd -= 10;
+	vspd -= 12;
 }
 
 #endregion

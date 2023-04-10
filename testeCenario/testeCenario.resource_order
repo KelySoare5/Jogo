@@ -22,6 +22,7 @@
     {"name":"obj_controle","order":9,"path":"objects/obj_controle/obj_controle.yy",},
     {"name":"background","order":1,"path":"sprites/background/background.yy",},
     {"name":"Object1","order":2,"path":"objects/Object1/Object1.yy",},
+    {"name":"mago","order":8,"path":"sprites/mago/mago.yy",},
     {"name":"personPrinc","order":1,"path":"sprites/personPrinc/personPrinc.yy",},
     {"name":"spr_retrato2","order":3,"path":"sprites/spr_retrato2/spr_retrato2.yy",},
     {"name":"Spr_background","order":4,"path":"sprites/Spr_background/Spr_background.yy",},

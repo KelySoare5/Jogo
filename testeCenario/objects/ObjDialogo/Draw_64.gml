@@ -35,7 +35,7 @@ if inicializar == true {
 		draw_text_ext(_xx + 232, _yy + 32, texto_grid[# infos.Texto, pagina], 32, _guil - 264);
 	
 		//desenhar a sprite         x     y
-		draw_sprite_ext(_sprite, 0, 50, _guia-200, 3, 3, 0, c_white, 1);
+		draw_sprite_ext(_sprite, 0, 20, _guia-200, 3, 3, 0, c_white, 1);
 	}
 	// lado direito
 	else{
@@ -53,7 +53,7 @@ if inicializar == true {
 		draw_text_ext(_xx + 32, _yy + 32, texto_grid[# infos.Texto, pagina], 32, _guil - 264);
 	
 		//desenhar a sprite
-		draw_sprite_ext(_sprite, 0, _guil - 100, _guia-200, -3, 3, 0, c_white, 1);
+		draw_sprite_ext(_sprite, 0, _guil, _guia-200, -3, 3, 0, c_white, 1);
 	
 	}
 }
