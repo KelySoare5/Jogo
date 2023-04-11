@@ -11,7 +11,6 @@ if inicializar == false{
 
 
  // if para passar os textos
- //
 if mouse_check_button_pressed(mb_left){
 	
 	//se a variavel pag for menor q o tamanho do array, 
@@ -23,8 +22,11 @@ if mouse_check_button_pressed(mb_left){
 	} 
 	
 	else {
-		//destroi a instancia
-		global.dialogo = false;
+		//destroi as instancias
+		//tirei pq o dialogo é pra execultar só uma vez. 
+		//(implentar ainda) pq se ele finalizar as perguntas vai para proxima fase ou reinicar o jogo
+		//global.dialogo = false;
+		instance_destroy(Object2);
 		instance_destroy();
 	}
 }
