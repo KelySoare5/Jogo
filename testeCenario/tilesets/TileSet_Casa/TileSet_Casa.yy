@@ -12,8 +12,8 @@
   "out_tilehborder": 2,
   "out_tilevborder": 2,
   "parent": {
-    "name": "Curvas da animação",
-    "path": "folders/Curvas da animação.yy",
+    "name": "enfeites_tiles",
+    "path": "folders/Curvas da animação/enfeites_tiles.yy",
   },
   "spriteId": {
     "name": "SprCasa",

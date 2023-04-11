@@ -1,7 +1,10 @@
 /// @description Inserir descrição aqui
 // criar as variaveis, so acontece 1 vez, 
 // quando criar o obj do player
-// Você pode escrever seu código neste editor
+
+//variavel global para controlar o 
+//dialogo e aparecer so uma vez quando tiver colisao
+global.dialogo = false;
 
 //velocidade do player
 spd = 5;
