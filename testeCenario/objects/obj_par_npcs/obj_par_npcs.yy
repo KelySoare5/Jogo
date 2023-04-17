@@ -6,8 +6,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objetos.yy",
+    "name": "busca_npcs",
+    "path": "folders/Objetos/objetos_players/busca_npcs.yy",
   },
   "parentObjectId": null,
   "persistent": false,

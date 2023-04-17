@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objetos",
-    "path": "folders/Objetos.yy",
+    "name": "objetos_players",
+    "path": "folders/Objetos/objetos_players.yy",
   },
   "parentObjectId": null,
   "persistent": false,

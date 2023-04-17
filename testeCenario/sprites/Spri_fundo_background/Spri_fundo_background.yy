@@ -25,8 +25,8 @@
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "enfeites_cenario",
+    "path": "folders/Sprites/spr_cenario/enfeites_cenario.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
