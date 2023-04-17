@@ -2,10 +2,10 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "mago",
-  "bbox_bottom": 174,
-  "bbox_left": 25,
-  "bbox_right": 121,
-  "bbox_top": 15,
+  "bbox_bottom": 247,
+  "bbox_left": 7,
+  "bbox_right": 131,
+  "bbox_top": 11,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,20 +13,20 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dd3c1a94-836d-45f7-bc98-3b2a24fecd89",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3f26b765-106f-4ede-9a73-47bbe7ea6955",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 250,
+  "height": 256,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"0c860f53-a651-47ff-b774-52b9468194d3","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1164c90f-d5b0-47ca-8e39-b284d9914feb","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"dd3c1a94-836d-45f7-bc98-3b2a24fecd89","path":"sprites/mago/mago.yy",},},},"Disabled":false,"id":"a54383de-43ec-4bb0-b286-821ed99d26ac","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3f26b765-106f-4ede-9a73-47bbe7ea6955","path":"sprites/mago/mago.yy",},},},"Disabled":false,"id":"055a7cfa-2ba0-47e1-841c-d6804de907c1","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 125,
+  "width": 138,
 }
