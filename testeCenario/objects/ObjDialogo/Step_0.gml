@@ -28,5 +28,6 @@ if mouse_check_button_pressed(mb_left){
 		//global.dialogo = false;
 		instance_destroy(Object2);
 		instance_destroy();
+
 	}
 }
