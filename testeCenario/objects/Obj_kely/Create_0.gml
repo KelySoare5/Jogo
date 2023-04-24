@@ -5,7 +5,7 @@
 //variavel global para controlar o 
 //dialogo e aparecer so uma vez quando tiver colisao
 global.dialogo = false;
-
+valorJoia = 0;//valor inicial da joia
 //velocidade do player
 spd = 5;
 
