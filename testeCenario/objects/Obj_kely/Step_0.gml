@@ -9,8 +9,6 @@ key_left = keyboard_check(vk_left); //esquerda
 key_jump = keyboard_check(vk_space); //pulo
 
 
-
-
 //sem movimento do personagem
 if(abs(hspd)) <= 0.5 {
 	image_index = 0;

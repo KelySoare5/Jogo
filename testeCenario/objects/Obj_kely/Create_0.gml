@@ -6,6 +6,7 @@
 //dialogo e aparecer so uma vez quando tiver colisao
 global.dialogo = false;
 
+global.joia=0;
 //velocidade do player
 spd = 5;
 
