@@ -6,10 +6,10 @@ function scr_textos(){
 	switch npcNome{
 		case "mago1":
 		//se for 0 e desenhar lado esquerdo e se for um do outro lado
-			ds_grid_add_text("Você é um garoto(a) de programa (S-sim/N-não)??",spr_retrato2, 1, "MAGO" );
-			ds_grid_add_text("SIM kk", spr_retrato1, 0, "KELY" );
-			ds_grid_add_text("Então, HTML é uma linguagem de programação (V-verdadeiro/F-Falso)??",spr_retrato2, 1, "MAGO" );
-			ds_grid_add_text("Falso", spr_retrato1, 0, "KELY" );
+			ds_grid_add_text("Você é um garoto(a) de programa (S-sim/N-não)?? eu preciso de texto",spr_retrato2, 1, "MAGO" );
+			ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
+			ds_grid_add_text("Então, HTML é uma linguagem de programação (V-verdadeiro/F-Falso)?? mais texto porque sim",spr_retrato2, 1, "MAGO" );
+			ds_grid_add_text("Falso. EU QUERo CAFE............. nem bebi no ifpi e quando cheguei n tinha mais aqui em casa", spr_retrato1, 0, "KELY" );
 			//texto[0]= "Vc é garota(o) de programa? ";
 			
 			

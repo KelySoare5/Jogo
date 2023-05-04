@@ -18,7 +18,9 @@ if inicializar == true {
 
 	// fonte
 	draw_set_font(FontDialogo);
-
+	
+	//variavel para copiar o texto
+	var _texto = string_copy(texto_grid[# infos.Texto, pagina], 0, caractere)
 	//lado esquerdo
 	if texto_grid[# infos.Lado, pagina] == 0 {
 		
@@ -32,7 +34,7 @@ if inicializar == true {
 
 		//escrever texto nessa posição
 		//texto-pag e incrementavel, 32 e a separacao d uma linha para outra
-		draw_text_ext(_xx + 232, _yy + 32, texto_grid[# infos.Texto, pagina], 32, _guil - 264);
+		draw_text_ext(_xx + 232, _yy + 32, _texto, 32, _guil - 264);
 	
 		//desenhar a sprite         x     y
 		draw_sprite_ext(_sprite, 0, 20, _guia-200, 3, 3, 0, c_white, 1);
@@ -50,7 +52,7 @@ if inicializar == true {
 
 		//escrever texto nessa posição
 		//texto-pag e incrementavel, 32 e a separacao d uma linha para outra
-		draw_text_ext(_xx + 32, _yy + 32, texto_grid[# infos.Texto, pagina], 32, _guil - 264);
+		draw_text_ext(_xx + 32, _yy + 32, _texto, 32, _guil - 264);
 	
 		//desenhar a sprite
 		draw_sprite_ext(_sprite, 0, _guil, _guia-200, -3, 3, 0, c_white, 1);
