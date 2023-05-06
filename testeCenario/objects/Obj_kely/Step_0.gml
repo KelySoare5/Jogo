@@ -46,11 +46,43 @@ if place_meeting(x+hspd, y, Obj_wall)
 
 
 
+
+
 // Dialogo colisão horizontal
 // faz com q na hr q tocar no mago,
 //aparecer a caixa de texto
 //ver se tem objeto do npc perto
-if place_meeting(x+hspd, y, Object2){
+
+//if place_meeting(x+hspd, y, Object2){
+	//hspd = 0;
+
+	//so conversa se nao tiver conversando
+	//if global.dialogo == false{
+		//recebe a instancia do npc
+		//var _npc = instance_nearest(x, y,Object2);
+		//cria o dialogo na layer Dialogo
+		//var _dialogo = instance_create_layer(x,y, "Dialogo", ObjDialogo);
+		//_dialogo.npcNome = _npc.nome;
+		
+	//}
+	
+	// quando fazer o mago3, excluir o if do 
+	//if instance_exists(ObjDialogo){
+		//para controlar se ta em um dialogo ou nao
+		// ou so joga fora do if acima a linha abaixo,
+		//sem checar q a instancia existe
+		//global.dialogo = true;
+	//}
+	
+//}
+
+
+//x = x + hspd;
+
+
+
+
+if place_meeting(x+hspd, y, obj_par_npcs){
 	hspd = 0;
 
 	//so conversa se nao tiver conversando
@@ -63,17 +95,19 @@ if place_meeting(x+hspd, y, Object2){
 		
 	}
 	
-	if instance_exists(ObjDialogo){
+	//if instance_exists(ObjDialogo){
 		//para controlar se ta em um dialogo ou nao
 		// ou so joga fora do if acima a linha abaixo,
 		//sem checar q a instancia existe
-		global.dialogo = true;
-	}
+		//global.dialogo = true;
+	//}
 	
 }
 
 
 x = x + hspd;
+
+
 
 
 

@@ -32,7 +32,7 @@ if mouse_check_button_pressed(mb_left){
 			//tirei pq o dialogo é pra execultar só uma vez. 
 			//(implentar ainda) pq se ele finalizar as perguntas vai para proxima fase ou reinicar o jogo
 			//global.dialogo = false;
-			instance_destroy(Object2);
+			instance_destroy(obj_par_npcs);
 			instance_destroy();
 
 		}
