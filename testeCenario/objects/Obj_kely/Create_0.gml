@@ -5,7 +5,16 @@
 //variavel global para controlar o 
 //dialogo e aparecer so uma vez quando tiver colisao
 global.dialogo = false;
+<<<<<<< HEAD
 valorJoia = 0;//valor inicial da joia
+=======
+
+
+//do obj controle
+//global.tecla = -1;
+
+global.joia=0;
+>>>>>>> teste
 //velocidade do player
 spd = 5;
 
