@@ -26,8 +26,13 @@
   "properties": [],
   "solid": false,
   "spriteId": {
+<<<<<<< HEAD
     "name": "joia",
     "path": "sprites/joia/joia.yy",
+=======
+    "name": "Sprite24",
+    "path": "sprites/Sprite24/Sprite24.yy",
+>>>>>>> teste
   },
   "spriteMaskId": null,
   "visible": true,

@@ -1,13 +1,16 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "objMagoFase3",
-  "eventList": [],
+  "name": "obj_controle",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "objetos_players",
-    "path": "folders/Objetos/objetos_players.yy",
+    "name": "dialogo",
+    "path": "folders/Objetos/dialogo.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -25,10 +28,7 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": {
-    "name": "Sprite19",
-    "path": "sprites/Sprite19/Sprite19.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }
