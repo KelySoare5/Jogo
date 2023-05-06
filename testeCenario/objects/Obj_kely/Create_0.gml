@@ -6,6 +6,10 @@
 //dialogo e aparecer so uma vez quando tiver colisao
 global.dialogo = false;
 
+
+//do obj controle
+//global.tecla = -1;
+
 global.joia=0;
 //velocidade do player
 spd = 5;

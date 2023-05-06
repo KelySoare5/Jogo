@@ -1,29 +1,70 @@
 // Os recursos de script mudaram para a v2.3.0; veja
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 para obter mais informações
+
+global.cont = 0;
 function scr_textos(){
+	
 	//ver qual é o npc_nome
 	//se o npc for o mago1 vai ter esse dialogo, pode fazer outro switch para os outros magos
 	switch npcNome{
 		case "mago1":
 		//se for 0 e desenhar lado esquerdo e se for um do outro lado
 			ds_grid_add_text("Você é um garoto(a) de programa (S-sim/N-não)?? eu preciso de texto",spr_retrato2, 1, "MAGO" );
-			ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
-			ds_grid_add_text("Então, HTML é uma linguagem de programação (V-verdadeiro/F-Falso)?? mais texto porque sim",spr_retrato2, 1, "MAGO" );
-			ds_grid_add_text("Falso. EU QUERo CAFE............. nem bebi no ifpi e quando cheguei n tinha mais aqui em casa", spr_retrato1, 0, "KELY" );
+			//ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
+			//ds_grid_add_text("Então, HTML é uma linguagem de programação (V-verdadeiro/F-Falso)?? mais texto porque sim",spr_retrato2, 1, "MAGO" );
+			//ds_grid_add_text("Falso. EU QUERo CAFE............. nem bebi no ifpi e quando cheguei n tinha mais aqui em casa", spr_retrato1, 0, "KELY" );
+			
 			//texto[0]= "Vc é garota(o) de programa? ";
+				add_op(" um oPcao texto aaaaaaaaaaaaaaaaa",	 "resp1");
+				add_op(" dois  oPcao bbbbbbbbbbbbbbb texto ",	 "resp2");
+				add_op(" tres oPcao  texto ccccccccccccc",	 "resp3");
+				
+				
+				
+			break;
+					case "resp1":
+						ds_grid_add_text("Essa é a 1 resposta",spr_retrato2, 1, "MAGO" );
+						//ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
+				
+						global.cont += 1;
+						if global.cont == 1{
+							global.joia += 100;	
+						}
+					break;
+					
+					
+					case "resp2":
+						ds_grid_add_text("Essa é a 2 resposta",spr_retrato2, 1, "MAGO" );
+						//ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
+						
+					break;
+					
+					
+					case "resp3":
+						ds_grid_add_text("Essa é a 3 resposta",spr_retrato2, 1, "MAGO" );
+						//ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
+						
+					break;
+					
+		
 			
-			
-		break;
+		
+		
 		case "mago2":
 		//se for 0 e desenhar lado esquerdo e se for um do outro lado
 			ds_grid_add_text("Você é um garoto(a) de programa (S-sim/N-não)?? eu preciso de texto",spr_retrato2, 1, "MAGO" );
+				
 			ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
 			ds_grid_add_text("Então, HTML é uma linguagem de programação (V-verdadeiro/F-Falso)?? mais texto porque sim",spr_retrato2, 1, "MAGO" );
 			ds_grid_add_text("Falso. EU QUERo CAFE......mago2....... nem bebi no ifpi e quando cheguei n tinha mais aqui em casa", spr_retrato1, 0, "KELY" );
 			//texto[0]= "Vc é garota(o) de programa? ";
-			
-			
+				
+					
 		break;
+		
+					
+			
+		
 		
 		case "mago3":
 		//se for 0 e desenhar lado esquerdo e se for um do outro lado
@@ -66,4 +107,12 @@ function ds_grid_add_text(){
 	
 }
 
+
+
+function add_op(_texto, _resposta){
+	op[op_num] = _texto;
+	op_resposta[op_num] = _resposta;
+	
+	op_num ++;
+}
 

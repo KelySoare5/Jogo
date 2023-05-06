@@ -8,6 +8,8 @@ key_right = keyboard_check(vk_right);//direita
 key_left = keyboard_check(vk_left); //esquerda
 key_jump = keyboard_check(vk_space); //pulo
 
+//global.tecla = keyboard_check_pressed(ord("A"));
+
 
 //sem movimento do personagem
 if(abs(hspd)) <= 0.5 {
@@ -95,6 +97,7 @@ if place_meeting(x+hspd, y, obj_par_npcs){
 		
 	}
 	
+	//global.tecla = keyboard_check_pressed(ord("A"));
 	//if instance_exists(ObjDialogo){
 		//para controlar se ta em um dialogo ou nao
 		// ou so joga fora do if acima a linha abaixo,
