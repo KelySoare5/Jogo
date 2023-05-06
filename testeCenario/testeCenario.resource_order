@@ -10,6 +10,7 @@
     {"name":"Linhas do tempo","order":6,"path":"folders/Linhas do tempo.yy",},
     {"name":"Objetos","order":7,"path":"folders/Objetos.yy",},
     {"name":"camera","order":11,"path":"folders/Objetos/camera.yy",},
+    {"name":"contagem","order":14,"path":"folders/Objetos/contagem.yy",},
     {"name":"dialogo","order":10,"path":"folders/Objetos/dialogo.yy",},
     {"name":"fundo","order":13,"path":"folders/Objetos/fundo.yy",},
     {"name":"objeto_colisao","order":12,"path":"folders/Objetos/objeto_colisao.yy",},
@@ -26,7 +27,6 @@
     {"name":"spr_colisao","order":7,"path":"folders/Sprites/spr_colisao.yy",},
     {"name":"cobrir_colisao","order":1,"path":"folders/Sprites/spr_colisao/cobrir_colisao.yy",},
     {"name":"spr_retrato_dialogo","order":4,"path":"folders/Sprites/spr_retrato_dialogo.yy",},
-    {"name":"contagem","order":14,"path":"folders/Objetos/contagem.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"objPorta","order":4,"path":"objects/objPorta/objPorta.yy",},
