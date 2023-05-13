@@ -1,7 +1,7 @@
 // Os recursos de script mudaram para a v2.3.0; veja
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 para obter mais informações
 
-global.cont = 0;
+//global.cont = 0;
 function scr_textos(){
 	
 	//ver qual é o npc_nome
@@ -36,8 +36,8 @@ function scr_textos(){
 							add_op("FALSO ",	 "resp4");	
 						break;
 								case "resp3":
-									global.cont += 1;
-									if global.cont == 1{
+									
+									if global.cont == 0{
 										global.joia += 100;	
 									}
 									ds_grid_add_text("RESPOSTA CERTA",spr_retrato2, 1, "MAGO" );
@@ -49,8 +49,8 @@ function scr_textos(){
 								break;
 									case "resp17":
 										ds_grid_add_text("RESPOSTA CERTA",spr_retrato2, 1, "MAGO" );
-										global.cont += 1;
-										if global.cont == 1{
+										
+										if global.cont == 0{
 											global.joia += 100;	
 										}
 									break;
@@ -66,8 +66,8 @@ function scr_textos(){
 								break;
 									case "resp5":
 									ds_grid_add_text("RESPOSTA CERTA",spr_retrato2, 1, "MAGO" );
-									global.cont += 1;
-									if global.cont == 1{
+									
+									if global.cont == 0{
 										global.joia += 100;	
 									}
 									ds_grid_add_text("A MEMÓRIA RAM É UMA FORMA DE ARMAZENAMENTO PERMANENTE DE DADOS.",spr_retrato2, 1, "MAGO" );
@@ -80,8 +80,8 @@ function scr_textos(){
 								break;
 									case "resp16":
 										ds_grid_add_text("RESPOSTA CERTA",spr_retrato2, 1, "MAGO" );
-										global.cont += 1;
-										if global.cont == 1{
+										
+										if global.cont == 0{
 											global.joia += 100;	
 										}
 									break;
@@ -98,8 +98,8 @@ function scr_textos(){
 								break;
 								case "resp12":
 									ds_grid_add_text("RESPOSTA CERTA",spr_retrato2, 1, "MAGO" );
-									global.cont += 1;
-									if global.cont == 1{
+									
+									if global.cont == 0{
 										global.joia += 100;	
 									}
 								break;
@@ -118,10 +118,10 @@ function scr_textos(){
 					
 			// CASO FALSO 1		
 					case "resp2":
-						global.cont += 1;
-							if global.cont == 1{
-								global.joia += 100;	
-							}
+						
+						if global.cont == 0{
+							global.joia += 100;	
+						}
 						ds_grid_add_text("CERTA RESPOSTA!!",spr_retrato2, 1, "MAGO" );
 						//ds_grid_add_text("A PROGRAMAÇÃO ORIENTADA A OBJETOS É UM PARADIGMA DE PROGRAMAÇÃO QUE SE CONCENTRA NA CRIAÇÃO DE OBJETOS QUE POSSUEM DADOS E MÉTODOS.",spr_retrato2, 1, "MAGO" );
 						//ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
@@ -132,8 +132,8 @@ function scr_textos(){
 										add_op("FALSO ",	 "resp8");	
 								break;
 									case "resp7":
-									//global.cont += 1;
-										if global.cont == 1{
+										
+										if global.cont == 0{
 											global.joia += 100;	
 										}
 									ds_grid_add_text("RESPOSTA CERTA",spr_retrato2, 1, "MAGO" );
@@ -147,8 +147,8 @@ function scr_textos(){
 									break;
 									case "resp14":
 										ds_grid_add_text("RESPOSTA CERTA",spr_retrato2, 1, "MAGO" );
-										global.cont += 1;
-										if global.cont == 1{
+										
+										if global.cont == 0{
 											global.joia += 100;	
 										}
 									break;
@@ -162,8 +162,8 @@ function scr_textos(){
 						break;
 									case "resp9":
 									ds_grid_add_text("RESPOSTA CERTA",spr_retrato2, 1, "MAGO" );
-									global.cont += 1;
-									if global.cont == 1{
+									
+									if global.cont == 0{
 										global.joia += 100;	
 									}
 								break;
