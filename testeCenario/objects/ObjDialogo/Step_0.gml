@@ -2,6 +2,9 @@
 // Você pode escrever seu código neste editor
 
 //quando criar o objDialogo vai iniciar com false
+
+global.cont = 0;
+
 if inicializar == false{
 	//acessa a funcao do script
 	scr_textos();
@@ -46,6 +49,8 @@ if inicializar == false{
 				if mouse_check_button_pressed(mb_left){
 					instance_destroy(obj_par_npcs);
 					instance_destroy();
+					//para o dialogo aparecer para os outros magos
+					global.dialogo = false;
 				}
 			}
 			
