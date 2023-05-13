@@ -86,6 +86,7 @@ if place_meeting(x+hspd, y, Obj_wall)
 
 if place_meeting(x+hspd, y, obj_par_npcs){
 	hspd = 0;
+	
 
 	//so conversa se nao tiver conversando
 	if global.dialogo == false{
@@ -98,12 +99,12 @@ if place_meeting(x+hspd, y, obj_par_npcs){
 	}
 	
 	//global.tecla = keyboard_check_pressed(ord("A"));
-	//if instance_exists(ObjDialogo){
+	if instance_exists(ObjDialogo){
 		//para controlar se ta em um dialogo ou nao
 		// ou so joga fora do if acima a linha abaixo,
 		//sem checar q a instancia existe
-		//global.dialogo = true;
-	//}
+		global.dialogo = true;
+	}
 	
 }
 
