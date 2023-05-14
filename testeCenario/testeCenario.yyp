@@ -70,6 +70,7 @@
     {"id":{"name":"T_ground","path":"tilesets/T_ground/T_ground.yy",},"order":0,},
     {"id":{"name":"fase3","path":"rooms/fase3/fase3.yy",},"order":5,},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},"order":0,},
+    {"id":{"name":"Som_andandoFase1","path":"sounds/Som_andandoFase1/Som_andandoFase1.yy",},"order":0,},
     {"id":{"name":"magoFase2","path":"objects/magoFase2/magoFase2.yy",},"order":5,},
     {"id":{"name":"Sprit_bolota","path":"sprites/Sprit_bolota/Sprit_bolota.yy",},"order":9,},
     {"id":{"name":"duplicada","path":"rooms/duplicada/duplicada.yy",},"order":2,},

@@ -65,8 +65,8 @@ if inicializar == true {
 		var _opsep = 48;
 		var _opborda = 6;
 		
-		
-		op_selecionado += keyboard_check_pressed(ord("W")) - keyboard_check_pressed(ord("S"));
+		// Mudei as letra "W" e "S" 
+		op_selecionado += keyboard_check_pressed(vk_up) - keyboard_check_pressed(vk_down);
 		
 		op_selecionado = clamp(op_selecionado, 0, op_num - 1);
 		
