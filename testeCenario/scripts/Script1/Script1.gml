@@ -208,6 +208,11 @@ function scr_textos(){
 			
 			
 		break;
+		
+		case "Nonato":
+			ds_grid_add_text("Parabéns joia de Aluno pela sua aprovação em Análise e Desenvolvimento de Sistemas!", mago2Dialogo, 1, "Diretor Nonato Silva" );
+			//ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
+		break;
 	}
 }
 

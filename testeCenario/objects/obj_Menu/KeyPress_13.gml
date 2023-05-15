@@ -2,6 +2,6 @@
 // Você pode escrever seu código neste editor
 if (index == 0){
 	room_goto_next();
-} else if (index ==2){	// se aperta sair sair do gameMaker
+} else if (index == 2){
 	game_end();
 }
