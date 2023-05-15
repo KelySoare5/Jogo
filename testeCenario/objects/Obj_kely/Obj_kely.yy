@@ -34,8 +34,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Spr_kely",
-    "path": "sprites/Spr_kely/Spr_kely.yy",
+    "name": "Sprite32",
+    "path": "sprites/Sprite32/Sprite32.yy",
   },
   "spriteMaskId": null,
   "visible": true,
