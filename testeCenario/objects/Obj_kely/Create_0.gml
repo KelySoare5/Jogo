@@ -11,8 +11,12 @@ global.dialogo = false;
 //global.tecla = -1;
 
 global.joia=0;
+
+
 //velocidade do player
 global.spd = 5;
+
+
 
 //velocidade horizontal
 hspd = 0;
