@@ -28,8 +28,11 @@ if(hspd != 0){
 
 
 #region Movimentacao
+
+
 var move = key_right - key_left;
-hspd = move * spd; //movimentacao vezes a velocidade
+
+hspd = move * global.spd; //movimentacao vezes a velocidade
 
 vspd = vspd + grv; 
 
@@ -90,11 +93,14 @@ if place_meeting(x+hspd, y, obj_par_npcs){
 
 	//so conversa se nao tiver conversando
 	if global.dialogo == false{
+		global.spd = 0;
 		//recebe a instancia do npc
 		var _npc = instance_nearest(x, y,obj_par_npcs);
 		//cria o dialogo na layer Dialogo
 		var _dialogo = instance_create_layer(x,y, "Dialogo", ObjDialogo);
 		_dialogo.npcNome = _npc.nome;
+		
+		
 		
 	}
 	
@@ -104,9 +110,13 @@ if place_meeting(x+hspd, y, obj_par_npcs){
 		// ou so joga fora do if acima a linha abaixo,
 		//sem checar q a instancia existe
 		global.dialogo = true;
+		
 	}
 	
+	
 }
+
+
 
 
 x = x + hspd;
@@ -130,9 +140,11 @@ y = y + vspd;
 
 
 
-//pulo jump se tivr no chao e clicar na tecla de pulo
-if place_meeting(x, y+1, Obj_wall) and key_jump {
-	vspd -= 12;
+//pulo jump se tivr no chao e clicar na tecla de pulo, so pula se nao estiver em um dialogo
+if global.dialogo == false{
+	if place_meeting(x, y+1, Obj_wall) and key_jump {
+		vspd -= 12;
+	}
 }
 
 

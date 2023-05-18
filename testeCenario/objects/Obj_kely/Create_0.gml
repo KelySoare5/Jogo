@@ -12,7 +12,7 @@ global.dialogo = false;
 
 global.joia=0;
 //velocidade do player
-spd = 5;
+global.spd = 5;
 
 //velocidade horizontal
 hspd = 0;

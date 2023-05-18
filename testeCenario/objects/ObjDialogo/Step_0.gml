@@ -51,6 +51,7 @@ if inicializar == false{
 					instance_destroy();
 					//para o dialogo aparecer para os outros magos
 					global.dialogo = false;
+					global.spd = 5;
 				}
 			}
 			
