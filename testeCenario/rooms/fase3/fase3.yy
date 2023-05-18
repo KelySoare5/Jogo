@@ -14,10 +14,21 @@
     {"name":"inst_3A72A01_2","path":"rooms/fase3/fase3.yy",},
     {"name":"inst_70BCA07F_2","path":"rooms/fase3/fase3.yy",},
     {"name":"inst_60193A2A_1","path":"rooms/fase3/fase3.yy",},
+<<<<<<< HEAD
+    {"name":"inst_6387F6F2","path":"rooms/fase3/fase3.yy",},
+    {"name":"inst_344256E3","path":"rooms/fase3/fase3.yy",},
+    {"name":"inst_65360B9C","path":"rooms/fase3/fase3.yy",},
+    {"name":"inst_3229307C","path":"rooms/fase3/fase3.yy",},
+    {"name":"inst_51E010E1","path":"rooms/fase3/fase3.yy",},
+=======
     {"name":"inst_22941E99","path":"rooms/fase3/fase3.yy",},
     {"name":"inst_12A7C1FF","path":"rooms/fase3/fase3.yy",},
     {"name":"inst_1772B2D8","path":"rooms/fase3/fase3.yy",},
+<<<<<<< HEAD
     {"name":"inst_713642EF","path":"rooms/fase3/fase3.yy",},
+=======
+>>>>>>> teste
+>>>>>>> a7af34ff781ca4fd302477f513d37b28915f6c1a
   ],
   "isDnd": false,
   "layers": [
@@ -26,8 +37,15 @@
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances_1","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_60193A2A_1","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":true,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"objPorta","path":"objects/objPorta/objPorta.yy",},"properties":[],"rotation":0.0,"scaleX":0.19999999,"scaleY":0.2,"x":1856.0,"y":672.0,},
+<<<<<<< HEAD
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_344256E3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Obj_Joia","path":"objects/Obj_Joia/Obj_Joia.yy",},"properties":[],"rotation":0.0,"scaleX":0.744,"scaleY":0.744,"x":1472.0,"y":672.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_65360B9C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Obj_Joia","path":"objects/Obj_Joia/Obj_Joia.yy",},"properties":[],"rotation":0.0,"scaleX":0.616,"scaleY":0.616,"x":896.0,"y":447.99997,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_3229307C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Obj_Joia","path":"objects/Obj_Joia/Obj_Joia.yy",},"properties":[],"rotation":0.0,"scaleX":0.744,"scaleY":0.744,"x":928.0,"y":736.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_51E010E1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"contadorJoia","path":"objects/contadorJoia/contadorJoia.yy",},"properties":[],"rotation":4.690434,"scaleX":3.0,"scaleY":3.0,"x":224.00002,"y":96.0,},
+=======
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_22941E99","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"Obj_Joia","path":"objects/Obj_Joia/Obj_Joia.yy",},"properties":[],"rotation":0.0,"scaleX":5.266667,"scaleY":6.3333335,"x":640.0,"y":704.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_12A7C1FF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"ObjContagemJoia","path":"objects/ObjContagemJoia/ObjContagemJoia.yy",},"properties":[],"rotation":0.0,"scaleX":5.0,"scaleY":5.0,"x":64.0,"y":64.0,},
+>>>>>>> teste
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Dialogo","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"camera","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
