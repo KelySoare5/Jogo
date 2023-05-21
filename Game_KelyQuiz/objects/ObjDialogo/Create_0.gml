@@ -17,13 +17,19 @@ texto_grid = ds_grid_create(4, 0);
 pagina = 0;
 
 
-op[0] = "";
-op_resposta[0] = "";
-op_num = 0;
-op_selecionado = 0;
-op_draw = false;
+op[0] = ""; //guarda as opcoes
+op_resposta[0] = ""; //quando clica na opcao, pra saber para qual resposta vai
+op_num = 0; //ver quantas opcoes tem
+op_selecionado = 0; 
+op_draw = false; //pra saber se tem q desenhar as opcoes
 
 
+global.respSelecionada = "";
+global.retUsuario = "";
+
+
+global.aux_opc1 = 0;
+global.aux_opc2 = 50;
 
 
 inicializar= false;

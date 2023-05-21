@@ -55,7 +55,7 @@ if inicializar == true {
 		draw_text_ext(_xx + 32, _yy + 32, _texto, 32, _guil - 264);
 	
 		//desenhar a sprite
-		draw_sprite_ext(_sprite, 0, _guil, _guia-200, -3, 3, 0, c_white, 1);
+		//draw_sprite_ext(_sprite, 0, _guil, _guia-200, -3, 3, 0, c_white, 1);
 	
 	}
 	
@@ -83,11 +83,39 @@ if inicializar == true {
 
 		}
 		
+		
+		//esse é q desnha o dialogo e destroi
 		if mouse_check_button_pressed(mb_right){
 
 			//cria o dialogo na layer Dialogo
+			
+
 			var _dialogo = instance_create_layer(x,y, "Dialogo", ObjDialogo);
-			_dialogo.npcNome =op_resposta[op_selecionado];
+			
+			_dialogo.npcNome = op_resposta[op_selecionado];
+			
+			//recebe o valor selecionado pelo usuario
+			global.respSelecionada = op[op_selecionado];
+			
+			if global.respSelecionada == global.list_pergunta[| 0][1]{
+				global.retUsuario = "CERTA RESPOSTA";
+				//apaga o topo da lista
+				//ds_list_delete(global.list_pergunta, 0);
+				//ganha mais joias
+				global.joia += 100;	
+			}
+			
+			if global.respSelecionada != global.list_pergunta[| 0][1]{
+				global.retUsuario = "RESPOSTA ERRADA";
+				//apaga o topo da lista
+				//ds_list_delete(global.list_pergunta, 0);
+				//perde joias
+				global.joia -= 100;	
+				
+			}
+			
+			
+			
 			instance_destroy();
 			
 		}

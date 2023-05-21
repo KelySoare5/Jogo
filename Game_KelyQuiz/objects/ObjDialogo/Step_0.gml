@@ -9,13 +9,32 @@ global.cont = 0;
 
 
 
-//aqui ele embaralha mais tras valores repetidos
-ds_list_shuffle(global.indice);
 
 if inicializar == false{
 	//acessa a funcao do script
-	ds_list_shuffle(global.indice);
-	scr_textos();
+	
+	scr_textos(); 
+	
+	
+	/*
+	ds_grid_add_text(global.list_pergunta[| 0][0], mago2Dialogo, 1, "MAGO" );
+	ds_list_delete(global.list_pergunta, 0);
+	/*
+	add_op(" VERDADEIRO",	 "resp1");
+	add_op(" FALSO ",	 "resp2");
+	
+	ds_grid_add_text(global.list_pergunta[| 0][0], mago2Dialogo, 1, "MAGO" );
+	
+	if global.respSelecionada == global.list_pergunta[| 0][1]{
+		ds_grid_add_text("RESPOSTA Certa",spr_retrato2, 1, "MAGO" );
+		ds_list_delete(global.list_pergunta, 0);
+	}
+	
+	if global.respSelecionada != global.list_pergunta[| 0][1]{
+		ds_grid_add_text("RESPOSTA ERRADA",spr_retrato2, 1, "MAGO" );
+		ds_list_delete(global.list_pergunta, 0);
+	}
+	*/
 	
 	inicializar = true;
 }
@@ -29,12 +48,26 @@ if inicializar == false{
 	//função para ajeteitar a contagem de letras
 	if caractere < string_length(texto_grid[# infos.Texto, pagina]){
 		if mouse_check_button_pressed(mb_left){
+			/*
+			ds_grid_add_text(global.list_pergunta[| 0][0], mago2Dialogo, 1, "MAGO" );
+			ds_list_delete(global.list_pergunta, 0);
+			/*
+			add_op("VERDADEIRO",	 "resp1");
+			add_op("FALSO",	 "resp2");
+	
+			if global.respSelecionada == global.list_pergunta[| 0][1]{
+				ds_grid_add_text("RESPOSTA Certa",spr_retrato2, 1, "MAGO" );
+				ds_list_delete(global.list_pergunta, 0);
+			}
+	
+			if global.respSelecionada != global.list_pergunta[| 0][1]{
+				ds_grid_add_text("RESPOSTA ERRADA",spr_retrato2, 1, "MAGO" );
+				ds_list_delete(global.list_pergunta, 0);
+			}
+	
 			
+			*/
 			
-			
-			
-			
-			ds_list_shuffle(global.indice);
 			
 			caractere = string_length(texto_grid[# infos.Texto, pagina]);
 		}
@@ -48,13 +81,10 @@ if inicializar == false{
 			if mouse_check_button_pressed(mb_left){
 				
 				
-				
-				
-				ds_list_shuffle(global.indice);
-				
 				alarm[0] =1;
 				caractere =0;
 				pagina++;
+				
 			}
 		//senao destroi
 		} 
@@ -67,10 +97,6 @@ if inicializar == false{
 			} else {
 				if mouse_check_button_pressed(mb_left){
 					
-					
-					
-					
-					ds_list_shuffle(global.indice);
 					//destroir o mago quando o dialogo acabar
 					instance_destroy(obj_par_npcs);
 					//destroir o dialogo quando o dialogo acabar

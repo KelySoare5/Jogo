@@ -14,187 +14,292 @@ function scr_textos(){
 		//se for 0 e desenhar lado esquerdo e se for um do outro lado
 		
 		// QUESTÃO 1
-			ds_grid_add_text("A LINGUAGEM DE PROGRAMAÇÃO PYTHON É BASEADA EM C++.",spr_retrato2, 1, "MAGO" );
-			//ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
-			//ds_grid_add_text("Então, HTML é uma linguagem de programação (V-verdadeiro/F-Falso)?? mais texto porque sim",spr_retrato2, 1, "MAGO" );
-			//ds_grid_add_text("Falso. EU QUERo CAFE............. nem bebi no ifpi e quando cheguei n tinha mais aqui em casa", spr_retrato1, 0, "KELY" );
-			
-			//texto[0]= "Vc é garota(o) de programa? ";
-				add_op(" VERDADEIRO",	 "resp1");
-				add_op(" FALSO ",	 "resp2");				
-				
-			break;
+			ds_grid_add_text(global.list_pergunta[| 0][0], spr_retrato2, 1, "MAGO" );
+				add_op("VERDADEIRO",	 "resp1");
+				add_op("FALSO",	 "resp2");				
+		break;
+		
 			// CASO VERDADEIRAO 1
 					case "resp1":
-						ds_grid_add_text("RESPOSTA ERRADA!",spr_retrato2, 1, "MAGO" );
-						//ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
-				
-						//global.cont += 1;
-						//if global.cont == 1{
-						//	global.joia += 100;	
-						//}
-			//  NOVA QUESTÃO
-						ds_grid_add_text("O HARDWARE DO COMPUTADOR INCLUI DISPOSITIVOS DE ENTRADA, DISPOSITIVOS DE SAÍDA E ARMAZENAMENTO DE DADOS.",spr_retrato2, 1, "MAGO" );
-							add_op(" VERDADEIRO",	 "resp3");
-							add_op("FALSO ",	 "resp4");	
-						break;
-								case "resp3":
-									
-									if global.cont == 0{
-										global.joia += 100;	
-									}
-									ds_grid_add_text("RESPOSTA CERTA",spr_retrato2, 1, "MAGO" );
-			// NOVA QUESTÃO
-									ds_grid_add_text("CONSTRUTOR É O NOME DADO AO MÉTODO QUE É EXECUTADO AUTOMATICAMENTE QUANDO UMA NOVA INST NCIA DE UMA CLASSE É CRIADA.",spr_retrato2, 1, "MAGO" );
-										add_op(" VERDADEIRO",	 "resp17");
-										add_op("FALSO ",	 "resp18");	
-			
-								break;
-									case "resp17":
-										ds_grid_add_text("RESPOSTA CERTA",spr_retrato2, 1, "MAGO" );
-										
-										if global.cont == 0{
-											global.joia += 100;	
-										}
-									break;
-										case "resp18":
-											ds_grid_add_text("RESPOSTA ERRADA",spr_retrato2, 1, "MAGO" );
-										break;
-								case "resp4":
-									ds_grid_add_text("RESPOSTA ERRADA",spr_retrato2, 1, "MAGO" );
-			// NOVA QUESTÃO
-									ds_grid_add_text("O SISTEMA BINÁRIO É USADO PARA REPRESENTAR DADOS EM COMPUTADORES.",spr_retrato2, 1, "MAGO" );
-										add_op(" VERDADEIRO",	 "resp5");
-										add_op("FALSO ",	 "resp6");	
-								break;
-									case "resp5":
-									ds_grid_add_text("RESPOSTA CERTA",spr_retrato2, 1, "MAGO" );
-									
-									if global.cont == 0{
-										global.joia += 100;	
-									}
-									ds_grid_add_text("A MEMÓRIA RAM É UMA FORMA DE ARMAZENAMENTO PERMANENTE DE DADOS.",spr_retrato2, 1, "MAGO" );
-										add_op(" VERDADEIRO",	 "resp15");
-										add_op("FALSO ",	 "resp16");
-								break;
-									case "resp15":
-									ds_grid_add_text("RESPOSTA ERRADA",spr_retrato2, 1, "MAGO" );
-								
-								break;
-									case "resp16":
-										ds_grid_add_text("RESPOSTA CERTA",spr_retrato2, 1, "MAGO" );
-										
-										if global.cont == 0{
-											global.joia += 100;	
-										}
-									break;
-								case "resp6":
-									ds_grid_add_text("RESPOSTA ERRADA",spr_retrato2, 1, "MAGO" );
-			// NOVA QUESTÃO
-									ds_grid_add_text("A INTERNET É UMA REDE MUNDIAL DE COMPUTADORES CONECTADOS.",spr_retrato2, 1, "MAGO" );
-										add_op(" VERDADEIRO",	 "resp11");
-										add_op("FALSO ",	 "resp12");			
+						ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+						//apagar sempre q responder certo ou errado
+						ds_list_delete(global.list_pergunta, 0);
+						
+				//  NOVA QUESTÃO
+						ds_grid_add_text(global.list_pergunta[| 0][0], spr_retrato2, 1, "MAGO" );
+							add_op("VERDADEIRO",	 "resp3");
+							add_op("FALSO",	 "resp4");	
 					break;
-								case "resp11":
-									ds_grid_add_text("RESPOSTA ERRADA",spr_retrato2, 1, "MAGO" );
+						
+								case "resp3":
+									ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
 									
+									//apagar sempre q responder certo ou errado
+									ds_list_delete(global.list_pergunta, 0);
+						
+							//  NOVA QUESTÃO
+									ds_grid_add_text(global.list_pergunta[| 0][0], spr_retrato2, 1, "MAGO" );
+										add_op("VERDADEIRO",	 "resp17");
+										add_op("FALSO",	 "resp18");	
 								break;
-								case "resp12":
-									ds_grid_add_text("RESPOSTA CERTA",spr_retrato2, 1, "MAGO" );
-									
-									if global.cont == 0{
-										global.joia += 100;	
-									}
-								break;
-							//case "resp3":
-							//	ds_grid_add_text("CERTA RESPOSTA",spr_retrato2, 1, "MAGO" );
-							//	global.cont += 1;
-							//	if global.cont == 1{
-							//		global.joia += 100;	
-							//	}
-							//	ds_grid_add_text("so um teste mesmo",spr_retrato2, 1, "MAGO" );
-						//	break
 								
-							//case "resp4":
-							//	ds_grid_add_text("A INTERNET É UMA REDE MUNDIAL DE COMPUTADORES CONECTADOS.",spr_retrato2, 1, "MAGO" );
-				//	break;
+									case "resp17":
+										ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+										
+										//apagar sempre q responder certo ou errado
+										ds_list_delete(global.list_pergunta, 0);
+						
+									break;
+									
+									
+									case "resp18":
+										ds_grid_add_text( global.retUsuario, spr_retrato2, 1, "MAGO" );
+										
+										//apagar sempre q responder certo ou errado
+										ds_list_delete(global.list_pergunta, 0);
+						
+									break;
+										
+										
+										
+								case "resp4":
+									ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+									
+									//apagar sempre q responder certo ou errado
+									ds_list_delete(global.list_pergunta, 0);
+						
+							//  NOVA QUESTÃO
+									ds_grid_add_text(global.list_pergunta[| 0][0], spr_retrato2, 1, "MAGO" );
+										add_op("VERDADEIRO",	 "resp5");
+										add_op("FALSO",	 "resp6");	
+								break;
+								
+								
+									case "resp5":
+										ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+										
+										//apagar sempre q responder certo ou errado
+										ds_list_delete(global.list_pergunta, 0);
+						
+								//  NOVA QUESTÃO
+										ds_grid_add_text(global.list_pergunta[| 0][0], spr_retrato2, 1, "MAGO" );
+											add_op("VERDADEIRO",	 "resp15");
+											add_op("FALSO",	 "resp16");
+									break;
+									
+									
+									case "resp15":
+										ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+										
+										//apagar sempre q responder certo ou errado
+										ds_list_delete(global.list_pergunta, 0);
+						
+									break;
+									
+									
+									case "resp16":
+										ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+										//apagar sempre q responder certo ou errado
+										ds_list_delete(global.list_pergunta, 0);
+						
+									break;
+									
+									
+								case "resp6":
+									ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+									//apagar sempre q responder certo ou errado
+									ds_list_delete(global.list_pergunta, 0);
+						
+						// NOVA QUESTÃO
+									ds_grid_add_text(global.list_pergunta[| 0][0], spr_retrato2, 1, "MAGO" );
+										add_op("VERDADEIRO",	 "resp11");
+										add_op("FALSO",	 "resp12");			
+								break;
+								
+										case "resp11":
+											ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+											//apagar sempre q responder certo ou errado
+											ds_list_delete(global.list_pergunta, 0);
+						
+										break;
+										
+										case "resp12":
+											ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+											//apagar sempre q responder certo ou errado
+											ds_list_delete(global.list_pergunta, 0);
+						
+										break;
+			
+			
+			
 					
 			// CASO FALSO 1		
 					case "resp2":
-						
-						if global.cont == 0{
+						/*if global.cont == 0{
 							global.joia += 100;	
-						}
-						ds_grid_add_text("CERTA RESPOSTA!!",spr_retrato2, 1, "MAGO" );
-						//ds_grid_add_text("A PROGRAMAÇÃO ORIENTADA A OBJETOS É UM PARADIGMA DE PROGRAMAÇÃO QUE SE CONCENTRA NA CRIAÇÃO DE OBJETOS QUE POSSUEM DADOS E MÉTODOS.",spr_retrato2, 1, "MAGO" );
-						//ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
+						}*/
+						ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+						//apagar sempre q responder certo ou errado
+						ds_list_delete(global.list_pergunta, 0);
 						
 			// NOVA QUESTÃO
-						ds_grid_add_text("O SISTEMA BINÁRIO É USADO PARA REPRESENTAR DADOS EM COMPUTADORES.",spr_retrato2, 1, "MAGO" );
-										add_op(" VERDADEIRO",	 "resp7");
-										add_op("FALSO ",	 "resp8");	
-								break;
-									case "resp7":
-										
-										if global.cont == 0{
-											global.joia += 100;	
-										}
-									ds_grid_add_text("RESPOSTA CERTA",spr_retrato2, 1, "MAGO" );
-			// NOVA QUESTÃO
-									ds_grid_add_text("A LINGUAGEM DE PROGRAMAÇÃO JAVA FOI DESENVOLVIDA POR GUIDO VAN ROSSUM!",spr_retrato2, 1, "MAGO" );
-										add_op(" VERDADEIRO",	 "resp13");
-										add_op("FALSO ",	 "resp14");
-								break;
-									case "resp13":
-										ds_grid_add_text("RESPOSTA ERRADA",spr_retrato2, 1, "MAGO" );
-									break;
-									case "resp14":
-										ds_grid_add_text("RESPOSTA CERTA",spr_retrato2, 1, "MAGO" );
-										
-										if global.cont == 0{
-											global.joia += 100;	
-										}
-									break;
-								case "resp8":
-									ds_grid_add_text("RESPOSTA ERRADA",spr_retrato2, 1, "MAGO" );
-				// NOVA QUESTÃO
-									ds_grid_add_text("A PROGRAMAÇÃO ORIENTADA A OBJETOS É UM PARADIGMA DE PROGRAMAÇÃO QUE SE CONCENTRA NA CRIAÇÃO DE OBJETOS QUE POSSUEM DADOS E MÉTODOS",spr_retrato2, 1, "MAGO" );
-										add_op(" VERDADEIRO",	 "resp9");
-										add_op("FALSO ",	 "resp10");	
+						ds_grid_add_text(global.list_pergunta[| 0][0], spr_retrato2, 1, "MAGO" );
+							add_op("FALSO",	 "resp7");
+							add_op("VERDADEIRO",	 "resp8");	
+					break;
 					
-						break;
-									case "resp9":
-									ds_grid_add_text("RESPOSTA CERTA",spr_retrato2, 1, "MAGO" );
+							case "resp7":
+								/*if global.cont == 0{
+									global.joia += 100;	
+								}*/
+								ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+								
+								//apagar sempre q responder certo ou errado
+								ds_list_delete(global.list_pergunta, 0);
+						
+								
+					// NOVA QUESTÃO
+									ds_grid_add_text(global.list_pergunta[| 0][0], spr_retrato2, 1, "MAGO" );
+										add_op("VERDADEIRO",	 "resp13");
+										add_op("FALSO",	 "resp14");
+								break;
+								
+										case "resp13":
+											ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+											//apagar sempre q responder certo ou errado
+											ds_list_delete(global.list_pergunta, 0);
+						
+										break;
 									
-									if global.cont == 0{
-										global.joia += 100;	
-									}
-								break;
-								case "resp10":
-									ds_grid_add_text("RESPOSTA ERRADA",spr_retrato2, 1, "MAGO" );
-							break;
-					
-					//case "resp3":
-					//	ds_grid_add_text("Essa é a 3 resposta",spr_retrato2, 1, "MAGO" );
-						//ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
+									
+										case "resp14":
+											/*if global.cont == 0{
+												global.joia += 100;	
+											}*/
+											ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+											//apagar sempre q responder certo ou errado
+											ds_list_delete(global.list_pergunta, 0);
 						
-					//break;
-			//	2 PERGUNTA
-			
-		
-			
-		
-		
-		
-		
+											
+										break;
+									
+									
+									
+							case "resp8":
+								ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+								
+								
+					// NOVA QUESTÃO
+								ds_grid_add_text(global.list_pergunta[| 0][0], spr_retrato2, 1, "MAGO" );
+									add_op("VERDADEIRO",	 "resp9");
+									add_op("FALSO",	 "resp10");	
+							break;
+							
+									case "resp9":
+										ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+										//apagar sempre q responder certo ou errado
+										ds_list_delete(global.list_pergunta, 0);
+						
+										
+									break;
+									
+									case "resp10":
+										ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+										//apagar sempre q responder certo ou errado
+										ds_list_delete(global.list_pergunta, 0);
+						
+										
+									break;
+					
+
 		case "mago2":
+			
+			
+				
+			
+			
 		
 			//se for 0 e desenhar lado esquerdo e se for um do outro lado
 		
 			// mostra a primeira pergunta e apaga sempre vai ser assim
 			//pergunta 1: ["A LINGUAGEM DE PROGRAMAÇÃO PYTHON É BASEADA EM C++?", "FALSO"]
 			ds_grid_add_text(global.list_pergunta[| 0][0], mago2Dialogo, 1, "MAGO" );
-			ds_list_delete(global.list_pergunta, 0);
+			
+				add_op("VERDADEIRO",	 global.aux_opc1);
+				add_op("FALSO",			 global.aux_opc2);
+				
+			
+			
+		break;
+		
+				case global.aux_opc1:  //opc sendo a primeira
+					ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+					ds_list_delete(global.list_pergunta, 0);
+					
+					/*
+					ds_grid_add_text(global.list_pergunta[| 0][0], mago2Dialogo, 1, "MAGO" );
+			
+						add_op("VERDADEIRO",	 "OPC3");
+						add_op("FALSO",			 "OPC4");
+						
+						case "OPC3":
+							ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+							ds_list_delete(global.list_pergunta, 0);
+						break;
+						
+						case "OPC4":
+							ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+							ds_list_delete(global.list_pergunta, 0);
+						break;
+					*/
+					
+					/*
+					ds_grid_add_text(global.list_pergunta[| 0][0], mago2Dialogo, 1, "MAGO" );
+					ds_list_delete(global.list_pergunta, 0);
+					
+					ds_grid_add_text(global.list_pergunta[| 0][0], mago2Dialogo, 1, "MAGO" );
+					ds_list_delete(global.list_pergunta, 0);
+					
+					ds_grid_add_text(global.list_pergunta[| 0][0], mago2Dialogo, 1, "MAGO" );
+					ds_list_delete(global.list_pergunta, 0);
+					*/
+				break
+				
+				case global.aux_opc2:  //opc sendo a segunda
+					ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+					ds_list_delete(global.list_pergunta, 0);
+				break;
+				
+				global.aux_opc1 += 1; //comeca em zero
+				global.aux_opc2 += 1; //comeca em 50
+		
+		
+			
+				
+				
+			
+				
+				//if global.list_pergunta[| 0][1] == op_resposta[op_selecionado] {
+				/*if global.respSelecionada == global.list_pergunta[| 0][1]{
+				//case "resQuestao1Errada":
+					ds_grid_add_text("RESPOSTA ERRADA",spr_retrato2, 1, "MAGO" );
+					break
+				//break;
+				}*/
+				//case "resQuestao1Errada":
+					//ds_grid_add_text("RESPOSTA ERRADA",spr_retrato2, 1, "MAGO" );
+				//break;
+				
+				//case "resQuestao1Certa":
+					//ds_grid_add_text("RESPOSTA Certa",spr_retrato2, 1, "MAGO" );
+				//break;
+				
+				
+				
+				
+			
+			
+			/*
 			
 			//pergunta 2: ["O HARDWARE DO COMPUTADOR INCLUI DISPOSITIVOS DE ENTRADA, DISPOSITIVOS DE SAÍDA E ARMAZENAMENTO DE DADOS?", "VERDADEIRO"]
 			ds_grid_add_text(global.list_pergunta[| 0][0], spr_retrato1, 0, "KELY" );
@@ -208,9 +313,10 @@ function scr_textos(){
 			ds_grid_add_text(global.list_pergunta[| 0][0], spr_retrato1, 0, "KELY" );
 			ds_list_delete(global.list_pergunta, 0);
 			//texto[0]= "Vc é garota(o) de programa? ";
-				
+			
+			*/
 					
-		break;
+		
 		
 					
 			
@@ -235,6 +341,7 @@ function scr_textos(){
 	
 	cont += 1;
 }
+
 
 //função para add linhas sempre na ultima posicao
 function ds_grid_add_rown(){
@@ -266,10 +373,20 @@ function ds_grid_add_text(){
 
 
 
+
+
+
+
+
+
+
+// para adcionar as opcoes
 function add_op(_texto, _resposta){
 	op[op_num] = _texto;
 	op_resposta[op_num] = _resposta;
 	
+	// essa pode remover
+	global.teste = _texto;
 	op_num ++;
 }
 

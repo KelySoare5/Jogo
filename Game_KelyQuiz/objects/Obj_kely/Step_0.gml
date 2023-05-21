@@ -87,21 +87,18 @@ if place_meeting(x+hspd, y, Obj_wall)
 if place_meeting(x+hspd, y, obj_par_npcs){
 	hspd = 0;
 	
-	
-	ds_list_shuffle(global.indice);
-	
-
 	//so conversa se nao tiver conversando
 	if global.dialogo == false{
 		
 		global.spd = 0;
+		
 		//recebe a instancia do npc
 		var _npc = instance_nearest(x, y,obj_par_npcs);
 		//cria o dialogo na layer Dialogo
 		var _dialogo = instance_create_layer(x,y, "Dialogo", ObjDialogo);
 		_dialogo.npcNome = _npc.nome;
 		
-		
+			
 		
 	}
 	

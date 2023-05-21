@@ -1,4 +1,5 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-ds_list_destroy(global.indice);
+//quando fechaar o jogo limpar a lista
+ds_list_destroy(global.list_pergunta);
