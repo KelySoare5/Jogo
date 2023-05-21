@@ -81,8 +81,11 @@ if inicializar == false{
 					//for destruido
 					global.spd = 5;
 					
+					
+					
 					// destruir a lista de perguntas
-					ds_list_destroy(global.list_pergunta);
+					// nao pode destruir pq nao tema mais elementos
+					//ds_list_destroy(global.list_pergunta);
 				}
 			}
 			

@@ -1,7 +1,9 @@
 
 #region EmbaralharPerguntas
 	if keyboard_check_pressed(ord("R")){
-		ds_list_shuffle(global.list_pergunta);
+		if ds_list_size(global.list_pergunta > 0) {
+			ds_list_shuffle(global.list_pergunta);
+		}
 	}
 #endregion
 
@@ -67,7 +69,10 @@ if place_meeting(x+hspd, y, Obj_wall)
 	while(!place_meeting(x+sign(hspd), y, Obj_wall)){
 		x = x + sign(hspd);
 		
-		ds_list_shuffle(global.list_pergunta);
+		if ds_list_size(global.list_pergunta > 0) {
+			// quando colidir verticalmente embaralhar o dialogo
+			ds_list_shuffle(global.list_pergunta);
+		}
 	}
 	hspd = 0;
 }
@@ -139,7 +144,12 @@ y = y + vspd;
 if global.dialogo == false{
 	if place_meeting(x, y+1, Obj_wall) and key_jump {
 		
-		ds_list_shuffle(global.list_pergunta);
+		
+		// quando pular embaralhar o dialogo
+		if ds_list_size(global.list_pergunta > 0) {
+			ds_list_shuffle(global.list_pergunta);
+		}
+		
 		vspd -= 12;
 	}
 }

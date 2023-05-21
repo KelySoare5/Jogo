@@ -14,33 +14,27 @@ function scr_textos(){
 		//se for 0 e desenhar lado esquerdo e se for um do outro lado
 		
 		// QUESTÃO 1
-		
-			//aqui acho q deu certo
-			/*
-			if cont == 0{
-				ds_list_shuffle(global.indice);
-			}
-			*/
+			ds_grid_add_text("A LINGUAGEM DE PROGRAMAÇÃO PYTHON É BASEADA EM C++.",spr_retrato2, 1, "MAGO" );
+			//ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
+			//ds_grid_add_text("Então, HTML é uma linguagem de programação (V-verdadeiro/F-Falso)?? mais texto porque sim",spr_retrato2, 1, "MAGO" );
+			//ds_grid_add_text("Falso. EU QUERo CAFE............. nem bebi no ifpi e quando cheguei n tinha mais aqui em casa", spr_retrato1, 0, "KELY" );
 			
-			ds_grid_add_text(global.fase1[ global.indice[| cont] ][0] ,spr_retrato2, 1, "MAGO" );
-			ds_list_delete(global.indice, cont);
-			
+			//texto[0]= "Vc é garota(o) de programa? ";
 				add_op(" VERDADEIRO",	 "resp1");
 				add_op(" FALSO ",	 "resp2");				
 				
 			break;
 			// CASO VERDADEIRAO 1
 					case "resp1":
-						if global.cont == 0{
-							global.joia -= 100;	
-						}
 						ds_grid_add_text("RESPOSTA ERRADA!",spr_retrato2, 1, "MAGO" );
-						cont+=1
-						
+						//ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
+				
+						//global.cont += 1;
+						//if global.cont == 1{
+						//	global.joia += 100;	
+						//}
 			//  NOVA QUESTÃO
-						ds_grid_add_text(global.fase1[global.indice[| cont]][0],spr_retrato2, 1, "MAGO" );
-						ds_list_delete(global.indice, cont);
-						
+						ds_grid_add_text("O HARDWARE DO COMPUTADOR INCLUI DISPOSITIVOS DE ENTRADA, DISPOSITIVOS DE SAÍDA E ARMAZENAMENTO DE DADOS.",spr_retrato2, 1, "MAGO" );
 							add_op(" VERDADEIRO",	 "resp3");
 							add_op("FALSO ",	 "resp4");	
 						break;
@@ -49,13 +43,9 @@ function scr_textos(){
 									if global.cont == 0{
 										global.joia += 100;	
 									}
-									
 									ds_grid_add_text("RESPOSTA CERTA",spr_retrato2, 1, "MAGO" );
-									cont+=1
 			// NOVA QUESTÃO
-									ds_grid_add_text(global.fase1[global.indice[| cont]][0],spr_retrato2, 1, "MAGO" );
-									ds_list_delete(global.indice, cont);
-									
+									ds_grid_add_text("CONSTRUTOR É O NOME DADO AO MÉTODO QUE É EXECUTADO AUTOMATICAMENTE QUANDO UMA NOVA INST NCIA DE UMA CLASSE É CRIADA.",spr_retrato2, 1, "MAGO" );
 										add_op(" VERDADEIRO",	 "resp17");
 										add_op("FALSO ",	 "resp18");	
 			
@@ -72,18 +62,11 @@ function scr_textos(){
 										break;
 								case "resp4":
 									ds_grid_add_text("RESPOSTA ERRADA",spr_retrato2, 1, "MAGO" );
-									cont+=1
 			// NOVA QUESTÃO
-									ds_grid_add_text(global.fase1[global.indice[| cont]][0],spr_retrato2, 1, "MAGO" );
-									ds_list_delete(global.indice, cont);
-									
-									
+									ds_grid_add_text("O SISTEMA BINÁRIO É USADO PARA REPRESENTAR DADOS EM COMPUTADORES.",spr_retrato2, 1, "MAGO" );
 										add_op(" VERDADEIRO",	 "resp5");
 										add_op("FALSO ",	 "resp6");	
 								break;
-								
-								
-								
 									case "resp5":
 									ds_grid_add_text("RESPOSTA CERTA",spr_retrato2, 1, "MAGO" );
 									
@@ -147,7 +130,7 @@ function scr_textos(){
 						//ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
 						
 			// NOVA QUESTÃO
-						ds_grid_add_text(" ESSE N E DA LISTA O SISTEMA BINÁRIO É USADO PARA REPRESENTAR DADOS EM COMPUTADORES.",spr_retrato2, 1, "MAGO" );
+						ds_grid_add_text("O SISTEMA BINÁRIO É USADO PARA REPRESENTAR DADOS EM COMPUTADORES.",spr_retrato2, 1, "MAGO" );
 										add_op(" VERDADEIRO",	 "resp7");
 										add_op("FALSO ",	 "resp8");	
 								break;
@@ -202,13 +185,28 @@ function scr_textos(){
 			
 		
 		
+		
+		
 		case "mago2":
-		//se for 0 e desenhar lado esquerdo e se for um do outro lado
+		
+			//se for 0 e desenhar lado esquerdo e se for um do outro lado
+		
+			// mostra a primeira pergunta e apaga sempre vai ser assim
+			//pergunta 1: ["A LINGUAGEM DE PROGRAMAÇÃO PYTHON É BASEADA EM C++?", "FALSO"]
 			ds_grid_add_text(global.list_pergunta[| 0][0], mago2Dialogo, 1, "MAGO" );
-				
-			ds_grid_add_text(global.list_pergunta[| 1][0], spr_retrato1, 0, "KELY" );
-			ds_grid_add_text(global.list_pergunta[| 2][0], mago2Dialogo, 1, "MAGO" );
-			ds_grid_add_text(global.list_pergunta[| 3][0], spr_retrato1, 0, "KELY" );
+			ds_list_delete(global.list_pergunta, 0);
+			
+			//pergunta 2: ["O HARDWARE DO COMPUTADOR INCLUI DISPOSITIVOS DE ENTRADA, DISPOSITIVOS DE SAÍDA E ARMAZENAMENTO DE DADOS?", "VERDADEIRO"]
+			ds_grid_add_text(global.list_pergunta[| 0][0], spr_retrato1, 0, "KELY" );
+			ds_list_delete(global.list_pergunta, 0);
+			
+			//pergunta 3: ["CONSTRUTOR É O NOME DADO AO MÉTODO QUE É EXECUTADO AUTOMATICAMENTE QUANDO UMA NOVA INSTANCIA DE UMA CLASSE É CRIADA?", "VERDADEIRO"]
+			ds_grid_add_text(global.list_pergunta[| 0][0], mago2Dialogo, 1, "MAGO" );
+			ds_list_delete(global.list_pergunta, 0);
+			
+			//pergunta 4:  ["O SISTEMA BINÁRIO É USADO PARA REPRESENTAR DADOS EM COMPUTADORES?", "VERDADEIRO"]
+			ds_grid_add_text(global.list_pergunta[| 0][0], spr_retrato1, 0, "KELY" );
+			ds_list_delete(global.list_pergunta, 0);
 			//texto[0]= "Vc é garota(o) de programa? ";
 				
 					
