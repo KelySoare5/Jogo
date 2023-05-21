@@ -47,6 +47,7 @@
     {"name":"Sprite13","order":14,"path":"sprites/Sprite13/Sprite13.yy",},
     {"name":"Sprite26","order":19,"path":"sprites/Sprite26/Sprite26.yy",},
     {"name":"spr_retrato2","order":1,"path":"sprites/spr_retrato2/spr_retrato2.yy",},
+    {"name":"ScriptTeste","order":3,"path":"scripts/ScriptTeste/ScriptTeste.yy",},
     {"name":"fase3","order":5,"path":"rooms/fase3/fase3.yy",},
     {"name":"magoFase2","order":5,"path":"objects/magoFase2/magoFase2.yy",},
     {"name":"Font_Menu","order":2,"path":"fonts/Font_Menu/Font_Menu.yy",},

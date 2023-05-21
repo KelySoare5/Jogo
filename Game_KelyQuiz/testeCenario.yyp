@@ -72,6 +72,7 @@
     {"id":{"name":"spr_retrato2","path":"sprites/spr_retrato2/spr_retrato2.yy",},},
     {"id":{"name":"Spr_background","path":"sprites/Spr_background/Spr_background.yy",},},
     {"id":{"name":"Obj_wall","path":"objects/Obj_wall/Obj_wall.yy",},},
+    {"id":{"name":"ScriptTeste","path":"scripts/ScriptTeste/ScriptTeste.yy",},},
     {"id":{"name":"Spr_wall","path":"sprites/Spr_wall/Spr_wall.yy",},},
     {"id":{"name":"T_ground","path":"tilesets/T_ground/T_ground.yy",},},
     {"id":{"name":"fase3","path":"rooms/fase3/fase3.yy",},},
