@@ -19,33 +19,6 @@
 #endregion
 
 
-/*
-
-ds_list_add(global.list_pergunta, ["A LINGUAGEM DE PROGRAMAÇÃO PYTHON É BASEADA EM C++?", "FALSO"]);
-ds_list_add(global.list_pergunta, ["O HARDWARE DO COMPUTADOR INCLUI DISPOSITIVOS DE ENTRADA, DISPOSITIVOS DE SAÍDA E ARMAZENAMENTO DE DADOS?", "VERDADEIRO"]);
-ds_list_add(global.list_pergunta, ["CONSTRUTOR É O NOME DADO AO MÉTODO QUE É EXECUTADO AUTOMATICAMENTE QUANDO UMA NOVA INSTANCIA DE UMA CLASSE É CRIADA?", "VERDADEIRO"]);
-ds_list_add(global.list_pergunta, ["O SISTEMA BINÁRIO É USADO PARA REPRESENTAR DADOS EM COMPUTADORES?", "VERDADEIRO"]);
-
-
-
-
-ds_list_add(global.list_pergunta, ["A MEMÓRIA RAM É UMA FORMA DE ARMAZENAMENTO PERMANENTE DE DADOS?", "FALSO"]);
-ds_list_add(global.list_pergunta, ["A INTERNET É UMA REDE MUNDIAL DE COMPUTADORES CONECTADOS?", "FALSO"]);
-ds_list_add(global.list_pergunta, ["HTML É UMA LINGUAGEM DE PROGRAMAÇÃO? ", "FALSO"]);
-ds_list_add(global.list_pergunta, ["A LINGUAGEM DE PROGRAMAÇÃO JAVA FOI DESENVOLVIDA POR GUIDO VAN ROSSUM!", "FALSO"]);
-ds_list_add(global.list_pergunta, ["A PROGRAMAÇÃO ORIENTADA A OBJETOS É UM PARADIGMA DE PROGRAMAÇÃO QUE SE CONCENTRA NA CRIAÇÃO DE OBJETOS QUE POSSUEM DADOS E MÉTODOS", "VERDADEIRO"]);
-
-
-*/
-
-
-
-
-
-
-
-
-
 
 
 // quando criar o obj do player

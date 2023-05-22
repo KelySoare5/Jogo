@@ -55,7 +55,7 @@ if inicializar == true {
 		draw_text_ext(_xx + 32, _yy + 32, _texto, 32, _guil - 264);
 	
 		//desenhar a sprite
-		//draw_sprite_ext(_sprite, 0, _guil, _guia-200, -3, 3, 0, c_white, 1);
+		draw_sprite_ext(_sprite, 0, _guil, _guia-200, -3, 3, 0, c_white, 1);
 	
 	}
 	
@@ -110,7 +110,18 @@ if inicializar == true {
 				//apaga o topo da lista
 				//ds_list_delete(global.list_pergunta, 0);
 				//perde joias
-				global.joia -= 100;	
+				global.joia -= 100;
+				
+				//condicao do gameOver
+				if global.joia <= 0 {
+					if (instance_exists(Obj_game_controller)){
+						with(Obj_game_controller){
+							game_over = true;
+						}
+					}
+					
+				}
+				
 				
 			}
 			

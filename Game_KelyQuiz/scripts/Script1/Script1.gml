@@ -212,8 +212,14 @@ function scr_textos(){
 									break;
 					
 
+
+
+
+
+
+
 		case "mago2":
-			
+
 			
 				
 			
@@ -382,6 +388,11 @@ function ds_grid_add_text(){
 
 // para adcionar as opcoes
 function add_op(_texto, _resposta){
+	//sempre repete2 vezes 
+	
+	
+	//add_op("VERDADEIRO",	 "resp1"); passar verdadeiro ou falso e um contador
+	//add_op("FALSO",	 "resp2"); 
 	op[op_num] = _texto;
 	op_resposta[op_num] = _resposta;
 	

@@ -1,4 +1,4 @@
-
+/*
 #region EmbaralharPerguntas
 	if keyboard_check_pressed(ord("R")){
 		if ds_list_size(global.list_pergunta > 0) {
@@ -6,21 +6,7 @@
 		}
 	}
 #endregion
-
-
-
-
-
-
-
-
-
-#region Embaralhar
-	//if keyboard_check_pressed(ord("R")){
-		//ds_list_shuffle(global.indice);
-	//}
-#endregion
-
+*/
 
 
 // loop, executa a cada frame
@@ -156,8 +142,10 @@ if global.dialogo == false{
 
 
 
+/*
+if (keyboard_check(vk_enter)) game_restart();
 
-
+*/
 
 
 
