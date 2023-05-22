@@ -3,3 +3,6 @@
 
 draw_set_font(Font_contagem);
 draw_text(102,126, "Joia: " + string(global.joia));
+
+//fechar fonte
+draw_set_font(-1);

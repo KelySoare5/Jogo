@@ -9,11 +9,16 @@ if inicializar == true {
 
 	// dimenções do quadro preto
 	var _xx = 0;
-	//altura da janela menos 200
-	var _yy = _guia - 200;
+	//altura da janela menos 200 
+	//alterie aqui pra pegar a pergunta toda
+	var _yy = _guia - 250;
 	//cor
 	var _c = c_black;
-
+	// variavel q recebe a sprit das opcoes
+	
+	//var _sprintOpcao = Sprit_fundo_texto;
+	
+	//recebe a sprit da funcao q cria
 	var _sprite = texto_grid[# infos.Retrato, pagina];
 
 	// fonte
@@ -21,6 +26,8 @@ if inicializar == true {
 	
 	//variavel para copiar o texto
 	var _texto = string_copy(texto_grid[# infos.Texto, pagina], 0, caractere)
+	
+	
 	//lado esquerdo
 	if texto_grid[# infos.Lado, pagina] == 0 {
 		
@@ -43,6 +50,8 @@ if inicializar == true {
 	else{
 		//desenhar a tela prata
 		//o x2-guil completar toda largura da tela 
+		
+		
 		draw_rectangle_color(_xx, _yy, _guil - 200, _guia, _c, _c, _c, _c, false); 
 
 
@@ -65,6 +74,12 @@ if inicializar == true {
 		var _opsep = 48;
 		var _opborda = 6;
 		
+		//recebe a sprit do campo de opcoes
+		var _sprintOpcao = Sprit_fundo_texto;
+		
+		
+		
+		
 		// Mudei as letra "W" e "S" 
 		op_selecionado += keyboard_check_pressed(vk_up) - keyboard_check_pressed(vk_down);
 		
@@ -72,14 +87,35 @@ if inicializar == true {
 		
 		
 		
+		
+		
 		for (var i = 0; i < op_num; i++) {
+			
+			_sprintOpcao = Sprit_fundo_texto;
+			
+			// muda a sprit do campo de opcoes
+			if i == 0 and op_selecionado == i{
+				_sprintOpcao = Sprit_fundo_outraCor;
+			}
+			
+			// muda a sprit do campo de opcoes
+			if i == 1 and op_selecionado == i{
+				_sprintOpcao = Sprit_fundo_outraCor;
+			}
+			
 			var _stringw = string_width(op[i]);
-			draw_sprite_ext(Sprit_fundo_texto, 0, _opx, _opy - (_opsep * i), (_stringw + _opborda * 2 ) /16, 1, 0, c_white, 1);
+			
+			//speit com q fica embaixo das opcoes
+			draw_sprite_ext(_sprintOpcao, 0, _opx, _opy - (_opsep * i), (_stringw + _opborda * 2 ) /16, 1, 0, c_white, 1);
 			draw_text(_opx + _opborda, _opy - (_opsep * i), op[i]);
 			
 			if op_selecionado == i {
+				
 				draw_sprite(Sprit_bolota, 0, _xx + 8, _opy - (_opsep * i) + 8 );
 			}
+			
+			
+			
 
 		}
 		
@@ -132,6 +168,10 @@ if inicializar == true {
 		}
 	
 	}
+	draw_set_font(-1);
+
+	
+
 	
 }
 

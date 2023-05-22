@@ -187,7 +187,7 @@ function scr_textos(){
 									
 							case "resp8":
 								ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
-								
+								ds_list_delete(global.list_pergunta, 0);
 								
 					// NOVA QUESTÃO
 								ds_grid_add_text(global.list_pergunta[| 0][0], spr_retrato2, 1, "MAGO" );

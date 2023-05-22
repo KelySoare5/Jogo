@@ -31,7 +31,8 @@ if (game_over){
 	draw_set_color(c_black);
 	//escurecendo a tela
 	//deixa swm alpha
-	draw_set_alpha(valor - .3);
+	//era .3, mas deixei .1 pra ficar mais legal
+	draw_set_alpha(valor - .1);
 	draw_rectangle(x1, y1, x2, y2, false);
 	
 	
