@@ -184,11 +184,11 @@ function scr_textos(){
 		
 		case "mago2":
 		//se for 0 e desenhar lado esquerdo e se for um do outro lado
-			ds_grid_add_text("Você é um garoto(a) de programa (S-sim/N-não)?? eu preciso de texto",mago2Dialogo, 1, "MAGO" );
+			ds_grid_add_text("Você é um garoto(a) de programa (S-sim/N-não)??",mago2Dialogo, 1, "MAGO" );
 				
-			ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
-			ds_grid_add_text("Então, HTML é uma linguagem de programação (V-verdadeiro/F-Falso)?? mais texto porque sim",mago2Dialogo, 1, "MAGO" );
-			ds_grid_add_text("Falso. EU QUERo CAFE......mago2....... nem bebi no ifpi e quando cheguei n tinha mais aqui em casa", spr_retrato1, 0, "KELY" );
+			ds_grid_add_text("teste teste", spr_retrato1, 0, "KELY" );
+			ds_grid_add_text("teste teste teste teste",mago2Dialogo, 1, "MAGO" );
+			ds_grid_add_text("teste testeteste testeteste teste", spr_retrato1, 0, "KELY" );
 			//texto[0]= "Vc é garota(o) de programa? ";
 				
 					
@@ -200,13 +200,18 @@ function scr_textos(){
 		
 		case "mago3":
 		//se for 0 e desenhar lado esquerdo e se for um do outro lado
-			ds_grid_add_text("Você é um garoto(a) de programa (S-sim/N-não)?? eu preciso de texto",mago3Dialogo, 1, "Vernei" );
-			ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
-			ds_grid_add_text("Então, HTML é uma linguagem de programação (V-verdadeiro/F-Falso)?? mais texto porque sim",mago3Dialogo, 1, "Vernei" );
-			ds_grid_add_text("Falso. EU QUERo CAFE......mago3...... nem bebi no ifpi e quando cheguei n tinha mais aqui em casa", spr_retrato1, 0, "KELY" );
+			ds_grid_add_text("Você é um garoto(a) de programa (S-sim/N-não)?? ",mago3Dialogo, 1, "Vernei" );
+			ds_grid_add_text("aqui vai ser adicionado perguntas de estruturas de dados I e II", spr_retrato1, 0, "KELY" );
+			ds_grid_add_text("Engenharia de software",mago3Dialogo, 1, "Vernei" );
+			ds_grid_add_text("teste testeteste testeteste testeteste testeteste testeteste testeteste testeteste testeteste testeteste teste", spr_retrato1, 0, "KELY" );
 			//texto[0]= "Vc é garota(o) de programa? ";
 			
 			
+		break;
+		
+		case "Nonato":
+			ds_grid_add_text("Parabéns joia de Aluno pela sua aprovação em Análise e Desenvolvimento de Sistemas!", mago2Dialogo, 1, "Diretor Nonato Silva" );
+			//ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
 		break;
 	}
 }
