@@ -2,5 +2,5 @@
 // Você pode escrever seu código neste editor
 index--;
 if (index <0){
-	index =  op_max -1;
+	index = op_max -1;
 }

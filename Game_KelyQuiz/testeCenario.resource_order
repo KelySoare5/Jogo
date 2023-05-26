@@ -54,6 +54,7 @@
     {"name":"fase3","order":5,"path":"rooms/fase3/fase3.yy",},
     {"name":"magoFase2","order":5,"path":"objects/magoFase2/magoFase2.yy",},
     {"name":"Font_Menu","order":2,"path":"fonts/Font_Menu/Font_Menu.yy",},
+    {"name":"rm_menu_teste","order":10,"path":"rooms/rm_menu_teste/rm_menu_teste.yy",},
     {"name":"Sprite36","order":24,"path":"sprites/Sprite36/Sprite36.yy",},
     {"name":"Sprit_bolota","order":9,"path":"sprites/Sprit_bolota/Sprit_bolota.yy",},
     {"name":"duplicada","order":2,"path":"rooms/duplicada/duplicada.yy",},

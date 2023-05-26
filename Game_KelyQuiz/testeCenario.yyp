@@ -82,6 +82,7 @@
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"id":{"name":"magoFase2","path":"objects/magoFase2/magoFase2.yy",},},
     {"id":{"name":"Font_Menu","path":"fonts/Font_Menu/Font_Menu.yy",},},
+    {"id":{"name":"rm_menu_teste","path":"rooms/rm_menu_teste/rm_menu_teste.yy",},},
     {"id":{"name":"Sprite36","path":"sprites/Sprite36/Sprite36.yy",},},
     {"id":{"name":"Sprit_bolota","path":"sprites/Sprit_bolota/Sprit_bolota.yy",},},
     {"id":{"name":"duplicada","path":"rooms/duplicada/duplicada.yy",},},
@@ -121,6 +122,7 @@
     {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
   ],
   "RoomOrderNodes": [
+    {"roomId":{"name":"rm_menu_teste","path":"rooms/rm_menu_teste/rm_menu_teste.yy",},},
     {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
     {"roomId":{"name":"duplicada","path":"rooms/duplicada/duplicada.yy",},},
     {"roomId":{"name":"fase3","path":"rooms/fase3/fase3.yy",},},
