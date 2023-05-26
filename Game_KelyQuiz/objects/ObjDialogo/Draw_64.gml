@@ -153,6 +153,7 @@ if inicializar == true {
 					if (instance_exists(Obj_game_controller)){
 						with(Obj_game_controller){
 							game_over = true;
+							
 						}
 					}
 					

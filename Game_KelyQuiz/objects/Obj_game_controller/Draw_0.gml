@@ -4,6 +4,7 @@
 
 if (game_over){
 	
+	
 	instance_destroy(ObjDialogo);
 	
 	//info da camera
@@ -75,7 +76,11 @@ if (game_over){
 		
 		draw_set_alpha(-1);
 		
+		
+		
 		if (keyboard_check(vk_enter)) game_restart();
+		
+		
 
 	}
 	

@@ -1,5 +1,8 @@
 
 
+
+
+
 #region Perguntas_list
 
 	global.list_pergunta = ds_list_create();
