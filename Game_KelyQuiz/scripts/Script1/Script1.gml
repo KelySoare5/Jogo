@@ -2,6 +2,237 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 para obter mais informações
 
 //global.cont = 0;
+
+function scr_textos_mago2() {
+	switch npcNome {
+		case "mago2":
+		//se for 0 e desenhar lado esquerdo e se for um do outro lado
+		
+		// QUESTÃO 1 global.list_pergunta_
+			ds_grid_add_text(global.list_pergunta_fase2[| 0][0], spr_retrato2, 1, "MAGO" );
+				add_op(global.list_pergunta_fase2[| 0][1],	 "resp11"); //VERDADEIRO
+				add_op(global.list_pergunta_fase2[| 0][2],	 "resp21");	//FALSO		
+		break;
+		
+			// CASO VERDADEIRAO 1
+					case "resp11":
+						ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+						//apagar sempre q responder certo ou errado
+						ds_list_delete(global.list_pergunta_fase2, 0);
+						
+				//  NOVA QUESTÃO
+						ds_grid_add_text(global.list_pergunta_fase2[| 0][0], spr_retrato2, 1, "MAGO" );
+							add_op(global.list_pergunta_fase2[| 0][2],	 "resp31");			//VERDADEIRO
+							add_op(global.list_pergunta_fase2[| 0][1],	 "resp41");			//FALSO
+					break;
+						
+								case "resp31":
+									ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+									
+									//apagar sempre q responder certo ou errado
+									ds_list_delete(global.list_pergunta_fase2, 0);
+						
+							//  NOVA QUESTÃO
+									ds_grid_add_text(global.list_pergunta_fase2[| 0][0], spr_retrato2, 1, "MAGO" );
+									
+										//ESCOLHAS
+										add_op(global.list_pergunta_fase2[| 0][2],	 "resp171");	
+										add_op(global.list_pergunta_fase2[| 0][1],	 "resp181");		
+								break;
+								
+									case "resp171":
+										ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+										
+										//apagar sempre q responder certo ou errado
+										ds_list_delete(global.list_pergunta_fase2, 0);
+						
+									break;
+									
+									
+									case "resp181":
+										ds_grid_add_text( global.retUsuario, spr_retrato2, 1, "MAGO" );
+										
+										//apagar sempre q responder certo ou errado
+										ds_list_delete(global.list_pergunta_fase2, 0);
+						
+									break;
+										
+										
+										
+								case "resp41":
+									ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+									
+									//apagar sempre q responder certo ou errado
+									ds_list_delete(global.list_pergunta_fase2, 0);
+						
+							//  NOVA QUESTÃO
+									ds_grid_add_text(global.list_pergunta_fase2[| 0][0], spr_retrato2, 1, "MAGO" );
+									
+										//ESCOLHAS
+										add_op(global.list_pergunta_fase2[| 0][1],	 "resp51");
+										add_op(global.list_pergunta_fase2[| 0][2],	 "resp61");	
+								break;
+								
+								
+									case "resp51":
+										ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+										
+										//apagar sempre q responder certo ou errado
+										ds_list_delete(global.list_pergunta_fase2, 0);
+						
+								//  NOVA QUESTÃO
+										ds_grid_add_text(global.list_pergunta_fase2[| 0][0], spr_retrato2, 1, "MAGO" );
+										
+											//ESCOLHAS
+											add_op(global.list_pergunta_fase2[| 0][2],	 "resp151");
+											add_op(global.list_pergunta_fase2[| 0][1],	 "resp161");
+									break;
+									
+									
+									case "resp151":
+										ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+										
+										//apagar sempre q responder certo ou errado
+										ds_list_delete(global.list_pergunta_fase2, 0);
+						
+									break;
+									
+									
+									case "resp161":
+										ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+										//apagar sempre q responder certo ou errado
+										ds_list_delete(global.list_pergunta_fase2, 0);
+						
+									break;
+									
+									
+								case "resp61":
+									ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+									//apagar sempre q responder certo ou errado
+									ds_list_delete(global.list_pergunta_fase2, 0);
+						
+						// NOVA QUESTÃO
+									ds_grid_add_text(global.list_pergunta_fase2[| 0][0], spr_retrato2, 1, "MAGO" );
+									
+										//ESCOLHAS
+										add_op(global.list_pergunta_fase2[| 0][1],	 "resp111");
+										add_op(global.list_pergunta_fase2[| 0][2],	 "resp121");			
+								break;
+								
+										case "resp111":
+											ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+											//apagar sempre q responder certo ou errado
+											ds_list_delete(global.list_pergunta_fase2, 0);
+						
+										break;
+										
+										case "resp121":
+											ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+											//apagar sempre q responder certo ou errado
+											ds_list_delete(global.list_pergunta_fase2, 0);
+						
+										break;
+			
+			
+			
+					
+			// CASO FALSO 1		
+					case "resp21":
+						/*if global.cont == 0{
+							global.joia += 100;	
+						}*/
+						ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+						//apagar sempre q responder certo ou errado
+						ds_list_delete(global.list_pergunta_fase2, 0);
+						
+			// NOVA QUESTÃO
+						ds_grid_add_text(global.list_pergunta_fase2[| 0][0], spr_retrato2, 1, "MAGO" );
+						
+							//ESCOLHAS
+							add_op(global.list_pergunta_fase2[| 0][2],	 "resp71");
+							add_op(global.list_pergunta_fase2[| 0][1],	 "resp81");	
+					break;
+					
+							case "resp71":
+								/*if global.cont == 0{
+									global.joia += 100;	
+								}*/
+								ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+								
+								//apagar sempre q responder certo ou errado
+								ds_list_delete(global.list_pergunta_fase2, 0);
+						
+								
+					// NOVA QUESTÃO
+									ds_grid_add_text(global.list_pergunta_fase2[| 0][0], spr_retrato2, 1, "MAGO" );
+									
+										//ESCOLHAS
+										add_op(global.list_pergunta_fase2[| 0][1],	 "resp131");
+										add_op(global.list_pergunta_fase2[| 0][2],	 "resp141");
+								break;
+								
+										case "resp131":
+											ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+											//apagar sempre q responder certo ou errado
+											ds_list_delete(global.list_pergunta_fase2, 0);
+						
+										break;
+									
+									
+										case "resp141":
+											/*if global.cont == 0{
+												global.joia += 100;	
+											}*/
+											ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+											//apagar sempre q responder certo ou errado
+											ds_list_delete(global.list_pergunta_fase2, 0);
+						
+											
+										break;
+									
+									
+									
+							case "resp81":
+								ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+								ds_list_delete(global.list_pergunta_fase2, 0);
+								
+					// NOVA QUESTÃO
+								ds_grid_add_text(global.list_pergunta_fase2[| 0][0], spr_retrato2, 1, "MAGO" );
+								
+									//ESCOLHAS
+									add_op(global.list_pergunta_fase2[| 0][1],	 "resp91");
+									add_op(global.list_pergunta_fase2[| 0][2],	 "resp101");	
+							break;
+							
+									case "resp91":
+										ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+										//apagar sempre q responder certo ou errado
+										ds_list_delete(global.list_pergunta_fase2, 0);
+						
+										
+									break;
+									
+									case "resp101":
+										ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+										//apagar sempre q responder certo ou errado
+										ds_list_delete(global.list_pergunta_fase2, 0);
+						
+										
+									break;
+					
+	
+	}
+
+}
+
+
+
+
+
+
+
+
+
 function scr_textos(){
 	
 	//ver qual é o npc_nome
@@ -217,8 +448,20 @@ function scr_textos(){
 
 
 
+		
 
-		case "mago2":
+
+
+//		case "mago2":
+//			scr_textos_mago2();		
+//		break;
+
+
+
+
+
+
+		//case "mago2":
 
 			
 				
@@ -229,18 +472,18 @@ function scr_textos(){
 		
 			// mostra a primeira pergunta e apaga sempre vai ser assim
 			//pergunta 1: ["A LINGUAGEM DE PROGRAMAÇÃO PYTHON É BASEADA EM C++?", "FALSO"]
-			ds_grid_add_text(global.list_pergunta[| 0][0], mago2Dialogo, 1, "MAGO" );
+			//ds_grid_add_text(global.list_pergunta[| 0][0], mago2Dialogo, 1, "MAGO" );
 			
-				add_op("VERDADEIRO",	 global.aux_opc1);
-				add_op("FALSO",			 global.aux_opc2);
+				//add_op("VERDADEIRO",	 global.aux_opc1);
+				//add_op("FALSO",			 global.aux_opc2);
 				
 			
 			
-		break;
+		//break;
 		
-				case global.aux_opc1:  //opc sendo a primeira
-					ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
-					ds_list_delete(global.list_pergunta, 0);
+				//case global.aux_opc1:  //opc sendo a primeira
+					//ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+					//ds_list_delete(global.list_pergunta, 0);
 					
 					/*
 					ds_grid_add_text(global.list_pergunta[| 0][0], mago2Dialogo, 1, "MAGO" );
@@ -269,15 +512,15 @@ function scr_textos(){
 					ds_grid_add_text(global.list_pergunta[| 0][0], mago2Dialogo, 1, "MAGO" );
 					ds_list_delete(global.list_pergunta, 0);
 					*/
-				break
+				//break
 				
-				case global.aux_opc2:  //opc sendo a segunda
-					ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
-					ds_list_delete(global.list_pergunta, 0);
-				break;
+				//case global.aux_opc2:  //opc sendo a segunda
+					//ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+					//ds_list_delete(global.list_pergunta, 0);
+				//break;
 				
-				global.aux_opc1 += 1; //comeca em zero
-				global.aux_opc2 += 1; //comeca em 50
+				//global.aux_opc1 += 1; //comeca em zero
+				//global.aux_opc2 += 1; //comeca em 50
 		
 		
 			

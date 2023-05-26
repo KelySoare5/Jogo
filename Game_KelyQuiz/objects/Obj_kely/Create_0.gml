@@ -3,7 +3,7 @@
 
 
 
-#region Perguntas_list
+#region Perguntas_list_fase1
 
 	global.list_pergunta = ds_list_create();
 	ds_list_add(global.list_pergunta, ["A LINGUAGEM DE PROGRAMAÇÃO PYTHON É BASEADA EM C++?", "FALSO"]);
@@ -20,6 +20,59 @@
 
 
 #endregion
+
+
+
+
+#region Perguntas_list_fase2
+
+	global.list_pergunta_fase2 = ds_list_create();
+	ds_list_add(global.list_pergunta_fase2, ["Qual das seguintes estruturas de dados é adequada para armazenar dados hierárquicos? ", 
+											"Arvore", 
+											"Pilha"]); 
+												
+	ds_list_add(global.list_pergunta_fase2, ["Qual das seguintes estruturas de dados é adequada para implementar uma pilha?", 
+											"Vetor", 
+											"Lista encadeada"]); 
+												
+	ds_list_add(global.list_pergunta_fase2, ["Qual linguagem é usada apenas para acessar e manipular dados em bancos de dados relacionais?", 
+											"Sql", 
+											"Sqlite"]);  
+	
+	
+	
+	ds_list_add(global.list_pergunta_fase2, ["O que é importante para garantir a recuperação de dados em caso de falha do sistema ou erro humano em um banco de dados?",
+											"Backup", 
+											"Where"]);
+											
+	ds_list_add(global.list_pergunta_fase2, ["Qual das seguintes atividades NÃO faz parte do ciclo de vida clássico do software?",
+											"Manutenção", 
+											"Testes"]);
+											
+	ds_list_add(global.list_pergunta_fase2, ["Qual das seguintes metodologias de desenvolvimento de software enfatiza a entrega contínua de software funcionando?", 
+											"Desenvolvimento ágil",
+											"Desenvolvimento incrementa"]);
+	
+	
+	
+	ds_list_add(global.list_pergunta_fase2, ["Qual dos seguintes diagramas UML é usado para mostrar a interação entre objetos? ", 
+											"Diagrama de sequência",
+											"Diagrama de classe"]);
+											
+	ds_list_add(global.list_pergunta_fase2, ["O que em um banco de dados garante que cada linha de uma tabela seja exclusiva?",
+											"Chave primária",
+											"Chave permanente"]);
+											
+	ds_list_add(global.list_pergunta_fase2, ["Qual das seguintes abordagens de desenvolvimento de software enfatiza a colaboração entre o cliente e o desenvolvedor?", 
+											"Desenvolvimento incremental",
+											"Cascata"]);
+
+
+#endregion
+
+
+
+
 
 
 

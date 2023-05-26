@@ -133,36 +133,77 @@ if inicializar == true {
 			//recebe o valor selecionado pelo usuario
 			global.respSelecionada = op[op_selecionado];
 			
-			if global.respSelecionada == global.list_pergunta[| 0][1]{
-				global.retUsuario = "CERTA RESPOSTA";
-				//apaga o topo da lista
-				//ds_list_delete(global.list_pergunta, 0);
-				//ganha mais joias
-				global.joia += 100;	
-			}
 			
-			if global.respSelecionada != global.list_pergunta[| 0][1]{
-				global.retUsuario = "RESPOSTA ERRADA";
-				//apaga o topo da lista
-				//ds_list_delete(global.list_pergunta, 0);
-				//perde joias
-				global.joia -= 100;
-				
-				//condicao do gameOver
-				if global.joia <= 0 {
-					if (instance_exists(Obj_game_controller)){
-						with(Obj_game_controller){
-							game_over = true;
-							
-						}
-					}
-					
+			
+			if global.nome_mago == "Mago1"{
+			
+				if global.respSelecionada == global.list_pergunta[| 0][1]{
+					global.retUsuario = "CERTA RESPOSTA";
+					//apaga o topo da lista
+					//ds_list_delete(global.list_pergunta, 0);
+					//ganha mais joias
+					global.joia += 100;	
 				}
+			
+				if global.respSelecionada != global.list_pergunta[| 0][1]{
+					global.retUsuario = "RESPOSTA ERRADA";
+					//apaga o topo da lista
+					//ds_list_delete(global.list_pergunta, 0);
+					//perde joias
+					global.joia -= 100;
+				
+					//condicao do gameOver
+					if global.joia <= 0 {
+						if (instance_exists(Obj_game_controller)){
+							with(Obj_game_controller){
+								game_over = true;
+							
+							}
+						}
+					
+					}
 				
 				
+				}
 			}
 			
 			
+			
+			if global.nome_mago == "Mago2" {
+			
+				if global.respSelecionada == global.list_pergunta_fase2[| 0][1]{
+					global.retUsuario = "CERTA RESPOSTA";
+					//apaga o topo da lista
+					//ds_list_delete(global.list_pergunta, 0);
+					//ganha mais joias
+					global.joia += 100;	
+				}
+			
+				if global.respSelecionada == global.list_pergunta_fase2[| 0][2]{
+					global.retUsuario = "RESPOSTA ERRADA";
+					//apaga o topo da lista
+					//ds_list_delete(global.list_pergunta, 0);
+					//perde joias
+					global.joia -= 100;
+				
+					//condicao do gameOver
+					if global.joia <= 0 {
+						if (instance_exists(Obj_game_controller)){
+							with(Obj_game_controller){
+								game_over = true;
+							
+							}
+						}
+					
+					}
+				
+				
+				}
+			
+			
+			
+			
+			}
 			
 			instance_destroy();
 			

@@ -2,7 +2,14 @@
 //quando criar o objDialogo vai iniciar com false
 if inicializar == false{
 	//acessa a funcao do script
-	scr_textos(); 
+	//se for o mago 2 vai para um script se nao for vai para outro
+	if global.nome_mago == "Mago2" {
+		scr_textos_mago2()
+	}
+	
+	if global.nome_mago == "Mago1" {
+		scr_textos(); 
+	}
 	
 	inicializar = true;
 }
