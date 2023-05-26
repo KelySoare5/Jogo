@@ -1,7 +1,7 @@
 // Os recursos de script mudaram para a v2.3.0; veja
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 para obter mais informações
 
-//global.cont = 0; scr_textos_nonato
+//funcao dialogo nonato
 function scr_textos_nonato() {
 	switch npcNome {
 		case "Nonato":
@@ -13,9 +13,7 @@ function scr_textos_nonato() {
 
 
 
-
-
-
+//funcao do mago3
 function scr_textos_mago3() {
 	switch npcNome {
 		case "mago3":
@@ -241,7 +239,7 @@ function scr_textos_mago3() {
 
 
 
-
+//funcao mago2
 function scr_textos_mago2() {
 	switch npcNome {
 		case "mago2":
@@ -467,11 +465,7 @@ function scr_textos_mago2() {
 
 
 
-
-
-
-
-
+//funcao mago1
 function scr_textos(){
 	
 	//ver qual é o npc_nome
@@ -680,141 +674,10 @@ function scr_textos(){
 						
 										
 									break;
-					
-
-
-
-
-
-
-		
-
-
-
-//		case "mago2":
-//			scr_textos_mago2();		
-//		break;
-
-
-
-
-
-
-		//case "mago2":
-
-			
-				
-			
-			
-		
-			//se for 0 e desenhar lado esquerdo e se for um do outro lado
-		
-			// mostra a primeira pergunta e apaga sempre vai ser assim
-			//pergunta 1: ["A LINGUAGEM DE PROGRAMAÇÃO PYTHON É BASEADA EM C++?", "FALSO"]
-			//ds_grid_add_text(global.list_pergunta[| 0][0], mago2Dialogo, 1, "MAGO" );
-			
-				//add_op("VERDADEIRO",	 global.aux_opc1);
-				//add_op("FALSO",			 global.aux_opc2);
-				
-			
-			
-		//break;
-		
-				//case global.aux_opc1:  //opc sendo a primeira
-					//ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
-					//ds_list_delete(global.list_pergunta, 0);
-					
-					/*
-					ds_grid_add_text(global.list_pergunta[| 0][0], mago2Dialogo, 1, "MAGO" );
-			
-						add_op("VERDADEIRO",	 "OPC3");
-						add_op("FALSO",			 "OPC4");
 						
-						case "OPC3":
-							ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
-							ds_list_delete(global.list_pergunta, 0);
-						break;
-						
-						case "OPC4":
-							ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
-							ds_list_delete(global.list_pergunta, 0);
-						break;
-					*/
-					
-					/*
-					ds_grid_add_text(global.list_pergunta[| 0][0], mago2Dialogo, 1, "MAGO" );
-					ds_list_delete(global.list_pergunta, 0);
-					
-					ds_grid_add_text(global.list_pergunta[| 0][0], mago2Dialogo, 1, "MAGO" );
-					ds_list_delete(global.list_pergunta, 0);
-					
-					ds_grid_add_text(global.list_pergunta[| 0][0], mago2Dialogo, 1, "MAGO" );
-					ds_list_delete(global.list_pergunta, 0);
-					*/
-				//break
-				
-				//case global.aux_opc2:  //opc sendo a segunda
-					//ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
-					//ds_list_delete(global.list_pergunta, 0);
-				//break;
-				
-				//global.aux_opc1 += 1; //comeca em zero
-				//global.aux_opc2 += 1; //comeca em 50
-		
-		
-			
-				
-				
-			
-				
-				//if global.list_pergunta[| 0][1] == op_resposta[op_selecionado] {
-				/*if global.respSelecionada == global.list_pergunta[| 0][1]{
-				//case "resQuestao1Errada":
-					ds_grid_add_text("RESPOSTA ERRADA",spr_retrato2, 1, "MAGO" );
-					break
-				//break;
-				}*/
-				//case "resQuestao1Errada":
-					//ds_grid_add_text("RESPOSTA ERRADA",spr_retrato2, 1, "MAGO" );
-				//break;
-				
-				//case "resQuestao1Certa":
-					//ds_grid_add_text("RESPOSTA Certa",spr_retrato2, 1, "MAGO" );
-				//break;
-				
-				
-				
-				
-			
-			
-			/*
-			
-			//pergunta 2: ["O HARDWARE DO COMPUTADOR INCLUI DISPOSITIVOS DE ENTRADA, DISPOSITIVOS DE SAÍDA E ARMAZENAMENTO DE DADOS?", "VERDADEIRO"]
-			ds_grid_add_text(global.list_pergunta[| 0][0], spr_retrato1, 0, "KELY" );
-			ds_list_delete(global.list_pergunta, 0);
-			
-			//pergunta 3: ["CONSTRUTOR É O NOME DADO AO MÉTODO QUE É EXECUTADO AUTOMATICAMENTE QUANDO UMA NOVA INSTANCIA DE UMA CLASSE É CRIADA?", "VERDADEIRO"]
-			ds_grid_add_text(global.list_pergunta[| 0][0], mago2Dialogo, 1, "MAGO" );
-			ds_list_delete(global.list_pergunta, 0);
-			
-			//pergunta 4:  ["O SISTEMA BINÁRIO É USADO PARA REPRESENTAR DADOS EM COMPUTADORES?", "VERDADEIRO"]
-			ds_grid_add_text(global.list_pergunta[| 0][0], spr_retrato1, 0, "KELY" );
-			ds_list_delete(global.list_pergunta, 0);
-			//texto[0]= "Vc é garota(o) de programa? ";
-			
-			*/
-					
-		
-		
-					
-			
-		
-		
-		
 	}
-	
-	cont += 1;
 }
+
 
 
 //função para add linhas sempre na ultima posicao
@@ -844,12 +707,6 @@ function ds_grid_add_text(){
 	_grid[# 3, _y] = argument[3];
 	
 }
-
-
-
-
-
-
 
 
 
