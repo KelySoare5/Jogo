@@ -3,6 +3,10 @@
 if inicializar == false{
 	//acessa a funcao do script
 	//se for o mago 2 vai para um script se nao for vai para outro
+	if global.nome_mago == "Mago3" {
+		scr_textos_mago3()
+	}
+	
 	if global.nome_mago == "Mago2" {
 		scr_textos_mago2()
 	}

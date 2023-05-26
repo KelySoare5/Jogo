@@ -73,6 +73,52 @@
 
 
 
+#region Perguntas_list_final
+
+	global.list_pergunta_final = ds_list_create();
+	ds_list_add(global.list_pergunta_final, ["O modelo de dados em rede é uma alternativa ao modelo de dados relacional que permite que cada registro tenha múltiplos pais ou filhos? ", 
+											"Verdadeiro",  //resposta
+											"Falso"]);	//resposta errada 
+												
+	ds_list_add(global.list_pergunta_final, ["Qual é a função principal do kernel de um sistema operacional?", 
+											"Gerenciar a memória do sistema", 
+											"Gerenciar a rede do sistema"]); 
+												
+	ds_list_add(global.list_pergunta_final, ["Qual é o objetivo do algoritmo de escalonamento de processos?", 
+											"Executar processos de forma justa e eficiente", 
+											"Alocar memória de forma eficiente"]);  
+	
+	
+	
+	ds_list_add(global.list_pergunta_final, ["Qual é a função da tabela de páginas na gestão da memória virtual?",
+											"Mapear endereços lógicos em endereços físicos de memória", 
+											"Gerenciar as interrupções de hardware"]);
+											
+	ds_list_add(global.list_pergunta_final, ["Qual é a linguagem de programação mais comumente usada para desenvolvimento de páginas web?",
+											"PHP", 
+											"Python"]);
+											
+	ds_list_add(global.list_pergunta_final, ["Qual é a diferença entre uma sessão e um cookie em uma aplicação web?", 
+											"Uma sessão é armazenada no servidor enquanto um cookie é armazenado no cliente",
+											"Uma sessão é armazenada no cliente enquanto um cookie é armazenado no servidor"]);
+	
+	
+	
+	ds_list_add(global.list_pergunta_final, ["Qual é a finalidade do protocolo HTTP? ", 
+											"Padronizar a comunicação entre servidores web e clientes web",
+											"Criptografar dados para transmissão segura na web"]);
+											
+	ds_list_add(global.list_pergunta_final, ["O que é uma API REST?",
+											"Uma API para acesso a recursos em um sistema web usando o protocolo HTTP",
+											"Uma API para acesso a dados de bancos de dados relacionais"]);
+											
+	ds_list_add(global.list_pergunta_final, ["Qual é a finalidade do framework Ruby on Rails?", 
+											"Desenvolvimento de aplicações web",
+											"Desenvolvimento de aplicativos móveis"]);
+
+
+#endregion
+
 
 
 

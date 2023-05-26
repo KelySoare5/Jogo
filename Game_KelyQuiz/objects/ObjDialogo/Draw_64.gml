@@ -205,6 +205,44 @@ if inicializar == true {
 			
 			}
 			
+			
+			if global.nome_mago == "Mago3" {
+			
+				if global.respSelecionada == global.list_pergunta_final[| 0][1]{
+					global.retUsuario = "CERTA RESPOSTA";
+					//apaga o topo da lista
+					//ds_list_delete(global.list_pergunta, 0);
+					//ganha mais joias
+					global.joia += 100;	
+				}
+			
+				if global.respSelecionada == global.list_pergunta_final[| 0][2]{
+					global.retUsuario = "RESPOSTA ERRADA";
+					//apaga o topo da lista
+					//ds_list_delete(global.list_pergunta, 0);
+					//perde joias
+					global.joia -= 100;
+				
+					//condicao do gameOver
+					if global.joia <= 0 {
+						if (instance_exists(Obj_game_controller)){
+							with(Obj_game_controller){
+								game_over = true;
+							
+							}
+						}
+					
+					}
+				
+				
+				}
+			
+			
+			
+			
+			}
+			
+			
 			instance_destroy();
 			
 		}
