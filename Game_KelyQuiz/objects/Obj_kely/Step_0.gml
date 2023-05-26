@@ -58,6 +58,7 @@ if place_meeting(x+hspd, y, Obj_wall)
 		if ds_list_size(global.list_pergunta > 0) {
 			// quando colidir verticalmente embaralhar o dialogo
 			ds_list_shuffle(global.list_pergunta);
+			ds_list_shuffle(global.list_pergunta_fase2);
 		}
 	}
 	hspd = 0;
@@ -131,6 +132,7 @@ if global.dialogo == false{
 		// quando pular embaralhar o dialogo
 		if ds_list_size(global.list_pergunta > 0) {
 			ds_list_shuffle(global.list_pergunta);
+			ds_list_shuffle(global.list_pergunta_fase2);
 		}
 		
 		vspd -= 12;

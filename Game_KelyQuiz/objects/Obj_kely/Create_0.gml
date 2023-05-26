@@ -28,8 +28,8 @@
 
 	global.list_pergunta_fase2 = ds_list_create();
 	ds_list_add(global.list_pergunta_fase2, ["Qual das seguintes estruturas de dados é adequada para armazenar dados hierárquicos? ", 
-											"Arvore", 
-											"Pilha"]); 
+											"Árvore",  //resposta
+											"Pilha"]);	//resposta errada 
 												
 	ds_list_add(global.list_pergunta_fase2, ["Qual das seguintes estruturas de dados é adequada para implementar uma pilha?", 
 											"Vetor", 
