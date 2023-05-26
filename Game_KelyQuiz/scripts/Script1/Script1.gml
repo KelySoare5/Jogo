@@ -1,7 +1,20 @@
 // Os recursos de script mudaram para a v2.3.0; veja
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 para obter mais informações
 
-//global.cont = 0;
+//global.cont = 0; scr_textos_nonato
+function scr_textos_nonato() {
+	switch npcNome {
+		case "Nonato":
+			ds_grid_add_text("Parabéns joia de Aluno pela sua aprovação em Análise e Desenvolvimento de Sistemas!", mago2Dialogo, 1, "Diretor Nonato Silva" );
+			//ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
+		break;
+	}
+}
+
+
+
+
+
 
 function scr_textos_mago3() {
 	switch npcNome {
@@ -797,21 +810,7 @@ function scr_textos(){
 			
 		
 		
-		case "mago3":
-		//se for 0 e desenhar lado esquerdo e se for um do outro lado
-			ds_grid_add_text("Você é um garoto(a) de programa (S-sim/N-não)?? eu preciso de texto",mago3Dialogo, 1, "Vernei" );
-			ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
-			ds_grid_add_text("Então, HTML é uma linguagem de programação (V-verdadeiro/F-Falso)?? mais texto porque sim",mago3Dialogo, 1, "Vernei" );
-			ds_grid_add_text("Falso. EU QUERo CAFE......mago3...... nem bebi no ifpi e quando cheguei n tinha mais aqui em casa", spr_retrato1, 0, "KELY" );
-			//texto[0]= "Vc é garota(o) de programa? ";
-			
-			
-		break;
 		
-		case "Nonato":
-			ds_grid_add_text("Parabéns joia de Aluno pela sua aprovação em Análise e Desenvolvimento de Sistemas!", mago2Dialogo, 1, "Diretor Nonato Silva" );
-			//ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
-		break;
 	}
 	
 	cont += 1;
