@@ -5,6 +5,7 @@
 if (game_over){
 	
 	instance_destroy(ObjDialogo);
+	
 	//info da camera
 	var x1 = camera_get_view_x(view_camera[0]);
 	var w = camera_get_view_width(view_camera[0]);
@@ -61,13 +62,13 @@ if (game_over){
 	
 		//sombra
 		draw_set_color(c_red);
-		draw_text(meio_w + 2, meio_h + 2, "G A M E - O V E R");
+		draw_text(meio_w + 2, meio_h + 2, "R E P R O V A D O");
 	
 		//texto
 		draw_set_color(c_white);
-		draw_text(meio_w, meio_h, "G A M E - O V E R");
+		draw_text(meio_w, meio_h, "R E P R O V A D O");
 		draw_set_font(-1);
-		draw_text(meio_w, meio_h + 70, "Press ENTER to restart");
+		draw_text(meio_w, meio_h + 70, "Pressione ENTER para reiniciar");
 		
 		draw_set_valign(-1);
 		draw_set_halign(-1);
