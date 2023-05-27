@@ -96,6 +96,7 @@ if inicializar == true {
 			// muda a sprit do campo de opcoes
 			if i == 0 and op_selecionado == i{
 				_sprintOpcao = Sprit_fundo_outraCor;
+				//audio_play_sound(Som_opcoes,10,false);
 			}
 			
 			// muda a sprit do campo de opcoes
