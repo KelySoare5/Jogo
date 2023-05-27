@@ -15,7 +15,8 @@ if inicializar == true {
 	//cor
 	var _c = c_black;
 	// variavel q recebe a sprit das opcoes
-	
+	//draw_rectangle_color(_xx,_yy, _guil, _guia, _c, _c, _c, _c, false);
+	//draw_text_ext(_xx + 32, _yy + 32, texto[0], 32, _guia - 64);
 	//var _sprintOpcao = Sprit_fundo_texto;
 	
 	//recebe a sprit da funcao q cria
