@@ -38,6 +38,7 @@
     {"name":"Sprite18","order":16,"path":"sprites/Sprite18/Sprite18.yy",},
     {"name":"Sprite11","order":1,"path":"sprites/Sprite11/Sprite11.yy",},
     {"name":"Obj_Joia","order":1,"path":"objects/Obj_Joia/Obj_Joia.yy",},
+    {"name":"Sprit_retrato_nonato","order":4,"path":"sprites/Sprit_retrato_nonato/Sprit_retrato_nonato.yy",},
     {"name":"TileSet_Casa","order":1,"path":"tilesets/TileSet_Casa/TileSet_Casa.yy",},
     {"name":"Sprite24","order":2,"path":"sprites/Sprite24/Sprite24.yy",},
     {"name":"Sprit_fundo_outraCor","order":8,"path":"sprites/Sprit_fundo_outraCor/Sprit_fundo_outraCor.yy",},

@@ -58,6 +58,7 @@
     {"id":{"name":"Sprite18","path":"sprites/Sprite18/Sprite18.yy",},},
     {"id":{"name":"Sprite11","path":"sprites/Sprite11/Sprite11.yy",},},
     {"id":{"name":"Obj_Joia","path":"objects/Obj_Joia/Obj_Joia.yy",},},
+    {"id":{"name":"Sprit_retrato_nonato","path":"sprites/Sprit_retrato_nonato/Sprit_retrato_nonato.yy",},},
     {"id":{"name":"TileSet_Casa","path":"tilesets/TileSet_Casa/TileSet_Casa.yy",},},
     {"id":{"name":"Sprite24","path":"sprites/Sprite24/Sprite24.yy",},},
     {"id":{"name":"Sprit_fundo_outraCor","path":"sprites/Sprit_fundo_outraCor/Sprit_fundo_outraCor.yy",},},

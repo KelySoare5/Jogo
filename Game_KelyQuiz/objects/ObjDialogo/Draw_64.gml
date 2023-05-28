@@ -66,6 +66,8 @@ if inicializar == true {
 	
 		//desenhar a sprite
 		draw_sprite_ext(_sprite, 0, _guil, _guia-200, -3, 3, 0, c_white, 1);
+		
+		
 	
 	}
 	
@@ -119,20 +121,19 @@ if inicializar == true {
 			//cria o dialogo na layer Dialogo
 			var _dialogo = instance_create_layer(x,y, "Dialogo", ObjDialogo);
 			
-			_dialogo.npcNome = op_resposta[op_selecionado];
+			_dialogo.npcNome = op_resposta[op_selecionado]; //recebe o valor selecionado pelo usuario
 			
-			//recebe o valor selecionado pelo usuario
-			global.respSelecionada = op[op_selecionado];
 			
-			 
-			 
+			
+			
+			
 			//nao precisa para o nonato pq so roda uma vez
 			
 			//para acessar o dialogo do mago1
-			if global.nome_mago = "Mago1"{
+			if global.nome_mago == "Mago1"{
 				
 				_dialogo.npcNome = "mago1";
-				if global.respSelecionada == global.list_pergunta[| 0][1]{
+				if op[op_selecionado] == global.list_pergunta[| 0][1]{
 					
 					//embaralhar os indices para se usados nas opcoes das perguntas
 					ds_list_shuffle(global.list_indice);
@@ -143,7 +144,7 @@ if inicializar == true {
 					
 				}
 			
-				if global.respSelecionada == global.list_pergunta[| 0][2]{
+				if op[op_selecionado] == global.list_pergunta[| 0][2]{
 					//embaralhar os indices para se usados nas opcoes das perguntas
 					ds_list_shuffle(global.list_indice);
 					
@@ -189,10 +190,10 @@ if inicializar == true {
 			
 			
 			//para acessar o dialogo do mago2
-			if global.nome_mago = "Mago2"{
+			if global.nome_mago == "Mago2"{
 				
 				_dialogo.npcNome = "mago2";
-				if global.respSelecionada == global.list_pergunta_fase2[| 0][1]{
+				if op[op_selecionado] == global.list_pergunta_fase2[| 0][1]{
 					
 					//embaralhar os indices para se usados nas opcoes das perguntas
 					ds_list_shuffle(global.list_indice);
@@ -203,7 +204,7 @@ if inicializar == true {
 					
 				}
 			
-				if global.respSelecionada == global.list_pergunta_fase2[| 0][2]{
+				if op[op_selecionado] == global.list_pergunta_fase2[| 0][2]{
 					//embaralhar os indices para se usados nas opcoes das perguntas
 					ds_list_shuffle(global.list_indice);
 					
@@ -249,10 +250,10 @@ if inicializar == true {
 			
 			
 			//para acessar o dialogo do mago3
-			if global.nome_mago = "Mago3"{
+			if global.nome_mago == "Mago3"{
 				
 				_dialogo.npcNome = "mago3";
-				if global.respSelecionada == global.list_pergunta_final[| 0][1]{
+				if op[op_selecionado] == global.list_pergunta_final[| 0][1]{
 					
 					//embaralhar os indices para se usados nas opcoes das perguntas
 					ds_list_shuffle(global.list_indice);
@@ -263,7 +264,7 @@ if inicializar == true {
 					
 				}
 			
-				if global.respSelecionada == global.list_pergunta_final[| 0][2]{
+				if op[op_selecionado] == global.list_pergunta_final[| 0][2]{
 					//embaralhar os indices para se usados nas opcoes das perguntas
 					ds_list_shuffle(global.list_indice);
 					
@@ -306,9 +307,16 @@ if inicializar == true {
 
 			} 
 			
+			
+			
+			
 			instance_destroy();
 			
+			
+			
+			
 		}
+		
 	
 	}
 	draw_set_font(-1);

@@ -4,10 +4,8 @@
 //funcao dialogo nonato
 function scr_textos_nonato() {
 	switch npcNome {
-		case "Nonato":
-			
-			ds_grid_add_text("Parabéns joia de Aluno pela sua aprovação em Análise e Desenvolvimento de Sistemas!", mago2Dialogo, 1, "Diretor Nonato Silva");
-					
+		case "Nonato":			
+			ds_grid_add_text("Parabéns joia de Aluno pela sua aprovação em Análise e Desenvolvimento de Sistemas!", Sprit_retrato_nonato, 1, "Diretor Nonato Silva");					
 		break;
 	}
 }
@@ -20,18 +18,18 @@ function scr_textos_mago33() {
 		case "mago3":
 			// recebe um valor aleatorio
 			//+ string(global.list_indice[| 0]) +"--->"+ string(global.list_indice[| 1]) 
-			ds_grid_add_text(global.list_pergunta_final[| 0][0], spr_retrato2, 1, "MAGO" );
+			ds_grid_add_text(global.list_pergunta_final[| 0][0], mago3Dialogo, 1, "MAGO" );
 					add_op(global.list_pergunta_final[| 0][global.list_indice[| 0]],	 "resp11"); //VERDADEIRO index1
 					add_op(global.list_pergunta_final[| 0][global.list_indice[| 1]],	 "resp21");	//FALSO		 index2
 		
 		break;
 		
 					case "resp11":
-						ds_grid_add_text("       Finalizada perguntas Fase Final\n(Clique em qualquer lugar para continuar)\n               ", spr_retrato2, 1, "MAGO" );
+						ds_grid_add_text("       Finalizada perguntas Fase Final\n(Clique em qualquer lugar para continuar)\n               ", mago3Dialogo, 1, "MAGO" );
 					break;
 					
 					case "resp21":
-						ds_grid_add_text("       Finalizada perguntas Fase Final\n(Clique em qualquer lugar para continuar)\n               ", spr_retrato2, 1, "MAGO" );
+						ds_grid_add_text("       Finalizada perguntas Fase Final\n(Clique em qualquer lugar para continuar)\n               ", mago3Dialogo, 1, "MAGO" );
 					break;
 	}
 }
@@ -46,18 +44,18 @@ function scr_textos_mago22() {
 		case "mago2":
 			// recebe um valor aleatorio
 			
-			ds_grid_add_text(global.list_pergunta_fase2[| 0][0], spr_retrato2, 1, "MAGO" );
+			ds_grid_add_text(global.list_pergunta_fase2[| 0][0], mago2Dialogo, 1, "MAGO" );
 					add_op(global.list_pergunta_fase2[| 0][global.list_indice[| 0]],	 "resp11"); //VERDADEIRO index1
 					add_op(global.list_pergunta_fase2[| 0][global.list_indice[| 1]],	 "resp21");	//FALSO		 index2
 		
 		break;
 		
 					case "resp11":
-						ds_grid_add_text("       Finalizada perguntas Fase 2\n(Clique em qualquer lugar para continuar)\n               ", spr_retrato2, 1, "MAGO" );
+						ds_grid_add_text("       Finalizada perguntas Fase 2\n(Clique em qualquer lugar para continuar)\n               ", mago2Dialogo, 1, "MAGO" );
 					break;
 					
 					case "resp21":
-						ds_grid_add_text("       Finalizada perguntas Fase 2\n(Clique em qualquer lugar para continuar)\n               ", spr_retrato2, 1, "MAGO" );
+						ds_grid_add_text("       Finalizada perguntas Fase 2\n(Clique em qualquer lugar para continuar)\n               ", mago2Dialogo, 1, "MAGO" );
 					break;
 					
 	}
