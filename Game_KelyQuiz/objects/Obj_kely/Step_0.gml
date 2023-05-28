@@ -1,12 +1,3 @@
-/*
-#region EmbaralharPerguntas
-	if keyboard_check_pressed(ord("R")){
-		if ds_list_size(global.list_pergunta > 0) {
-			ds_list_shuffle(global.list_pergunta);
-		}
-	}
-#endregion
-*/
 
 
 // loop, executa a cada frame

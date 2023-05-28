@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "mago3Dialogo",
-  "bbox_bottom": 63,
-  "bbox_left": 3,
-  "bbox_right": 67,
-  "bbox_top": 1,
+  "name": "Sprit_retrato_nonato",
+  "bbox_bottom": 46,
+  "bbox_left": 13,
+  "bbox_right": 52,
+  "bbox_top": 12,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"04b2c961-6ad0-47c4-b7c9-d1c7ea29a04f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bdba410a-1dfc-41f8-a3f2-c2b1a9d21f6e",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 64,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"4c716026-c73b-4236-9537-faf4cb3dc154","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c4ace3af-1bb6-484f-a18b-597ff8716a31","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "mago3Dialogo",
+    "name": "Sprit_retrato_nonato",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"04b2c961-6ad0-47c4-b7c9-d1c7ea29a04f","path":"sprites/mago3Dialogo/mago3Dialogo.yy",},},},"Disabled":false,"id":"a35e1ae7-207e-4a77-a787-c8f3884987f2","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"bdba410a-1dfc-41f8-a3f2-c2b1a9d21f6e","path":"sprites/Sprit_retrato_nonato/Sprit_retrato_nonato.yy",},},},"Disabled":false,"id":"684b38bf-c748-4543-b039-64fb2af5e4b7","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

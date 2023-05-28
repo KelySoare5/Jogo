@@ -8,17 +8,14 @@ if inicializar == false{
 	ds_list_shuffle(global.list_indice);
 	
 	if global.nome_mago == "Nonato" {
-		scr_textos_nonato(); 
+		scr_textos_nonato();	 
 	}
 	
 	if global.nome_mago == "Mago3" {
 		scr_textos_mago33();
 	}
 	
-	
-	//if global.nome_mago == "Mago3" {
-	//	scr_textos_mago3();
-	//}
+
 	
 	if global.nome_mago == "Mago2" {
 		scr_textos_mago22();
@@ -45,6 +42,8 @@ if caractere < string_length(texto_grid[# infos.Texto, pagina]){
 		ds_list_shuffle(global.list_indice);
 		caractere = string_length(texto_grid[# infos.Texto, pagina]);
 	}
+	
+	
 } else {	
 		
 		
@@ -84,6 +83,12 @@ if pagina < ds_grid_height(texto_grid) - 1{
 				//para o player principal conseguir se movimentar quando dialogo
 				//for destruido
 				global.spd = 5;
+				
+				
+				// encerra o jogo quando clica no dialogo
+				if global.nome_mago == "Nonato"{
+					game_end();
+				}
 
 			}
 		}
