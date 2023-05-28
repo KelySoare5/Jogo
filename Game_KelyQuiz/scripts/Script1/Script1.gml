@@ -239,7 +239,7 @@ function scr_textos(){
 		break;
 		
 				case global.aux_opc1:  //opc sendo a primeira
-					ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+					ds_grid_add_text(global.retUsuario, mago2Dialogo, 1, "MAGO" );
 					ds_list_delete(global.list_pergunta, 0);
 					
 					/*
@@ -272,7 +272,7 @@ function scr_textos(){
 				break
 				
 				case global.aux_opc2:  //opc sendo a segunda
-					ds_grid_add_text(global.retUsuario, spr_retrato2, 1, "MAGO" );
+					ds_grid_add_text(global.retUsuario, mago2Dialogo, 1, "MAGO" );
 					ds_list_delete(global.list_pergunta, 0);
 				break;
 				
@@ -339,8 +339,14 @@ function scr_textos(){
 			
 		break;
 		
+		
+		
+	//_______NONATO________________IFPI
+	
+	
+	
 		case "Nonato":
-			ds_grid_add_text("Parabéns joia de Aluno pela sua aprovação em Análise e Desenvolvimento de Sistemas!", mago2Dialogo, 1, "Diretor Nonato Silva" );
+			ds_grid_add_text("Parabéns joia de Aluno pela sua aprovação em Análise e Desenvolvimento de Sistemas!", nonato_recortado, 1, "Diretor Nonato Silva" );
 			//ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
 		break;
 	}
