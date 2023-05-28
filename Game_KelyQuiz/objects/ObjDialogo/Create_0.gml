@@ -1,6 +1,4 @@
 
-
-
 enum infos{
 	//infos.nome retorna 3 ...
 	Texto,
@@ -9,6 +7,8 @@ enum infos{
 	Lado,
 	Nome
 }
+
+//a = 0;
 
 npcNome= "";
 //quatro coisas para add dentro
@@ -24,12 +24,11 @@ op_selecionado = 0;
 op_draw = false; //pra saber se tem q desenhar as opcoes
 
 
-global.respSelecionada = "";
-global.retUsuario = "";
 
 
-global.aux_opc1 = 0;
-global.aux_opc2 = 50;
+//pode da errado nos outros duialogos
+//global.respSelecionada = "";
+//global.retUsuario = "";
 
 
 inicializar= false;
