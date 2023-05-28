@@ -133,12 +133,12 @@ if inicializar == true {
 			//recebe o valor selecionado pelo usuario
 			global.respSelecionada = op[op_selecionado];
 			
-			
+			 
 			
 			if global.nome_mago == "Mago1"{
 			
 				if global.respSelecionada == global.list_pergunta[| 0][1]{
-					global.retUsuario = "CERTA RESPOSTA";
+					global.retUsuario = _dialogo.npcNome = "Nonato";;
 					//apaga o topo da lista
 					//ds_list_delete(global.list_pergunta, 0);
 					//ganha mais joias
@@ -206,21 +206,22 @@ if inicializar == true {
 			}
 			
 			
+			
+			
+			
+			
+			
 			if global.nome_mago == "Mago3" {
 			
 				if global.respSelecionada == global.list_pergunta_final[| 0][1]{
 					global.retUsuario = "CERTA RESPOSTA";
-					//apaga o topo da lista
-					//ds_list_delete(global.list_pergunta, 0);
-					//ganha mais joias
+				
 					global.joia += 100;	
 				}
 			
 				if global.respSelecionada == global.list_pergunta_final[| 0][2]{
 					global.retUsuario = "RESPOSTA ERRADA";
-					//apaga o topo da lista
-					//ds_list_delete(global.list_pergunta, 0);
-					//perde joias
+					
 					global.joia -= 100;
 				
 					//condicao do gameOver
@@ -242,6 +243,64 @@ if inicializar == true {
 			
 			}
 			
+			
+			//if ds_list_size(global.list_pergunta_final > 0) {
+			if global.nome_mago = "Nonato"{
+				
+				_dialogo.npcNome = "Nonato";
+				if global.respSelecionada == global.list_pergunta_final[| 0][1]{
+					
+					//embaralhar os indices para se usados nas opcoes das perguntas
+					ds_list_shuffle(global.list_indice);
+					global.retUsuario = "Você é uma jóia";
+					//ds_list_delete(global.list_pergunta, 0);
+					global.joia += 100;	
+					
+					
+				}
+			
+				if global.respSelecionada == global.list_pergunta_final[| 0][2]{
+					//embaralhar os indices para se usados nas opcoes das perguntas
+					ds_list_shuffle(global.list_indice);
+					
+					global.retUsuario = "Você NÂO é uma jóia";
+					
+					global.joia -= 100;
+					
+				
+					//condicao do gameOver
+					if global.joia <= 0 {
+						if (instance_exists(Obj_game_controller)){
+							with(Obj_game_controller){
+								game_over = true;
+							
+							}
+						}
+					
+					}
+				
+				
+				}
+				
+					
+				
+				if (ds_list_size(global.list_pergunta_final)) > 1 {
+					
+					//embaralhar os indices para se usados nas opcoes das perguntas
+					ds_list_shuffle(global.list_indice);
+					
+					
+					ds_list_delete(global.list_pergunta_final, 0);
+					scr_textos_nonato();
+				}
+				
+				
+				if (ds_list_size(global.list_pergunta_final)) == 1 {
+					global.retUsuario = "";
+					_dialogo.npcNome = op_resposta[op_selecionado];
+				}
+
+			} 
 			
 			instance_destroy();
 			

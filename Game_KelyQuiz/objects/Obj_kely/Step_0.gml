@@ -60,6 +60,8 @@ if place_meeting(x+hspd, y, Obj_wall)
 			ds_list_shuffle(global.list_pergunta);
 			ds_list_shuffle(global.list_pergunta_fase2);
 			ds_list_shuffle(global.list_pergunta_final);
+			
+			ds_list_shuffle(global.list_indice);
 		}
 	}
 	hspd = 0;
@@ -135,6 +137,9 @@ if global.dialogo == false{
 			ds_list_shuffle(global.list_pergunta);
 			ds_list_shuffle(global.list_pergunta_fase2);
 			ds_list_shuffle(global.list_pergunta_final);
+			
+			ds_list_shuffle(global.list_indice);
+			
 		}
 		
 		vspd -= 12;

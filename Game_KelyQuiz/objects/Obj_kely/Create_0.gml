@@ -121,12 +121,23 @@
 
 
 
+#region List_index
+	global.list_indice = ds_list_create();
+	ds_list_add(global.list_indice, 2, 1);
+#endregion
+
 
 
 // quando criar o obj do player
 
 //variavel global para controlar o 
 //dialogo e aparecer so uma vez quando tiver colisao
+
+
+
+//retorna uma resposta para o usuario
+global.retUsuario = "";
+global.respSelecionada = "";
 
 global.dialogo = false;
 

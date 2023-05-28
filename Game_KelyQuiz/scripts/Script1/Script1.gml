@@ -2,12 +2,29 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 para obter mais informações
 
 //funcao dialogo nonato
+
 function scr_textos_nonato() {
-	switch npcNome {
+	
+	
+		switch npcNome {
 		case "Nonato":
-			ds_grid_add_text("Parabéns joia de Aluno pela sua aprovação em Análise e Desenvolvimento de Sistemas!", mago2Dialogo, 1, "Diretor Nonato Silva" );
-			//ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
+			// recebe um valor aleatorio
+
+			
+			ds_grid_add_text(global.list_pergunta_final[| 0][0]+ string(global.list_indice[| 0]) +"--->"+ string(global.list_indice[| 1]) , spr_retrato2, 1, "MAGO" );
+					add_op(global.list_pergunta_final[| 0][global.list_indice[| 0]],	 "resp11"); //VERDADEIRO index1
+					add_op(global.list_pergunta_final[| 0][global.list_indice[| 1]],	 "resp21");	//FALSO		 index2
+				
 		break;
+		
+					case "resp11":
+						ds_grid_add_text("       Finalizada perguntas Fase Final\n(Clique em qualquer lugar para continuar)\n               " + global.retUsuario, spr_retrato2, 1, "MAGO" );
+					break;
+					
+					case "resp21":
+						ds_grid_add_text("       Finalizada perguntas Fase Final\n(Clique em qualquer lugar para continuar)\n               " + global.retUsuario, spr_retrato2, 1, "MAGO" );
+					break;
+				
 	}
 }
 
@@ -470,7 +487,7 @@ function scr_textos(){
 	
 	//ver qual é o npc_nome
 	//se o npc for o mago1 vai ter esse dialogo, pode fazer outro switch para os outros magos
-	var cont = 0;
+	
 	
 	switch npcNome{
 		
@@ -722,7 +739,7 @@ function add_op(_texto, _resposta){
 	op_resposta[op_num] = _resposta;
 	
 	// essa pode remover
-	global.teste = _texto;
+	//global.teste = _texto;
 	op_num ++;
 }
 
