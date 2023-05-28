@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "Sprite40",
-  "bbox_bottom": 162,
+  "name": "Chao_fase3",
+  "bbox_bottom": 377,
   "bbox_left": 0,
-  "bbox_right": 799,
+  "bbox_right": 999,
   "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -13,26 +13,26 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"017f8fc5-8864-4ae6-84d6-b4580b812d92",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6a318099-42e9-41f0-95c3-8e4c54c0a5c7",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 163,
+  "height": 378,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"575aca51-1209-4a7c-9214-08511efe0d52","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"7c87e0fe-1caf-427b-b199-2f2f69d7e23c","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
   "parent": {
-    "name": "testeCenario",
-    "path": "testeCenario.yyp",
+    "name": "enfeites_cenario",
+    "path": "folders/Sprites/spr_cenario/enfeites_cenario.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "Sprite40",
+    "name": "Chao_fase3",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"017f8fc5-8864-4ae6-84d6-b4580b812d92","path":"sprites/Sprite40/Sprite40.yy",},},},"Disabled":false,"id":"3bb3c9b6-b133-4f7a-a094-489a80518681","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6a318099-42e9-41f0-95c3-8e4c54c0a5c7","path":"sprites/Chao_fase3/Chao_fase3.yy",},},},"Disabled":false,"id":"5451a586-e003-46d3-934c-fdbdb0e82186","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 800,
+  "width": 1000,
 }

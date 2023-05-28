@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "Sprite40",
-  "bbox_bottom": 162,
-  "bbox_left": 0,
-  "bbox_right": 799,
-  "bbox_top": 0,
+  "name": "cruz1",
+  "bbox_bottom": 131,
+  "bbox_left": 20,
+  "bbox_right": 74,
+  "bbox_top": 30,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"017f8fc5-8864-4ae6-84d6-b4580b812d92",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"de32f7cc-4d4a-4d58-8cb5-a30dc31839a0",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 163,
+  "height": 146,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"575aca51-1209-4a7c-9214-08511efe0d52","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"c034c02a-e9bb-43fa-b00b-59f69a5febf5","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "Sprite40",
+    "name": "cruz1",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"017f8fc5-8864-4ae6-84d6-b4580b812d92","path":"sprites/Sprite40/Sprite40.yy",},},},"Disabled":false,"id":"3bb3c9b6-b133-4f7a-a094-489a80518681","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"de32f7cc-4d4a-4d58-8cb5-a30dc31839a0","path":"sprites/cruz1/cruz1.yy",},},},"Disabled":false,"id":"5b7b1030-edaf-4e75-b131-121bc0bdb5ef","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 800,
+  "width": 93,
 }
