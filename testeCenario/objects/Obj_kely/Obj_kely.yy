@@ -11,7 +11,11 @@
 <<<<<<< HEAD
 =======
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":{"name":"magoFase2","path":"objects/magoFase2/magoFase2.yy",},"eventNum":0,"eventType":4,"isDnD":false,},
+<<<<<<< HEAD
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,},
+=======
 >>>>>>> teste
+>>>>>>> a7af34ff781ca4fd302477f513d37b28915f6c1a
   ],
   "managed": true,
   "overriddenProperties": [],
