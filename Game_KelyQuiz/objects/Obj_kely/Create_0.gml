@@ -5,49 +5,50 @@
 
 #region Perguntas_list_fase1
 
-	global.list_pergunta = ds_list_create(); //VERDADEIRO		FALSO
-	ds_list_add(global.list_pergunta, ["A LINGUAGEM DE PROGRAMAÇÃO PYTHON É BASEADA EM C++?", 
-										"FALSO", //resposta correta
-										"VERDADEIRA"]); // resposta errada 
-										
-	ds_list_add(global.list_pergunta, ["O HARDWARE DO COMPUTADOR INCLUI DISPOSITIVOS DE ENTRADA, DISPOSITIVOS DE SAÍDA E ARMAZENAMENTO DE DADOS?", 
-										"VERDADEIRO",
-										"FALSO"]);
-										
-	ds_list_add(global.list_pergunta, ["CONSTRUTOR É O NOME DADO AO MÉTODO QUE É EXECUTADO AUTOMATICAMENTE QUANDO UMA NOVA INSTANCIA DE UMA CLASSE É CRIADA?", 
-										"VERDADEIRO",
-										"FALSO"]);
-	
-	
-	
-	ds_list_add(global.list_pergunta, ["O SISTEMA BINÁRIO É USADO PARA REPRESENTAR DADOS EM COMPUTADORES?",
-									   "VERDADEIRO",
-									   "FALSO"]);
-									   
-	ds_list_add(global.list_pergunta, ["A MEMÓRIA RAM É UMA FORMA DE ARMAZENAMENTO PERMANENTE DE DADOS?", 
-										"FALSO",
-										"VERDADEIRO"]);
-										
-	ds_list_add(global.list_pergunta, ["A INTERNET É UMA REDE MUNDIAL DE COMPUTADORES CONECTADOS?", 
-										"FALSO",
-										"VERDADEIRO"]);
-	
-	
-	
-	ds_list_add(global.list_pergunta, ["HTML É UMA LINGUAGEM DE PROGRAMAÇÃO? ", 
-										"FALSO",
-										"VERDADEIRO"]);
-										
-	ds_list_add(global.list_pergunta, ["A LINGUAGEM DE PROGRAMAÇÃO JAVA FOI DESENVOLVIDA POR GUIDO VAN ROSSUM?", 
-										"FALSO",
-										"VERDADEIRO"]);
-										
-	ds_list_add(global.list_pergunta, ["A PROGRAMAÇÃO ORIENTADA A OBJETOS É UM PARADIGMA DE PROGRAMAÇÃO QUE SE CONCENTRA NA CRIAÇÃO DE OBJETOS QUE POSSUEM DADOS E MÉTODOS?", 
-										"VERDADEIRO",
-										"FALSO"]);
+    global.list_pergunta = ds_list_create(); //VERDADEIRO   	 FALSO
+    ds_list_add(global.list_pergunta, ["A linguagem de programação Python é baseada em C++?",
+   									 "Falso", //resposta correta
+   									 "Verdadeira"]); // resposta errada
+   									 
+    ds_list_add(global.list_pergunta, ["O hardware do computador inclui dispositivos de entrada, dispositivos de saída e armazenamento de dados?",
+   									 "Verdadeiro",
+   									 "Falso"]);
+   									 
+    ds_list_add(global.list_pergunta, ["Construtor é o nome dado ao método que é executado automaticamente quando uma nova instância de uma classe é criada?",
+   									 "Verdadeiro",
+   									 "Falso"]);
+    
+    
+    
+    ds_list_add(global.list_pergunta, ["O sistema binário é usado para representar dados em computadores?",
+   									"Verdadeiro",
+   									"Falso"]);
+   								    
+    ds_list_add(global.list_pergunta, ["A memória RAM é uma forma de armazenamento permanente de dados?",
+   									 "Falso",
+   									 "Verdadeiro"]);
+   									 
+    ds_list_add(global.list_pergunta, ["A internet é uma rede mundial de computadores conectados?",
+   									 "Falso",
+   									 "Verdadeiro"]);
+    
+    
+    
+    ds_list_add(global.list_pergunta, ["HTML é uma linguagem de programação? ",
+   									 "Falso",
+   									 "Verdadeiro"]);
+   									 
+    ds_list_add(global.list_pergunta, ["A linguagem de programação java foi desenvolvida por guido Van Rossum?",
+   									 "Falso",
+   									 "Verdadeiro"]);
+   									 
+    ds_list_add(global.list_pergunta, ["A programação orientada a objetos é um paradigma de programação que se concentra na criação de objetos que possuem dados e métodos?",
+   									 "Verdadeiro",
+   									 "Falso"]);
 
 
 #endregion
+
 
 
 

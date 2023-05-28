@@ -1,6 +1,4 @@
 
-
-
 enum infos{
 	//infos.nome retorna 3 ...
 	Texto,
@@ -31,10 +29,6 @@ op_draw = false; //pra saber se tem q desenhar as opcoes
 //pode da errado nos outros duialogos
 //global.respSelecionada = "";
 //global.retUsuario = "";
-
-
-global.aux_opc1 = 0;
-global.aux_opc2 = 50;
 
 
 inicializar= false;

@@ -1,12 +1,5 @@
 
 //quando criar o objDialogo vai iniciar com false
-
-
-
-
-
-
-
 if inicializar == false{
 	//acessa a funcao do script
 	//se for o mago 2 vai para um script se nao for vai para outro
@@ -42,15 +35,6 @@ if inicializar == false{
 }
 
 
-//chamou a funcao so 5 vezes
-/*if a <= 5 {
-	if global.nome_mago == "Nonato" {
-		scr_textos_nonato();
-	}
-}
-
-a += 1;
-*/
 
  // if para passar os textos	
 	//função para ajeteitar a contagem de letras
@@ -90,6 +74,7 @@ if pagina < ds_grid_height(texto_grid) - 1{
 				
 				//embaralhar os indices para se usados nas opcoes das perguntas
 				ds_list_shuffle(global.list_indice);
+				
 				//destroir o mago quando o dialogo acabar
 				instance_destroy(obj_par_npcs);
 				//destroir o dialogo quando o dialogo acabar
