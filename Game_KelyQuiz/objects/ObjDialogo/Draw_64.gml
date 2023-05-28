@@ -131,42 +131,202 @@ if inicializar == true {
 			
 			_dialogo.npcNome = op_resposta[op_selecionado];
 			
+			
+			
+			
 			//recebe o valor selecionado pelo usuario
-			global.respSelecionada = op[op_selecionado];
+			//global.respSelecionada = op[op_selecionado];
 			
-			if global.respSelecionada == global.list_pergunta[| 0][1]{
-				global.retUsuario = "CERTA RESPOSTA";
-				//apaga o topo da lista
-				//ds_list_delete(global.list_pergunta, 0);
-				//ganha mais joias
-				global.joia += 100;	
-			}
+			//nao precisa para o nonato pq so roda uma vez
 			
-			if global.respSelecionada != global.list_pergunta[| 0][1]{
-				global.retUsuario = "RESPOSTA ERRADA";
-				//apaga o topo da lista
-				//ds_list_delete(global.list_pergunta, 0);
-				//perde joias
-				global.joia -= 100;
+			//para acessar o dialogo do mago1
+			if global.nome_mago == "Mago1"{
 				
-				//condicao do gameOver
-				if global.joia <= 0 {
-					if (instance_exists(Obj_game_controller)){
-						with(Obj_game_controller){
-							game_over = true;
-						}
-					}
+				_dialogo.npcNome = "mago1";
+				if op[op_selecionado] == global.list_pergunta[| 0][1]{
 					
+					//embaralhar os indices para se usados nas opcoes das perguntas
+					ds_list_shuffle(global.list_indice);
+					global.retUsuario = "Você é uma jóia";
+					//ds_list_delete(global.list_pergunta, 0);
+					global.joia += 100;	
+					
+					
+				}
+			
+				if op[op_selecionado] == global.list_pergunta[| 0][2]{
+					//embaralhar os indices para se usados nas opcoes das perguntas
+					ds_list_shuffle(global.list_indice);
+					
+					global.retUsuario = "Você NÂO é uma jóia";
+					
+					global.joia -= 100;
+					
+				
+					//condicao do gameOver
+					if global.joia <= 0 {
+						if (instance_exists(Obj_game_controller)){
+							with(Obj_game_controller){
+								game_over = true;
+							
+							}
+						}
+					
+					}
+				
+				
+				}
+				
+					
+				
+				if (ds_list_size(global.list_pergunta)) > 1 {
+					
+					//embaralhar os indices para se usados nas opcoes das perguntas
+					ds_list_shuffle(global.list_indice);
+					
+					
+					ds_list_delete(global.list_pergunta, 0);
+					scr_textos_mago1();
 				}
 				
 				
-			}
+				if (ds_list_size(global.list_pergunta)) == 1 {
+					global.retUsuario = "";
+					_dialogo.npcNome = op_resposta[op_selecionado];
+				}
+
+			} 
+			
+			
+			
+			//para acessar o dialogo do mago2
+			if global.nome_mago == "Mago2"{
+				
+				_dialogo.npcNome = "mago2";
+				if op[op_selecionado] == global.list_pergunta_fase2[| 0][1]{
+					
+					//embaralhar os indices para se usados nas opcoes das perguntas
+					ds_list_shuffle(global.list_indice);
+					global.retUsuario = "Você é uma jóia";
+					//ds_list_delete(global.list_pergunta, 0);
+					global.joia += 100;	
+					
+					
+				}
+			
+				if op[op_selecionado] == global.list_pergunta_fase2[| 0][2]{
+					//embaralhar os indices para se usados nas opcoes das perguntas
+					ds_list_shuffle(global.list_indice);
+					
+					global.retUsuario = "Você NÂO é uma jóia";
+					
+					global.joia -= 100;
+					
+				
+					//condicao do gameOver
+					if global.joia <= 0 {
+						if (instance_exists(Obj_game_controller)){
+							with(Obj_game_controller){
+								game_over = true;
+							
+							}
+						}
+					
+					}
+				
+				
+				}
+				
+					
+				
+				if (ds_list_size(global.list_pergunta_fase2)) > 1 {
+					
+					//embaralhar os indices para se usados nas opcoes das perguntas
+					ds_list_shuffle(global.list_indice);
+					
+					
+					ds_list_delete(global.list_pergunta_fase2, 0);
+					scr_textos_mago22();
+				}
+				
+				
+				if (ds_list_size(global.list_pergunta_fase2)) == 1 {
+					global.retUsuario = "";
+					_dialogo.npcNome = op_resposta[op_selecionado];
+				}
+
+			} 
+			
+			
+			
+			//para acessar o dialogo do mago3
+			if global.nome_mago == "Mago3"{
+				
+				_dialogo.npcNome = "mago3";
+				if op[op_selecionado] == global.list_pergunta_final[| 0][1]{
+					
+					//embaralhar os indices para se usados nas opcoes das perguntas
+					ds_list_shuffle(global.list_indice);
+					global.retUsuario = "Você é uma jóia";
+					//ds_list_delete(global.list_pergunta, 0);
+					global.joia += 100;	
+					
+					
+				}
+			
+				if op[op_selecionado] == global.list_pergunta_final[| 0][2]{
+					//embaralhar os indices para se usados nas opcoes das perguntas
+					ds_list_shuffle(global.list_indice);
+					
+					global.retUsuario = "Você NÂO é uma jóia";
+					
+					global.joia -= 100;
+					
+				
+					//condicao do gameOver
+					if global.joia <= 0 {
+						if (instance_exists(Obj_game_controller)){
+							with(Obj_game_controller){
+								game_over = true;
+							
+							}
+						}
+					
+					}
+				
+				
+				}
+				
+					
+				
+				if (ds_list_size(global.list_pergunta_final)) > 1 {
+					
+					//embaralhar os indices para se usados nas opcoes das perguntas
+					ds_list_shuffle(global.list_indice);
+					
+					
+					ds_list_delete(global.list_pergunta_final, 0);
+					scr_textos_mago33();
+				}
+				
+				
+				if (ds_list_size(global.list_pergunta_final)) == 1 {
+					global.retUsuario = "";
+					_dialogo.npcNome = op_resposta[op_selecionado];
+				}
+
+			} 
+			
 			
 			
 			
 			instance_destroy();
 			
+			
+			
+			
 		}
+		
 	
 	}
 	draw_set_font(-1);

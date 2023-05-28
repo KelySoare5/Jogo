@@ -1,5 +1,7 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
+
+/*
 draw_set_font(Font_Menu);
 draw_set_color(c_white);
 
@@ -21,3 +23,5 @@ for (var i=0; i< op_max; i++){
 }
 
 draw_set_font(-1);
+
+*/
