@@ -31,8 +31,11 @@ if inicializar == false{
 		scr_textos_mago22();
 	}
 	
+	
+	
 	if global.nome_mago == "Mago1" {
-		scr_textos(); 
+		scr_textos_mago1();
+		//scr_textos(); 
 	}
 	
 	inicializar = true;
