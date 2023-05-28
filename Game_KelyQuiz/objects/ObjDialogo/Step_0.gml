@@ -14,19 +14,21 @@ if inicializar == false{
 	//embaralhar os indices para se usados nas opcoes das perguntas
 	ds_list_shuffle(global.list_indice);
 	
-	
-	
 	if global.nome_mago == "Nonato" {
-		scr_textos_nonato();
+		scr_textos_nonato(); 
 	}
-	
 	
 	if global.nome_mago == "Mago3" {
-		scr_textos_mago3();
+		scr_textos_mago33();
 	}
 	
+	
+	//if global.nome_mago == "Mago3" {
+	//	scr_textos_mago3();
+	//}
+	
 	if global.nome_mago == "Mago2" {
-		scr_textos_mago2();
+		scr_textos_mago22();
 	}
 	
 	if global.nome_mago == "Mago1" {
