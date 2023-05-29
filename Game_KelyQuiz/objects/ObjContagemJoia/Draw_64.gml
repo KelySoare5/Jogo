@@ -6,13 +6,6 @@ draw_text(102,126, "Joia: " + string(global.joia));
 
 //fechar fonte
 
-
-draw_text(550,126,"Media: " + string(int64(global.media / 3)));
-draw_set_font(-1);
-
-
-
-
 if global.retUsuario == "Você é uma joia" {
 	draw_sprite_ext(Sprit_teste_vc_joia, 0, 80,195, .9, 1, 0, c_white, 1);
 	draw_set_font(FontDialogo);

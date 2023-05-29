@@ -69,16 +69,43 @@ if pagina < ds_grid_height(texto_grid) - 1{
 		} 
 		else {
 			if mouse_check_button_pressed(mb_left){
+				
+
 				global.media += global.joia;
-				global.joia = 0;
-				//media abaixo de 7 reseta o jogo
+				
+				//nota mago1
+				if global.nome_mago == "Mago1" {
+					global.nota1 = global.joia;
+				}
+				
+				//nota mago2
+				if global.nome_mago == "Mago2" {
+					global.nota2 = global.joia;
+				}
+				
+				////nota mago3 e media abaixo de 7 reseta o jogo, reprova
 				if global.nome_mago == "Mago3"{
+					global.nota3 = global.joia;
 					global.media = global.media / 3;
 					if global.media < 700 {
 						//reprova
 						game_restart();
 					}
 				}
+				
+				//se o valor das joias for menor q 700, esta de reccuperacao
+				if global.joia < 700 {
+					if (instance_exists(Obj_game_controller)){
+						with(Obj_game_controller){
+							game_over = true;
+							
+						}
+					}
+					
+				}
+				
+				//reseta as joias
+				global.joia = 0;
 				
 				//embaralhar os indices para se usados nas opcoes das perguntas
 				ds_list_shuffle(global.list_indice);

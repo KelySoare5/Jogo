@@ -149,7 +149,8 @@ if inicializar == true {
 					ds_list_shuffle(global.list_indice);
 					global.retUsuario = "Você é uma joia";
 					//ds_list_delete(global.list_pergunta, 0);
-					global.joia += 100;	
+					//vale 125 cada questao
+					global.joia += 125;	
 					
 					
 					
@@ -160,11 +161,11 @@ if inicializar == true {
 					ds_list_shuffle(global.list_indice);
 					
 					global.retUsuario = "Você NÂO é uma joia";
-					global.joia -= 100;
+					//global.joia -= 100;
 					
 					
 					//condicao do gameOver
-					if global.joia <= 0 {
+					/*if global.joia <= 0 {
 						if (instance_exists(Obj_game_controller)){
 							with(Obj_game_controller){
 								
@@ -173,7 +174,7 @@ if inicializar == true {
 							}
 						}
 					
-					}
+					}*/
 				
 				
 				}
@@ -210,7 +211,7 @@ if inicializar == true {
 					ds_list_shuffle(global.list_indice);
 					global.retUsuario = "Você é uma joia";
 					//ds_list_delete(global.list_pergunta, 0);
-					global.joia += 100;	
+					global.joia += 125;	
 					
 					
 				}
@@ -221,11 +222,11 @@ if inicializar == true {
 					
 					global.retUsuario = "Você NÂO é uma joia";
 					
-					global.joia -= 100;
+					//global.joia -= 100;
 					
 				
 					//condicao do gameOver
-					if global.joia <= 0 {
+					/*if global.joia <= 0 {
 						if (instance_exists(Obj_game_controller)){
 							with(Obj_game_controller){
 								game_over = true;
@@ -233,7 +234,7 @@ if inicializar == true {
 							}
 						}
 					
-					}
+					}*/
 				
 				
 				}
@@ -270,7 +271,7 @@ if inicializar == true {
 					ds_list_shuffle(global.list_indice);
 					global.retUsuario = "Você é uma joia";
 					//ds_list_delete(global.list_pergunta, 0);
-					global.joia += 100;	
+					global.joia += 125;	
 					
 					
 				}
@@ -281,11 +282,11 @@ if inicializar == true {
 					
 					global.retUsuario = "Você NÂO é uma joia";
 					
-					global.joia -= 100;
+					//global.joia -= 100;
 					
 				
 					//condicao do gameOver
-					if global.joia <= 0 {
+					/*if global.joia <= 0 {
 						if (instance_exists(Obj_game_controller)){
 							with(Obj_game_controller){
 								game_over = true;
@@ -293,7 +294,7 @@ if inicializar == true {
 							}
 						}
 					
-					}
+					}*/
 				
 				
 				}

@@ -165,6 +165,16 @@
 global.retUsuario = "";
 global.media = 0;
 
+nom_mago1 = false;
+nom_mago2 = false;
+nom_mago3 = false;
+
+
+global.nota1 = 0;
+global.nota2 = 0;
+global.nota3 = 0;
+
+
 
 
 global.dialogo = false;

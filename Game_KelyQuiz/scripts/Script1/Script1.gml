@@ -33,7 +33,7 @@ function scr_textos_mago33() {
 						}
 						//se for aprovado
 						else{
-							ds_grid_add_text("       Parabéns, você foi aprovado...\n(Clique em qualquer lugar para ir até o Diretor)", mago3Dialogo, 1, "VERNEI" );
+							ds_grid_add_text("       Parabéns, você foi APROVADO...\n    Com média: ->" + string((global.media + global.joia) / 3) + "<- \n(Clique em qualquer lugar para ir até o Diretor)", mago3Dialogo, 1, "VERNEI" );
 						}
 						
 					break;
@@ -47,7 +47,7 @@ function scr_textos_mago33() {
 						}
 						//se for aprovado
 						else{
-							ds_grid_add_text("       Parabéns, você foi aprovado...\n(Clique em qualquer lugar para ir até o Diretor)", mago3Dialogo, 1, "VERNEI" );
+							ds_grid_add_text("       Parabéns, você foi APROVADO...\n    Com média: ->" + string((global.media + global.joia) / 3) + "<- \n(Clique em qualquer lugar para ir até o Diretor)", mago3Dialogo, 1, "VERNEI" );
 						}
 						
 						
@@ -72,11 +72,22 @@ function scr_textos_mago22() {
 		break;
 		
 					case "resp11":
-						ds_grid_add_text("       Finalizada perguntas Fase 2\n(Clique em qualquer lugar para continuar)", mago2Dialogo, 1, "MAGO2" );
+						if global.joia < 700 {
+							ds_grid_add_text("       Você não atingiu 700 joias \n(Clique em qualquer lugar para continuar)", mago2Dialogo, 1, "MAGO2" );
+						
+						}else{
+							ds_grid_add_text("       Finalizada perguntas Fase 2\n(Clique em qualquer lugar para continuar)", mago2Dialogo, 1, "MAGO2" );
+						}
+					
 					break;
 					
 					case "resp21":
-						ds_grid_add_text("       Finalizada perguntas Fase 2\n(Clique em qualquer lugar para continuar)", mago2Dialogo, 1, "MAGO2" );
+						if global.joia < 700 {
+							ds_grid_add_text("       Você não atingiu 700 joias \n(Clique em qualquer lugar para continuar)", mago2Dialogo, 1, "MAGO2" );
+						
+						}else{
+							ds_grid_add_text("       Finalizada perguntas Fase 2\n(Clique em qualquer lugar para continuar)", mago2Dialogo, 1, "MAGO2" );
+						}
 					break;
 					
 	}
@@ -99,11 +110,24 @@ function scr_textos_mago1() {
 		break;
 		
 					case "resp11":
-						ds_grid_add_text("       Finalizada perguntas Fase 1\n(Clique em qualquer lugar para continuar)", spr_retrato2, 1, "MAGO1" );
+					
+						if global.joia < 700 {
+							ds_grid_add_text("       Você não atingiu 700 joias \n(Clique em qualquer lugar para continuar)", spr_retrato2, 1, "MAGO1" );
+						
+						}else{
+							ds_grid_add_text("       Finalizada perguntas Fase 1\n(Clique em qualquer lugar para continuar)", spr_retrato2, 1, "MAGO1" );
+						}
+					
 					break;
 					
 					case "resp21":
-						ds_grid_add_text("       Finalizada perguntas Fase 1\n(Clique em qualquer lugar para continuar)", spr_retrato2, 1, "MAGO1" );
+					
+						if global.joia < 700 {
+							ds_grid_add_text("       Você não atingiu 700 joias \n(Clique em qualquer lugar para continuar)", spr_retrato2, 1, "MAGO1" );
+						
+						}else{
+							ds_grid_add_text("       Finalizada perguntas Fase 1\n(Clique em qualquer lugar para continuar)", spr_retrato2, 1, "MAGO1" );
+						}
 					break;
 					
 	}

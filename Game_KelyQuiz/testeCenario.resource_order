@@ -33,6 +33,7 @@
   "ResourceOrderSettings": [
     {"name":"objPorta","order":4,"path":"objects/objPorta/objPorta.yy",},
     {"name":"Object13","order":8,"path":"objects/Object13/Object13.yy",},
+    {"name":"Obj_notas","order":3,"path":"objects/Obj_notas/Obj_notas.yy",},
     {"name":"Nonato","order":9,"path":"objects/Nonato/Nonato.yy",},
     {"name":"Object2","order":1,"path":"objects/Object2/Object2.yy",},
     {"name":"Fonte_game_over","order":3,"path":"fonts/Fonte_game_over/Fonte_game_over.yy",},
