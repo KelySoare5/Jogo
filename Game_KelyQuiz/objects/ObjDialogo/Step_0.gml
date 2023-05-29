@@ -69,9 +69,11 @@ if pagina < ds_grid_height(texto_grid) - 1{
 		} 
 		else {
 			if mouse_check_button_pressed(mb_left){
-				
+				global.media += global.joia;
+				global.joia = 0;
 				//media abaixo de 7 reseta o jogo
 				if global.nome_mago == "Mago3"{
+					global.media = global.media / 3;
 					if global.media < 700 {
 						//reprova
 						game_restart();

@@ -2,6 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 para obter mais informações
 
 //funcao dialogo nonato
+global.aux = "       Finalizada perguntas Fase Final\n(Clique em qualquer lugar para continuar)\n               ";
 function scr_textos_nonato() {
 	switch npcNome {
 		case "Nonato":			
@@ -25,13 +26,23 @@ function scr_textos_mago33() {
 		break;
 		
 					case "resp11":
-						global.media = global.joia / 3;
-						ds_grid_add_text("       Finalizada perguntas Fase Final\n(Clique em qualquer lugar para continuar)\n               ", mago3Dialogo, 1, "MAGO" );
+						//global.media = global.joia / 3;
+						
+						if global.media < 700 { 
+							global.aux = "       REPROVADO!!! \n               Você não é uma joia";	
+						}
+						
+						ds_grid_add_text(global.aux, mago3Dialogo, 1, "MAGO" );
 					break;
 					
 					case "resp21":
-						global.media = global.joia / 3;
-						ds_grid_add_text("       Finalizada perguntas Fase Final\n(Clique em qualquer lugar para continuar)\n               ", mago3Dialogo, 1, "MAGO" );
+						//global.media = global.joia / 3;
+						
+						if global.media < 700 { 
+							global.aux = "       REPROVADO!!! \n               Você não é uma joia";	
+						}
+						
+						ds_grid_add_text(global.aux, mago3Dialogo, 1, "MAGO" );
 					break;
 	}
 }

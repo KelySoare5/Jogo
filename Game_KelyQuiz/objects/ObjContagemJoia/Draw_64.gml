@@ -2,10 +2,14 @@
 // Você pode escrever seu código neste editor
 
 draw_set_font(Font_contagem);
-draw_text(102,126, "Joia: " + string(global.joia));
+draw_text(102,126, "Joia: " + string(global.joia)); 
 
 //fechar fonte
+
+
+draw_text(550,126,"Media: " + string(int64(global.media / 3)));
 draw_set_font(-1);
+
 
 
 
