@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 para obter mais informações
 
 //funcao dialogo nonato
-global.aux = "       Finalizada perguntas Fase Final\n(Clique em qualquer lugar para continuar)\n               ";
+
 function scr_textos_nonato() {
 	switch npcNome {
 		case "Nonato":			
@@ -19,30 +19,38 @@ function scr_textos_mago33() {
 		case "mago3":
 			// recebe um valor aleatorio
 			//+ string(global.list_indice[| 0]) +"--->"+ string(global.list_indice[| 1]) 
-			ds_grid_add_text(global.list_pergunta_final[| 0][0], mago3Dialogo, 1, "MAGO" );
+			ds_grid_add_text(global.list_pergunta_final[| 0][0], mago3Dialogo, 1, "VERNEI" );
 					add_op(global.list_pergunta_final[| 0][global.list_indice[| 0]],	 "resp11"); //VERDADEIRO index1
 					add_op(global.list_pergunta_final[| 0][global.list_indice[| 1]],	 "resp21");	//FALSO		 index2
 		
 		break;
 		
 					case "resp11":
-						//global.media = global.joia / 3;
 						
+						//se for reprovado
 						if global.media < 700 { 
-							global.aux = "       REPROVADO!!! \n               Você não é uma joia";	
+							ds_grid_add_text("       REPROVADO!!! \n   Você não é uma joia", mago3Dialogo, 1, "VERNEI" );
+						}
+						//se for aprovado
+						else{
+							ds_grid_add_text("       Parabéns, você foi aprovado...\n(Clique em qualquer lugar para ir até o Diretor)", mago3Dialogo, 1, "VERNEI" );
 						}
 						
-						ds_grid_add_text(global.aux, mago3Dialogo, 1, "MAGO" );
 					break;
 					
 					case "resp21":
-						//global.media = global.joia / 3;
 						
+						
+						//se for reprovado
 						if global.media < 700 { 
-							global.aux = "       REPROVADO!!! \n               Você não é uma joia";	
+							ds_grid_add_text("       REPROVADO!!! \n   Você não é uma joia", mago3Dialogo, 1, "VERNEI" );
+						}
+						//se for aprovado
+						else{
+							ds_grid_add_text("       Parabéns, você foi aprovado...\n(Clique em qualquer lugar para ir até o Diretor)", mago3Dialogo, 1, "VERNEI" );
 						}
 						
-						ds_grid_add_text(global.aux, mago3Dialogo, 1, "MAGO" );
+						
 					break;
 	}
 }
@@ -57,18 +65,18 @@ function scr_textos_mago22() {
 		case "mago2":
 			// recebe um valor aleatorio
 			
-			ds_grid_add_text(global.list_pergunta_fase2[| 0][0], mago2Dialogo, 1, "MAGO" );
+			ds_grid_add_text(global.list_pergunta_fase2[| 0][0], mago2Dialogo, 1, "MAGO2" );
 					add_op(global.list_pergunta_fase2[| 0][global.list_indice[| 0]],	 "resp11"); //VERDADEIRO index1
 					add_op(global.list_pergunta_fase2[| 0][global.list_indice[| 1]],	 "resp21");	//FALSO		 index2
 		
 		break;
 		
 					case "resp11":
-						ds_grid_add_text("       Finalizada perguntas Fase 2\n(Clique em qualquer lugar para continuar)\n               ", mago2Dialogo, 1, "MAGO" );
+						ds_grid_add_text("       Finalizada perguntas Fase 2\n(Clique em qualquer lugar para continuar)", mago2Dialogo, 1, "MAGO2" );
 					break;
 					
 					case "resp21":
-						ds_grid_add_text("       Finalizada perguntas Fase 2\n(Clique em qualquer lugar para continuar)\n               ", mago2Dialogo, 1, "MAGO" );
+						ds_grid_add_text("       Finalizada perguntas Fase 2\n(Clique em qualquer lugar para continuar)", mago2Dialogo, 1, "MAGO2" );
 					break;
 					
 	}
@@ -84,18 +92,18 @@ function scr_textos_mago1() {
 		case "mago1":
 			// recebe um valor aleatorio
 			
-			ds_grid_add_text(global.list_pergunta[| 0][0], spr_retrato2, 1, "MAGO" );
+			ds_grid_add_text(global.list_pergunta[| 0][0], spr_retrato2, 1, "MAGO1" );
 					add_op(global.list_pergunta[| 0][global.list_indice[| 0]],	 "resp11"); //VERDADEIRO index1
 					add_op(global.list_pergunta[| 0][global.list_indice[| 1]],	 "resp21");	//FALSO		 index2
 		
 		break;
 		
 					case "resp11":
-						ds_grid_add_text("       Finalizada perguntas Fase 1\n(Clique em qualquer lugar para continuar)\n               ", spr_retrato2, 1, "MAGO" );
+						ds_grid_add_text("       Finalizada perguntas Fase 1\n(Clique em qualquer lugar para continuar)", spr_retrato2, 1, "MAGO1" );
 					break;
 					
 					case "resp21":
-						ds_grid_add_text("       Finalizada perguntas Fase 1\n(Clique em qualquer lugar para continuar)\n               ", spr_retrato2, 1, "MAGO" );
+						ds_grid_add_text("       Finalizada perguntas Fase 1\n(Clique em qualquer lugar para continuar)", spr_retrato2, 1, "MAGO1" );
 					break;
 					
 	}

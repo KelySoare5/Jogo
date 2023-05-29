@@ -167,7 +167,6 @@ global.media = 0;
 
 
 
-
 global.dialogo = false;
 
 
