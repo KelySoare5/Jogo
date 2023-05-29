@@ -11,7 +11,7 @@ if inicializar == true {
 	var _xx = 0;
 	//altura da janela menos 200 
 	//alterie aqui pra pegar a pergunta toda
-	var _yy = _guia - 250;
+	var _yy = _guia - 220;
 	//cor
 	var _c = c_black;
 	// variavel q recebe a sprit das opcoes
@@ -152,6 +152,7 @@ if inicializar == true {
 					global.joia += 100;	
 					
 					
+					
 				}
 			
 				if op[op_selecionado] == global.list_pergunta[| 0][2]{
@@ -159,14 +160,14 @@ if inicializar == true {
 					ds_list_shuffle(global.list_indice);
 					
 					global.retUsuario = "Você NÂO é uma jóia";
-					
 					global.joia -= 100;
 					
-				
+					
 					//condicao do gameOver
 					if global.joia <= 0 {
 						if (instance_exists(Obj_game_controller)){
 							with(Obj_game_controller){
+								
 								game_over = true;
 							
 							}

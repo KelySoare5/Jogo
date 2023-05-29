@@ -56,6 +56,10 @@ if pagina < ds_grid_height(texto_grid) - 1{
 		alarm[0] =1;
 		caractere =0;
 		pagina++;
+		draw_sprite_ext(Sprit_teste_vc_joia, 0, 80,195, .9, 1, 0, c_white, 1);
+		draw_set_font(FontDialogo);
+		draw_set_color(c_white);
+		draw_text(130,200, string(global.retUsuario));
 				
 	}
 	//senao destroi

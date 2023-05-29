@@ -25,10 +25,12 @@ function scr_textos_mago33() {
 		break;
 		
 					case "resp11":
+						global.media = global.joia / 3;
 						ds_grid_add_text("       Finalizada perguntas Fase Final\n(Clique em qualquer lugar para continuar)\n               ", mago3Dialogo, 1, "MAGO" );
 					break;
 					
 					case "resp21":
+						global.media = global.joia / 3;
 						ds_grid_add_text("       Finalizada perguntas Fase Final\n(Clique em qualquer lugar para continuar)\n               ", mago3Dialogo, 1, "MAGO" );
 					break;
 	}

@@ -163,6 +163,7 @@
 //retorna uma resposta para o usuario
 //essa é usada no obj dialogo e joia
 global.retUsuario = "";
+global.media = 0;
 
 
 

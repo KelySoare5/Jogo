@@ -2,9 +2,13 @@
 
 //criando a tela de game over
 
+
+
+
 if (game_over){
 	
 	instance_destroy(ObjDialogo);
+	instance_destroy(ObjContagemJoia);
 	
 	//info da camera
 	var x1 = camera_get_view_x(view_camera[0]);
