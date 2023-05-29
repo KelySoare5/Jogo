@@ -82,6 +82,7 @@
     {"id":{"name":"Obj_wall","path":"objects/Obj_wall/Obj_wall.yy",},},
     {"id":{"name":"ScriptTeste","path":"scripts/ScriptTeste/ScriptTeste.yy",},},
     {"id":{"name":"Spr_wall","path":"sprites/Spr_wall/Spr_wall.yy",},},
+    {"id":{"name":"Sprite_cururu","path":"sprites/Sprite_cururu/Sprite_cururu.yy",},},
     {"id":{"name":"som_pulo_Ks","path":"sounds/som_pulo_Ks/som_pulo_Ks.yy",},},
     {"id":{"name":"rm_init","path":"rooms/rm_init/rm_init.yy",},},
     {"id":{"name":"T_ground","path":"tilesets/T_ground/T_ground.yy",},},

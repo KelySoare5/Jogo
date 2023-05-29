@@ -56,6 +56,7 @@
     {"name":"Sprite26","order":19,"path":"sprites/Sprite26/Sprite26.yy",},
     {"name":"spr_retrato2","order":1,"path":"sprites/spr_retrato2/spr_retrato2.yy",},
     {"name":"ScriptTeste","order":3,"path":"scripts/ScriptTeste/ScriptTeste.yy",},
+    {"name":"Sprite_cururu","order":12,"path":"sprites/Sprite_cururu/Sprite_cururu.yy",},
     {"name":"som_pulo_Ks","order":2,"path":"sounds/som_pulo_Ks/som_pulo_Ks.yy",},
     {"name":"rm_init","order":9,"path":"rooms/rm_init/rm_init.yy",},
     {"name":"fase3","order":5,"path":"rooms/fase3/fase3.yy",},
