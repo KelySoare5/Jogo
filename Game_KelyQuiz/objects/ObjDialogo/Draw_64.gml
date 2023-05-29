@@ -147,7 +147,7 @@ if inicializar == true {
 					
 					//embaralhar os indices para se usados nas opcoes das perguntas
 					ds_list_shuffle(global.list_indice);
-					global.retUsuario = "Você é uma jóia";
+					global.retUsuario = "Você é uma joia";
 					//ds_list_delete(global.list_pergunta, 0);
 					global.joia += 100;	
 					
@@ -159,7 +159,7 @@ if inicializar == true {
 					//embaralhar os indices para se usados nas opcoes das perguntas
 					ds_list_shuffle(global.list_indice);
 					
-					global.retUsuario = "Você NÂO é uma jóia";
+					global.retUsuario = "Você NÂO é uma joia";
 					global.joia -= 100;
 					
 					
@@ -208,7 +208,7 @@ if inicializar == true {
 					
 					//embaralhar os indices para se usados nas opcoes das perguntas
 					ds_list_shuffle(global.list_indice);
-					global.retUsuario = "Você é uma jóia";
+					global.retUsuario = "Você é uma joia";
 					//ds_list_delete(global.list_pergunta, 0);
 					global.joia += 100;	
 					
@@ -219,7 +219,7 @@ if inicializar == true {
 					//embaralhar os indices para se usados nas opcoes das perguntas
 					ds_list_shuffle(global.list_indice);
 					
-					global.retUsuario = "Você NÂO é uma jóia";
+					global.retUsuario = "Você NÂO é uma joia";
 					
 					global.joia -= 100;
 					
@@ -268,7 +268,7 @@ if inicializar == true {
 					
 					//embaralhar os indices para se usados nas opcoes das perguntas
 					ds_list_shuffle(global.list_indice);
-					global.retUsuario = "Você é uma jóia";
+					global.retUsuario = "Você é uma joia";
 					//ds_list_delete(global.list_pergunta, 0);
 					global.joia += 100;	
 					
@@ -279,7 +279,7 @@ if inicializar == true {
 					//embaralhar os indices para se usados nas opcoes das perguntas
 					ds_list_shuffle(global.list_indice);
 					
-					global.retUsuario = "Você NÂO é uma jóia";
+					global.retUsuario = "Você NÂO é uma joia";
 					
 					global.joia -= 100;
 					

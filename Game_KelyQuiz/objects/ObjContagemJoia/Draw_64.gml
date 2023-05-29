@@ -9,7 +9,7 @@ draw_set_font(-1);
 
 
 
-if global.retUsuario == "Você é uma jóia" {
+if global.retUsuario == "Você é uma joia" {
 	draw_sprite_ext(Sprit_teste_vc_joia, 0, 80,195, .9, 1, 0, c_white, 1);
 	draw_set_font(FontDialogo);
 	draw_set_color(c_white);
@@ -23,7 +23,7 @@ if global.retUsuario == "Você é uma jóia" {
 
 
 
-if global.retUsuario == "Você NÂO é uma jóia" {
+if global.retUsuario == "Você NÂO é uma joia" {
 	draw_sprite_ext(Sprit_teste_vc_joia, 0, 95,195, 1, 1, 0, c_white, 1);
 	draw_set_font(FontDialogo);
 	draw_set_color(c_white);
