@@ -11,17 +11,19 @@ if inicializar == true {
 	var _xx = 0;
 	//altura da janela menos 200 
 	//alterie aqui pra pegar a pergunta toda
-	var _yy = _guia - 250;
+	var _yy = _guia - 220;
 	//cor
 	var _c = c_black;
 	// variavel q recebe a sprit das opcoes
-	
+	//draw_rectangle_color(_xx,_yy, _guil, _guia, _c, _c, _c, _c, false);
+	//draw_text_ext(_xx + 32, _yy + 32, texto[0], 32, _guia - 64);
 	//var _sprintOpcao = Sprit_fundo_texto;
 	
 	//recebe a sprit da funcao q cria
 	var _sprite = texto_grid[# infos.Retrato, pagina];
 
 	// fonte
+	
 	draw_set_font(FontDialogo);
 	
 	//variavel para copiar o texto
@@ -65,6 +67,8 @@ if inicializar == true {
 	
 		//desenhar a sprite
 		draw_sprite_ext(_sprite, 0, _guil, _guia-200, -3, 3, 0, c_white, 1);
+		
+		
 	
 	}
 	
@@ -78,15 +82,10 @@ if inicializar == true {
 		var _sprintOpcao = Sprit_fundo_texto;
 		
 		
-		
-		
 		// Mudei as letra "W" e "S" 
 		op_selecionado += keyboard_check_pressed(vk_up) - keyboard_check_pressed(vk_down);
 		
 		op_selecionado = clamp(op_selecionado, 0, op_num - 1);
-		
-		
-		
 		
 		
 		for (var i = 0; i < op_num; i++) {
@@ -114,9 +113,6 @@ if inicializar == true {
 				
 				draw_sprite(Sprit_bolota, 0, _xx + 8, _opy - (_opsep * i) + 8 );
 			}
-			
-			
-			
 
 		}
 		
@@ -125,48 +121,204 @@ if inicializar == true {
 		if mouse_check_button_pressed(mb_right){
 
 			//cria o dialogo na layer Dialogo
-			
-
 			var _dialogo = instance_create_layer(x,y, "Dialogo", ObjDialogo);
 			
-			_dialogo.npcNome = op_resposta[op_selecionado];
+			_dialogo.npcNome = op_resposta[op_selecionado]; //recebe o valor selecionado pelo usuario
 			
-			//recebe o valor selecionado pelo usuario
-			global.respSelecionada = op[op_selecionado];
 			
-			if global.respSelecionada == global.list_pergunta[| 0][1]{
-				global.retUsuario = "CERTA RESPOSTA";
-				//apaga o topo da lista
-				//ds_list_delete(global.list_pergunta, 0);
-				//ganha mais joias
-				global.joia += 100;	
-			}
 			
-			if global.respSelecionada != global.list_pergunta[| 0][1]{
-				global.retUsuario = "RESPOSTA ERRADA";
-				//apaga o topo da lista
-				//ds_list_delete(global.list_pergunta, 0);
-				//perde joias
-				global.joia -= 100;
+			
+			
+			//nao precisa para o nonato pq so roda uma vez
+			
+			//para acessar o dialogo do mago1
+			if global.nome_mago == "Mago1"{
 				
-				//condicao do gameOver
-				if global.joia <= 0 {
-					if (instance_exists(Obj_game_controller)){
-						with(Obj_game_controller){
-							game_over = true;
-						}
-					}
+				_dialogo.npcNome = "mago1";
+				if op[op_selecionado] == global.list_pergunta[| 0][1]{
 					
+					//embaralhar os indices para se usados nas opcoes das perguntas
+					ds_list_shuffle(global.list_indice);
+					global.retUsuario = "Você é uma jóia";
+					//ds_list_delete(global.list_pergunta, 0);
+					global.joia += 100;	
+					
+					
+				}
+			
+				if op[op_selecionado] == global.list_pergunta[| 0][2]{
+					//embaralhar os indices para se usados nas opcoes das perguntas
+					ds_list_shuffle(global.list_indice);
+					
+					global.retUsuario = "Você NÂO é uma jóia";
+					
+					global.joia -= 100;
+					
+				
+					//condicao do gameOver
+					if global.joia <= 0 {
+						if (instance_exists(Obj_game_controller)){
+							with(Obj_game_controller){
+								game_over = true;
+							
+							}
+						}
+					
+					}
+				
+				
+				}
+				
+					
+				
+				if (ds_list_size(global.list_pergunta)) > 1 {
+					
+					//embaralhar os indices para se usados nas opcoes das perguntas
+					ds_list_shuffle(global.list_indice);
+					
+					
+					ds_list_delete(global.list_pergunta, 0);
+					scr_textos_mago1();
 				}
 				
 				
-			}
+				if (ds_list_size(global.list_pergunta)) == 1 {
+					global.retUsuario = "";
+					_dialogo.npcNome = op_resposta[op_selecionado];
+				}
+
+			} 
+			
+			
+			
+			//para acessar o dialogo do mago2
+			if global.nome_mago == "Mago2"{
+				
+				_dialogo.npcNome = "mago2";
+				if op[op_selecionado] == global.list_pergunta_fase2[| 0][1]{
+					
+					//embaralhar os indices para se usados nas opcoes das perguntas
+					ds_list_shuffle(global.list_indice);
+					global.retUsuario = "Você é uma jóia";
+					//ds_list_delete(global.list_pergunta, 0);
+					global.joia += 100;	
+					
+					
+				}
+			
+				if op[op_selecionado] == global.list_pergunta_fase2[| 0][2]{
+					//embaralhar os indices para se usados nas opcoes das perguntas
+					ds_list_shuffle(global.list_indice);
+					
+					global.retUsuario = "Você NÂO é uma jóia";
+					
+					global.joia -= 100;
+					
+				
+					//condicao do gameOver
+					if global.joia <= 0 {
+						if (instance_exists(Obj_game_controller)){
+							with(Obj_game_controller){
+								game_over = true;
+							
+							}
+						}
+					
+					}
+				
+				
+				}
+				
+					
+				
+				if (ds_list_size(global.list_pergunta_fase2)) > 1 {
+					
+					//embaralhar os indices para se usados nas opcoes das perguntas
+					ds_list_shuffle(global.list_indice);
+					
+					
+					ds_list_delete(global.list_pergunta_fase2, 0);
+					scr_textos_mago22();
+				}
+				
+				
+				if (ds_list_size(global.list_pergunta_fase2)) == 1 {
+					global.retUsuario = "";
+					_dialogo.npcNome = op_resposta[op_selecionado];
+				}
+
+			} 
+			
+			
+			
+			//para acessar o dialogo do mago3
+			if global.nome_mago == "Mago3"{
+				
+				_dialogo.npcNome = "mago3";
+				if op[op_selecionado] == global.list_pergunta_final[| 0][1]{
+					
+					//embaralhar os indices para se usados nas opcoes das perguntas
+					ds_list_shuffle(global.list_indice);
+					global.retUsuario = "Você é uma jóia";
+					//ds_list_delete(global.list_pergunta, 0);
+					global.joia += 100;	
+					
+					
+				}
+			
+				if op[op_selecionado] == global.list_pergunta_final[| 0][2]{
+					//embaralhar os indices para se usados nas opcoes das perguntas
+					ds_list_shuffle(global.list_indice);
+					
+					global.retUsuario = "Você NÂO é uma jóia";
+					
+					global.joia -= 100;
+					
+				
+					//condicao do gameOver
+					if global.joia <= 0 {
+						if (instance_exists(Obj_game_controller)){
+							with(Obj_game_controller){
+								game_over = true;
+							
+							}
+						}
+					
+					}
+				
+				
+				}
+				
+					
+				
+				if (ds_list_size(global.list_pergunta_final)) > 1 {
+					
+					//embaralhar os indices para se usados nas opcoes das perguntas
+					ds_list_shuffle(global.list_indice);
+					
+					
+					ds_list_delete(global.list_pergunta_final, 0);
+					scr_textos_mago33();
+				}
+				
+				
+				if (ds_list_size(global.list_pergunta_final)) == 1 {
+					global.retUsuario = "";
+					_dialogo.npcNome = op_resposta[op_selecionado];
+				}
+
+			} 
+			
 			
 			
 			
 			instance_destroy();
 			
+			
+			
+			
 		}
+		
 	
 	}
 	draw_set_font(-1);

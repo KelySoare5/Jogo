@@ -1,6 +1,7 @@
 // Os recursos de script mudaram para a v2.3.0; veja
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 para obter mais informações
 
+<<<<<<< HEAD
 //global.cont = 0;
 function scr_textos(){
 	
@@ -341,18 +342,119 @@ function scr_textos(){
 		
 		
 		
+<<<<<<< HEAD
 	//_______NONATO________________IFPI
 	
 	
 	
 		case "Nonato":
 			ds_grid_add_text("Parabéns joia de Aluno pela sua aprovação em Análise e Desenvolvimento de Sistemas!", nonato_recortado, 1, "Diretor Nonato Silva" );
+=======
+		//NONATO IFPI
+		case "Nonato":
+			//texto[0]= "Parabéns joia de Aluno pela sua aprovação em Análise e Desenvolvimento de Sistemas!";
+			ds_grid_add_text("Parabéns joia de Aluno pela sua aprovação em Análise e Desenvolvimento de Sistemas!", nonatoDialogo, 1, "Diretor Nonato Silva" );
+>>>>>>> e3fd693f2c6c1de415b22eb020df66caf73f3b8b
 			//ds_grid_add_text("são 11hrs da noite e eu aqui mexendo nesse bicho", spr_retrato1, 0, "KELY" );
+=======
+//funcao dialogo nonato
+function scr_textos_nonato() {
+	switch npcNome {
+<<<<<<< HEAD
+		case "Nonato":
+			
+			ds_grid_add_text("Parabéns joia de Aluno pela sua aprovação em Análise e Desenvolvimento de Sistemas!", mago2Dialogo, 1, "Diretor Nonato Silva");
+					
+>>>>>>> 91df535ecc53bffeb0fa26fdb6bd8501624536d7
+=======
+		case "Nonato":			
+			ds_grid_add_text("Parabéns joia de Aluno pela sua aprovação em Análise e Desenvolvimento de Sistemas!", Sprit_retrato_nonato, 1, "Diretor Nonato Silva");					
+>>>>>>> 767b2a84b274f15c8b9757c2381ba0158789f809
 		break;
 	}
-	
-	cont += 1;
 }
+
+
+//funcao do mago3
+function scr_textos_mago33() {
+	
+		switch npcNome {
+		case "mago3":
+			// recebe um valor aleatorio
+			//+ string(global.list_indice[| 0]) +"--->"+ string(global.list_indice[| 1]) 
+			ds_grid_add_text(global.list_pergunta_final[| 0][0], mago3Dialogo, 1, "MAGO" );
+					add_op(global.list_pergunta_final[| 0][global.list_indice[| 0]],	 "resp11"); //VERDADEIRO index1
+					add_op(global.list_pergunta_final[| 0][global.list_indice[| 1]],	 "resp21");	//FALSO		 index2
+		
+		break;
+		
+					case "resp11":
+						ds_grid_add_text("       Finalizada perguntas Fase Final\n(Clique em qualquer lugar para continuar)\n               ", mago3Dialogo, 1, "MAGO" );
+					break;
+					
+					case "resp21":
+						ds_grid_add_text("       Finalizada perguntas Fase Final\n(Clique em qualquer lugar para continuar)\n               ", mago3Dialogo, 1, "MAGO" );
+					break;
+	}
+}
+
+
+
+
+//funcao mago2
+function scr_textos_mago22() {
+	
+		switch npcNome {
+		case "mago2":
+			// recebe um valor aleatorio
+			
+			ds_grid_add_text(global.list_pergunta_fase2[| 0][0], mago2Dialogo, 1, "MAGO" );
+					add_op(global.list_pergunta_fase2[| 0][global.list_indice[| 0]],	 "resp11"); //VERDADEIRO index1
+					add_op(global.list_pergunta_fase2[| 0][global.list_indice[| 1]],	 "resp21");	//FALSO		 index2
+		
+		break;
+		
+					case "resp11":
+						ds_grid_add_text("       Finalizada perguntas Fase 2\n(Clique em qualquer lugar para continuar)\n               ", mago2Dialogo, 1, "MAGO" );
+					break;
+					
+					case "resp21":
+						ds_grid_add_text("       Finalizada perguntas Fase 2\n(Clique em qualquer lugar para continuar)\n               ", mago2Dialogo, 1, "MAGO" );
+					break;
+					
+	}
+}
+
+
+
+
+//funcao mago1
+function scr_textos_mago1() {
+	
+		switch npcNome {
+		case "mago1":
+			// recebe um valor aleatorio
+			
+			ds_grid_add_text(global.list_pergunta[| 0][0], spr_retrato2, 1, "MAGO" );
+					add_op(global.list_pergunta[| 0][global.list_indice[| 0]],	 "resp11"); //VERDADEIRO index1
+					add_op(global.list_pergunta[| 0][global.list_indice[| 1]],	 "resp21");	//FALSO		 index2
+		
+		break;
+		
+					case "resp11":
+						ds_grid_add_text("       Finalizada perguntas Fase 1\n(Clique em qualquer lugar para continuar)\n               ", spr_retrato2, 1, "MAGO" );
+					break;
+					
+					case "resp21":
+						ds_grid_add_text("       Finalizada perguntas Fase 1\n(Clique em qualquer lugar para continuar)\n               ", spr_retrato2, 1, "MAGO" );
+					break;
+					
+	}
+}
+
+
+
+
 
 
 //função para add linhas sempre na ultima posicao
@@ -386,12 +488,6 @@ function ds_grid_add_text(){
 
 
 
-
-
-
-
-
-
 // para adcionar as opcoes
 function add_op(_texto, _resposta){
 	//sempre repete2 vezes 
@@ -403,7 +499,7 @@ function add_op(_texto, _resposta){
 	op_resposta[op_num] = _resposta;
 	
 	// essa pode remover
-	global.teste = _texto;
+	//global.teste = _texto;
 	op_num ++;
 }
 
