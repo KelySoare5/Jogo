@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "mago2Dialogo",
-  "bbox_bottom": 63,
+  "bbox_bottom": 50,
   "bbox_left": 0,
   "bbox_right": 66,
   "bbox_top": 0,
@@ -17,7 +17,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 64,
+  "height": 51,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"99369639-c89a-441b-a391-229272beb18b","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},

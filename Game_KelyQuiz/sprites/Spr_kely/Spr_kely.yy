@@ -2,19 +2,11 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "Spr_kely",
-<<<<<<< HEAD
   "bbox_bottom": 179,
-  "bbox_left": 5,
-  "bbox_right": 126,
+  "bbox_left": 48,
+  "bbox_right": 127,
   "bbox_top": 13,
-  "bboxMode": 0,
-=======
-  "bbox_bottom": 127,
-  "bbox_left": 42,
-  "bbox_right": 89,
-  "bbox_top": 36,
   "bboxMode": 2,
->>>>>>> e3fd693f2c6c1de415b22eb020df66caf73f3b8b
   "collisionKind": 1,
   "collisionTolerance": 0,
   "DynamicTexturePage": false,

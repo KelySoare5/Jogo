@@ -46,10 +46,24 @@ if place_meeting(x+hspd, y, Obj_wall)
 	while(!place_meeting(x+sign(hspd), y, Obj_wall)){
 		x = x + sign(hspd);
 		
-		if ds_list_size(global.list_pergunta > 0) {
-			// quando colidir verticalmente embaralhar o dialogo
+		// quando colidir embaralhar o dialogo
+		if ds_list_size(global.list_pergunta)  > 0{
 			ds_list_shuffle(global.list_pergunta);
+			
+			//embaralhar os indices
+			ds_list_shuffle(global.list_indice);
+		}
+		
+		
+		//fase 2
+		if ds_list_size(global.list_pergunta_fase2)  > 0 { 
 			ds_list_shuffle(global.list_pergunta_fase2);
+			
+			ds_list_shuffle(global.list_indice);
+		}
+		
+		//fase 3
+		if ds_list_size(global.list_pergunta_final)  > 0 { 
 			ds_list_shuffle(global.list_pergunta_final);
 			
 			ds_list_shuffle(global.list_indice);
@@ -123,14 +137,27 @@ if global.dialogo == false{
 	if place_meeting(x, y+1, Obj_wall) and key_jump {
 		
 		
-		// quando pular embaralhar o dialogo
-		if ds_list_size(global.list_pergunta > 0) {
+		// quando colidir embaralhar o dialogo
+		if ds_list_size(global.list_pergunta)  > 0{
 			ds_list_shuffle(global.list_pergunta);
+			
+			//embaralhar os indices
+			ds_list_shuffle(global.list_indice);
+		}
+		
+		
+		//fase 2
+		if ds_list_size(global.list_pergunta_fase2)  > 0 { 
 			ds_list_shuffle(global.list_pergunta_fase2);
+			
+			ds_list_shuffle(global.list_indice);
+		}
+		
+		//fase 3
+		if ds_list_size(global.list_pergunta_final)  > 0 { 
 			ds_list_shuffle(global.list_pergunta_final);
 			
 			ds_list_shuffle(global.list_indice);
-			
 		}
 		
 		vspd -= 12;
@@ -139,13 +166,5 @@ if global.dialogo == false{
 
 
 #endregion
-
-
-
-/*
-if (keyboard_check(vk_enter)) game_restart();
-
-*/
-
 
 

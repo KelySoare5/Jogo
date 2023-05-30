@@ -15,15 +15,13 @@ if inicializar == true {
 	//cor
 	var _c = c_black;
 	// variavel q recebe a sprit das opcoes
-	//draw_rectangle_color(_xx,_yy, _guil, _guia, _c, _c, _c, _c, false);
-	//draw_text_ext(_xx + 32, _yy + 32, texto[0], 32, _guia - 64);
+	
 	//var _sprintOpcao = Sprit_fundo_texto;
 	
 	//recebe a sprit da funcao q cria
 	var _sprite = texto_grid[# infos.Retrato, pagina];
 
 	// fonte
-	
 	draw_set_font(FontDialogo);
 	
 	//variavel para copiar o texto
@@ -67,8 +65,6 @@ if inicializar == true {
 	
 		//desenhar a sprite
 		draw_sprite_ext(_sprite, 0, _guil, _guia-200, -3, 3, 0, c_white, 1);
-		
-		
 	
 	}
 	
@@ -82,10 +78,15 @@ if inicializar == true {
 		var _sprintOpcao = Sprit_fundo_texto;
 		
 		
+		
+		
 		// Mudei as letra "W" e "S" 
 		op_selecionado += keyboard_check_pressed(vk_up) - keyboard_check_pressed(vk_down);
 		
 		op_selecionado = clamp(op_selecionado, 0, op_num - 1);
+		
+		
+		
 		
 		
 		for (var i = 0; i < op_num; i++) {
@@ -113,6 +114,9 @@ if inicializar == true {
 				
 				draw_sprite(Sprit_bolota, 0, _xx + 8, _opy - (_opsep * i) + 8 );
 			}
+			
+			
+			
 
 		}
 		
@@ -121,13 +125,17 @@ if inicializar == true {
 		if mouse_check_button_pressed(mb_right){
 
 			//cria o dialogo na layer Dialogo
+			
+
 			var _dialogo = instance_create_layer(x,y, "Dialogo", ObjDialogo);
 			
-			_dialogo.npcNome = op_resposta[op_selecionado]; //recebe o valor selecionado pelo usuario
+			_dialogo.npcNome = op_resposta[op_selecionado];
 			
 			
 			
 			
+			//recebe o valor selecionado pelo usuario
+			//global.respSelecionada = op[op_selecionado];
 			
 			//nao precisa para o nonato pq so roda uma vez
 			
@@ -139,9 +147,11 @@ if inicializar == true {
 					
 					//embaralhar os indices para se usados nas opcoes das perguntas
 					ds_list_shuffle(global.list_indice);
-					global.retUsuario = "Você é uma jóia";
+					global.retUsuario = "Você é uma joia";
 					//ds_list_delete(global.list_pergunta, 0);
-					global.joia += 100;	
+					//vale 125 cada questao
+					global.joia += 125;	
+					
 					
 					
 				}
@@ -150,21 +160,21 @@ if inicializar == true {
 					//embaralhar os indices para se usados nas opcoes das perguntas
 					ds_list_shuffle(global.list_indice);
 					
-					global.retUsuario = "Você NÂO é uma jóia";
+					global.retUsuario = "Você NÂO é uma joia";
+					//global.joia -= 100;
 					
-					global.joia -= 100;
 					
-				
 					//condicao do gameOver
-					if global.joia <= 0 {
+					/*if global.joia <= 0 {
 						if (instance_exists(Obj_game_controller)){
 							with(Obj_game_controller){
+								
 								game_over = true;
 							
 							}
 						}
 					
-					}
+					}*/
 				
 				
 				}
@@ -199,9 +209,9 @@ if inicializar == true {
 					
 					//embaralhar os indices para se usados nas opcoes das perguntas
 					ds_list_shuffle(global.list_indice);
-					global.retUsuario = "Você é uma jóia";
+					global.retUsuario = "Você é uma joia";
 					//ds_list_delete(global.list_pergunta, 0);
-					global.joia += 100;	
+					global.joia += 125;	
 					
 					
 				}
@@ -210,13 +220,13 @@ if inicializar == true {
 					//embaralhar os indices para se usados nas opcoes das perguntas
 					ds_list_shuffle(global.list_indice);
 					
-					global.retUsuario = "Você NÂO é uma jóia";
+					global.retUsuario = "Você NÂO é uma joia";
 					
-					global.joia -= 100;
+					//global.joia -= 100;
 					
 				
 					//condicao do gameOver
-					if global.joia <= 0 {
+					/*if global.joia <= 0 {
 						if (instance_exists(Obj_game_controller)){
 							with(Obj_game_controller){
 								game_over = true;
@@ -224,7 +234,7 @@ if inicializar == true {
 							}
 						}
 					
-					}
+					}*/
 				
 				
 				}
@@ -259,9 +269,9 @@ if inicializar == true {
 					
 					//embaralhar os indices para se usados nas opcoes das perguntas
 					ds_list_shuffle(global.list_indice);
-					global.retUsuario = "Você é uma jóia";
+					global.retUsuario = "Você é uma joia";
 					//ds_list_delete(global.list_pergunta, 0);
-					global.joia += 100;	
+					global.joia += 125;	
 					
 					
 				}
@@ -270,13 +280,13 @@ if inicializar == true {
 					//embaralhar os indices para se usados nas opcoes das perguntas
 					ds_list_shuffle(global.list_indice);
 					
-					global.retUsuario = "Você NÂO é uma jóia";
+					global.retUsuario = "Você NÂO é uma joia";
 					
-					global.joia -= 100;
+					//global.joia -= 100;
 					
 				
 					//condicao do gameOver
-					if global.joia <= 0 {
+					/*if global.joia <= 0 {
 						if (instance_exists(Obj_game_controller)){
 							with(Obj_game_controller){
 								game_over = true;
@@ -284,7 +294,7 @@ if inicializar == true {
 							}
 						}
 					
-					}
+					}*/
 				
 				
 				}

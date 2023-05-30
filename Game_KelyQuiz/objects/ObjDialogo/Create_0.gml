@@ -8,8 +8,6 @@ enum infos{
 	Nome
 }
 
-//a = 0;
-
 npcNome= "";
 //quatro coisas para add dentro
 texto_grid = ds_grid_create(4, 0);
@@ -25,11 +23,15 @@ op_draw = false; //pra saber se tem q desenhar as opcoes
 
 
 
+/*
+global.respSelecionada = "";
+global.retUsuario = "";
+*/
 
-//pode da errado nos outros duialogos
-//global.respSelecionada = "";
-//global.retUsuario = "";
-
+/*
+global.aux_opc1 = 0;
+global.aux_opc2 = 50;
+*/
 
 inicializar= false;
 

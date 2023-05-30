@@ -4,4 +4,6 @@
 
 nome= "mago1"; //referencia q o nome dele e esse
 
+
+
 global.nome_mago = "Mago1";

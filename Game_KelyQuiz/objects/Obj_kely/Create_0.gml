@@ -1,8 +1,5 @@
 
 
-
-
-
 #region Perguntas_list_fase1
 
     global.list_pergunta = ds_list_create(); //VERDADEIRO   	 FALSO
@@ -163,10 +160,21 @@
 //dialogo e aparecer so uma vez quando tiver colisao
 
 
-
 //retorna uma resposta para o usuario
 //essa é usada no obj dialogo e joia
 global.retUsuario = "";
+global.media = 0;
+
+nom_mago1 = false;
+nom_mago2 = false;
+nom_mago3 = false;
+
+
+global.nota1 = 0;
+global.nota2 = 0;
+global.nota3 = 0;
+
+
 
 
 global.dialogo = false;
