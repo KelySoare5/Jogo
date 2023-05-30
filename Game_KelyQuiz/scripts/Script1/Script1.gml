@@ -26,6 +26,9 @@ function scr_textos_mago33() {
 		break;
 		
 					case "resp11":
+						global.media = global.nota1 + global.nota2 + global.joia;
+						
+						global.media = global.media / 3;
 						
 						//se for reprovado
 						if global.media < 700 { 
@@ -33,13 +36,15 @@ function scr_textos_mago33() {
 						}
 						//se for aprovado
 						else{
-							ds_grid_add_text("       Parabéns, você foi APROVADO...\n    Com média: ->" + string((global.media + global.joia) / 3) + "<- \n(Clique em qualquer lugar para ir até o Diretor)", mago3Dialogo, 1, "VERNEI" );
+							ds_grid_add_text("       Parabéns, você foi APROVADO...\n    Com média: ->" + string(global.media) + "<- \n(Clique em qualquer lugar para ir até o Diretor)", mago3Dialogo, 1, "VERNEI" );
 						}
 						
 					break;
 					
 					case "resp21":
+						global.media = global.nota1 + global.nota2 + global.joia;
 						
+						global.media = global.media / 3;
 						
 						//se for reprovado
 						if global.media < 700 { 
@@ -47,7 +52,7 @@ function scr_textos_mago33() {
 						}
 						//se for aprovado
 						else{
-							ds_grid_add_text("       Parabéns, você foi APROVADO...\n    Com média: ->" + string((global.media + global.joia) / 3) + "<- \n(Clique em qualquer lugar para ir até o Diretor)", mago3Dialogo, 1, "VERNEI" );
+							ds_grid_add_text("       Parabéns, você foi APROVADO...\n    Com média: ->" + string(global.media) + "<- \n(Clique em qualquer lugar para ir até o Diretor)", mago3Dialogo, 1, "VERNEI" );
 						}
 						
 						

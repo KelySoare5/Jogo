@@ -71,7 +71,7 @@ if pagina < ds_grid_height(texto_grid) - 1{
 			if mouse_check_button_pressed(mb_left){
 				
 
-				global.media += global.joia;
+				//global.media += global.joia;
 				
 				//nota mago1
 				if global.nome_mago == "Mago1" {
@@ -86,15 +86,24 @@ if pagina < ds_grid_height(texto_grid) - 1{
 				////nota mago3 e media abaixo de 7 reseta o jogo, reprova
 				if global.nome_mago == "Mago3"{
 					global.nota3 = global.joia;
-					global.media = global.media / 3;
+					//global.media = global.media / 3;
+					
 					if global.media < 700 {
+						
+						if (instance_exists(Obj_game_controller)){
+							with(Obj_game_controller){
+								game_over = true;
+							
+							}
+						}
+						
 						//reprova
-						game_restart();
+						//game_restart();
 					}
 				}
 				
 				//se o valor das joias for menor q 700, esta de reccuperacao
-				if global.joia < 700 {
+				if global.joia < 700 and global.nome_mago != "Mago3" {
 					if (instance_exists(Obj_game_controller)){
 						with(Obj_game_controller){
 							game_over = true;
