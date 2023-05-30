@@ -13,5 +13,5 @@ global.musica2= audio_play_sound(Som_suspense,1,true); // musica da 3 fase
 //audio_sound_gain(global.musica1, global.vol_musica,10000); //começa baixa e vai aumentando
 
 audio_sound_gain(global.musica2, 0, 0); // efeito de som
-audio_sound_gain(global.musica2, global.vol_musica,10000); //começa baixa e vai aumentando
+audio_sound_gain(global.musica2, global.vol_musica,1000); //começa baixa e vai aumentando
 

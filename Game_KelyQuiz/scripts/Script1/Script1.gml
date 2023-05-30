@@ -8,9 +8,22 @@ function scr_textos_nonato() {
 		case "Nonato":			
 			ds_grid_add_text("Parabéns joia de Aluno pela sua aprovação em Análise e Desenvolvimento de Sistemas!", nonato_recortado, 1, "Diretor Nonato Silva");					
 		break;
+		
+		
 	}
 }
 
+function scr_textos_nonato3() {
+	switch npcNome {
+				
+		case "NonatoFase3":			
+			ds_grid_add_text("Parabens aluno, por chehar até aqui", nonato_recortado, 1, "Diretor Nonato Silva");	
+			ds_grid_add_text("Hoje obteve muito conhecimento nas fases anterios!", nonato_recortado, 1, "Diretor Nonato Silva");	
+			ds_grid_add_text("Essa é a ultima fase!! Para passar nessa sua média precisa ser igual ou maior que sete.", nonato_recortado, 1, "Diretor Nonato Silva");	
+			ds_grid_add_text("Boa sorte!!", nonato_recortado, 1, "Diretor Nonato Silva");
+		break;
+	}
+}
 
 //funcao do mago3
 function scr_textos_mago33() {

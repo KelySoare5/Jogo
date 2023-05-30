@@ -11,6 +11,10 @@ if inicializar == false{
 		scr_textos_nonato();	 
 	}
 	
+	if global.nome_mago == "NonatoFase3" {
+		scr_textos_nonato3();	 
+	}
+	
 	if global.nome_mago == "Mago3" {
 		scr_textos_mago33();
 	}
@@ -83,6 +87,14 @@ if pagina < ds_grid_height(texto_grid) - 1{
 					global.nota2 = global.joia;
 				}
 				
+				if global.nome_mago == "NonatoFase3"{
+					//destroir o mago quando o dialogo acabar
+					instance_destroy(obj_par_npcs);
+					//destroir o dialogo quando o dialogo acabar
+					instance_destroy();
+					//para o dialogo aparecer para os outros magos
+					global.dialogo = false;
+				}
 				////nota mago3 e media abaixo de 7 reseta o jogo, reprova
 				if global.nome_mago == "Mago3"{
 					global.nota3 = global.joia;
@@ -125,6 +137,7 @@ if pagina < ds_grid_height(texto_grid) - 1{
 				if global.nome_mago == "Nonato"{
 					game_end();
 				}
+
 
 			}
 		}

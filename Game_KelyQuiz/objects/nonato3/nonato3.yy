@@ -1,20 +1,20 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "objMusicicaFase3",
+  "name": "nonato3",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":4,"eventType":7,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":3,"eventType":7,"isDnD":false,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":5,"eventType":7,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "obj_Musicas",
-    "path": "folders/Objetos/obj_Musicas.yy",
+    "name": "objetos_players",
+    "path": "folders/Objetos/objetos_players.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_par_npcs",
+    "path": "objects/obj_par_npcs/obj_par_npcs.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -30,7 +30,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "Sprit_Nonato",
+    "path": "sprites/Sprit_Nonato/Sprit_Nonato.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
