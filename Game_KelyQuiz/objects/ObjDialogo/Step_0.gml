@@ -104,8 +104,11 @@ if pagina < ds_grid_height(texto_grid) - 1{
 				
 				//se o valor das joias for menor q 700, esta de reccuperacao
 				if global.joia < 700 and global.nome_mago != "Mago3" {
+					//aqui era pra voltar so pro comeco da room
+					
 					if (instance_exists(Obj_game_controller)){
 						with(Obj_game_controller){
+							
 							game_over = true;
 							
 						}
